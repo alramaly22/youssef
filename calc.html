@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Responsive pizza website - Bedimcode</title>
+</head>
+
+<body>
+    <!--=============== NAVBAR ===============-->
+    <header class="header" id="header">
+        <div class="navtotal container">
+            <a href="index.html" class="nav__logo"><img src="assets/img/logo2.png" alt=""></a>
+
+
+            <div class="footer__social2">
+                <span class="footersociel"><i class="ri-moon-clear-fill change-theme" id="theme-button"></i></span>
+                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link2">
+                    <i class="ri-facebook-circle-fill"></i>
+                </a>
+                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link2">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link2">
+                    <i class="ri-tiktok-fill"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <div class="section calculate">
+            <div class="containerform" id="loginForm">
+                <h1>Login</h1>
+                <form id="login">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+
+                    <label for="phone">WhatsApp/Phone Number:</label>
+                    <input type="tel" id="phone" pattern="^\d{11}$" required placeholder="11-digit number">
+
+                    <button class="button" type="submit">Login</button>
+                </form>
+            </div>
+
+            <div class="containerform hidden" id="calculatorForm">
+                <h1>Calorie Calculator</h1>
+                <form id="calorieForm">
+                    <label for="sex">Sex:</label>
+                    <select id="sex" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+
+                    <label for="age">Age (years):</label>
+                    <input type="number" id="age" required>
+
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" required>
+
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" required>
+
+                    <label for="goal">Goal:</label>
+                    <select id="goal" required>
+                        <option value="lose">Lose Weight</option>
+                        <option value="maintain">Maintain Weight</option>
+                        <option value="gain">Gain Weight</option>
+                    </select>
+
+                    <label for="activity-level">Activity Level:</label>
+                    <div class="activity-level" id="activity-level">
+                        <label><input type="radio" name="activity" value="sedentary" required> Sedentary</label>
+                        <label><input type="radio" name="activity" value="light"> Light</label>
+                        <label><input type="radio" name="activity" value="moderate"> Moderate</label>
+                        <label><input type="radio" name="activity" value="active"> Active</label>
+                        <label><input type="radio" name="activity" value="very_active"> Very Active</label>
+                    </div>
+
+                    <button class="button" type="submit">Calculate</button>
+                </form>
+                <div id="result" class="hidden">
+                    <h2>Your Results:</h2>
+                    <p>Target calorie intake per day:</p>
+                    <div class="calories">0</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const loginForm = document.getElementById('login');
+        const calculatorForm = document.getElementById('calculatorForm');
+        const loginContainer = document.getElementById('loginForm');
+
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // استخدام الأسماء الجديدة في HTML (name و phone)
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+
+            // التحقق من أن الحقول ليست فارغة
+            if (name && phone) {
+                loginContainer.classList.add('hidden');
+                calculatorForm.classList.remove('hidden');
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+
+        const calorieForm = document.getElementById('calorieForm');
+        const result = document.getElementById('result');
+        const caloriesElement = document.querySelector('.calories');
+
+        calorieForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const sex = document.getElementById('sex').value;
+            const age = parseInt(document.getElementById('age').value);
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value);
+            const goal = document.getElementById('goal').value;
+            const activity = document.querySelector('input[name="activity"]:checked').value;
+
+            let bmr;
+            if (sex === 'male') {
+                bmr = 10 * weight + 6.25 * height - 5 * age + 5;
+            } else {
+                bmr = 10 * weight + 6.25 * height - 5 * age - 161;
+            }
+
+            let activityFactor;
+            switch (activity) {
+                case 'sedentary':
+                    activityFactor = 1.2;
+                    break;
+                case 'light':
+                    activityFactor = 1.375;
+                    break;
+                case 'moderate':
+                    activityFactor = 1.55;
+                    break;
+                case 'active':
+                    activityFactor = 1.725;
+                    break;
+                case 'very_active':
+                    activityFactor = 1.9;
+                    break;
+                default:
+                    activityFactor = 1;
+            }
+
+            const maintenanceCalories = bmr * activityFactor;
+
+            let goalCalories;
+            if (goal === 'lose') {
+                goalCalories = maintenanceCalories - 500;
+            } else if (goal === 'gain') {
+                goalCalories = maintenanceCalories + 500;
+            } else {
+                goalCalories = maintenanceCalories;
+            }
+
+            caloriesElement.textContent = Math.round(goalCalories);
+            result.classList.remove('hidden');
+        });
+    </script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

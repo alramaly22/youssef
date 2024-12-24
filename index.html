@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+    <!--=============== AOS ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--=============== SWIPER CSS ===============-->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Responsive pizza website - Bedimcode</title>
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <!--=============== NAVBAR ===============-->
+    <header class="header" id="header">
+        <div class="navtotal container">
+            <a href="index.html" class="nav__logo"><img src="assets/img/logo2.png" alt=""></a>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#home" class="nav__link ">
+                            <i class="ri-home-smile-2-line"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="nav__link">
+                            <i class="ri-user-line"></i>
+                        </a>
+                    </li>
+
+                    <!-- Expand list -->
+                    <li>
+                        <button class="nav__expand" id="nav-expand">
+              <i class="ri-add-line nav__expand-icon" id="nav-expand-icon"></i>
+           </button>
+
+                        <ul class="nav__expand-list" id="nav-expand-list">
+                            <li>
+                                <a href="#clients" class="nav__expand-link">
+                                    <i class="ri-chat-3-fill"></i>
+                                    <span>Clients</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#discount" class="nav__expand-link">
+                                    <i class="ri-book-3-fill"></i>
+                                    <span>E-Book</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#care" class="nav__expand-link">
+                                    <i class="ri-calculator-fill"></i>
+                                    <span>Calculater</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#pricing" class="nav__link">
+                            <i class="ri-money-dollar-circle-line"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#new" class="nav__link">
+                            <i class="ri-arrow-left-right-fill"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__social2">
+                <span class="footersociel"><i class="ri-moon-clear-fill change-theme" id="theme-button"></i></span>
+                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link2">
+                    <i class="ri-facebook-circle-fill"></i>
+                </a>
+                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link2">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link2">
+                    <i class="ri-tiktok-fill"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- <div class="countdown-timer-container">
+        <i class="fa-solid fa-face-grin-stars"></i>
+
+        <div class="countdown-timer">
+            <h2 class="countdown-heading">The Christmas Offer Ends In:</h2>
+            <div class="time-segment">
+                <span id="days">00</span>
+                <p>Days</p>
+            </div>
+            <div class="time-segment">
+                <span id="hours">00</span>
+                <p>Hours</p>
+            </div>
+            <div class="time-segment">
+                <span id="minutes">00</span>
+                <p>Minutes</p>
+            </div>
+            <div class="time-segment">
+                <span id="seconds">00</span>
+                <p>Seconds</p>
+            </div>
+            <p class="countdown-footer">Hurry up! Don't miss the Christmas deal!</p>
+        </div>
+
+        <i class="fas fa-sleigh"></i>
+    </div> -->
+
+
+
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home" data-aos="fade-right">
+            <div class="video-container">
+                <video class="home__video" autoplay muted loop>
+                    <source src="assets/video/v3.mp4" type="video/mp4" >
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="home__img">
+
+            </div>
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        <p data-lang="home1">Achieve Your Best</p>
+                        <!-- <p data-lang="home2">body with Wassim</p> -->
+                    </h1>
+                    <!-- <p data-lang="home3" class="home__description">
+                        Welcome to Wassim, your ultimate destination for fitness guidance and inspiration.
+                    </p> -->
+                    <a data-lang="button" href="pricing.html" class="button button--flex">
+                        Get Start <i class="ri-arrow-right-circle-fill"></i>
+                    </a>
+                </div>
+
+                <div class="home__social">
+                    <span data-lang="follow" class="home__social-follow">Follow Us</span>
+
+                    <div class="home__social-links">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================== STEPS ====================-->
+        <section class="steps" id="steps" data-aos="fade-right">
+            <div class="steps__bg section">
+                <h2 class="section__title">
+                    Steps of manufacturing our products
+                </h2>
+                <div class="steps__container container grid">
+                    <img src="" alt="" class="steps__bg-img">
+                    <div class="steps__content">
+                        <img src="assets/img/steps-curve-line.svg" alt="" class="steps__border">
+                        <div class="steps__card">
+                            <div class="steps__circle">
+                                <div class="steps__subcircle">
+                                    01
+                                </div>
+                                <img src="assets/img/num11.png" alt="" class="steps__img">
+                            </div>
+                            <p class="steps__description">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed temporibus ex quos nemo excepturi quas!
+                            </p>
+                        </div>
+
+                        <div class="steps__card steps__card-move">
+                            <div class="steps__circle">
+                                <div class="steps__subcircle">
+                                    02
+                                </div>
+                                <img src="assets/img/oo.png" alt="" class="steps__img">
+                            </div>
+                            <p class="steps__description">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil voluptatem expedita optio nostrum aperiam!
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__circle">
+                                <div class="steps__subcircle">
+                                    03
+                                </div>
+                                <img src="assets/img/po.png" alt="" class="steps__img">
+                            </div>
+                            <p class="steps__description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia assumenda quis ratione?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about" data-aos="fade-right">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title creative-title">
+                        About <br>
+                        <span class="highlight">
+                            <span class="char">Y</span>
+                        <span class="char">o</span>
+                        <span class="char">u</span>
+                        <span class="char">s</span>
+                        <span class="char">s</span>
+                        <span class="char">e</span>
+                        <span class="char">f</span>
+                        </span>
+                    </h2>
+
+                    <p class="about__description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque tempore asperiores corporis magni optio aspernatur, eius non omnis laborum a.
+                    </p>
+                    <a href="about.html" class="button">
+                        Learn More <i class="ri-quill-pen-ai-fill"></i>
+                    </a>
+                </div>
+                <div class="about__image">
+                    <img src="assets/img/about2.jpeg" alt="" class="about__img">
+                    <div class="about__shadow"></div>
+                    <div class="about__border"></div>
+                </div>
+            </div>
+        </section>
+        <!--==================== PRICING ====================-->
+        <section class="packages section" id="pricing">
+            <h1 class="section__title">CHOOSE THE PACKAGE</h1>
+            <!-- <p>I will help you reach the best version of yourself</p> -->
+            <div class="package-container">
+                <!-- Package Basic -->
+                <div class="package silver" data-aos="fade-right">
+                    <h2>Ignite Package</h2>
+                    <p class="price"><del>EGP 2,500</del> <span>EGP 1,499</span></p>
+                    <a href="#" class="animationbutttonpricieng">SUBSCRIBE NOW</a>
+                    <p class="animated-line">PER / 3 MONTHS</p>
+                    <ul>
+                        <li><i class="ri-check-fill iconprice"></i> Weekly follow up.</li>
+                        <li><i class="ri-check-fill iconprice"></i> Customized workout program in the gym or home workouts, changing every 45 days.</li>
+                        <li><i class="ri-check-fill iconprice"></i> Changing the nutrition plan every 3 weeks.</li>
+                        <li><i class="ri-check-fill iconprice"></i> Mini Cooking Ebook👨‍🍳 with 7 healthy recipes.</li>
+                        <li><i class="ri-check-fill iconprice"></i> Recommended supplements plan (Optional).</li>
+                        <li><i style="color: red;" class="ri-close-fill iconprice xx"></i> No contacts through phone calls.</li>
+                    </ul>
+                </div>
+
+                <!-- Package 1 Premium -->
+                <div class="package gold" data-aos="fade-left">
+                    <h2>Power Package</h2>
+                    <p class="price"><del>EGP 4,000</del> <span>EGP 1,999</span></p>
+                    <a href="#" class="animationbutttonpricieng">SUBSCRIBE NOW</a>
+                    <p class="animated-line">PER / 3 MONTHS</p>
+                    <ul>
+                        <li><i class="ri-check-fill iconprice"></i> Follow up every 3-4 days to evaluate your progress.</li>
+                        <li><i class="ri-check-fill iconprice"></i> Customized workout program in the gym or home workouts, changing every 30 days.</li>
+                        <li><i class="ri-check-fill iconprice"></i> Changing the nutrition plan every 2 weeks.</li>
+                        <li><i class="ri-check-fill iconprice"></i> Full Cooking Ebook👨‍🍳 with +50 healthy recipes.</li>
+                        <li><i class="ri-check-fill iconprice"></i> Recommended supplements plan with special discounts (Optional).</li>
+                        <li><i class="ri-check-fill iconprice"></i> You can contact through phone calls.</li>
+                    </ul>
+                </div>
+
+                <!-- Package 2 VIP -->
+                <div class="package vip" data-aos="fade-right">
+                    <h2>Limit break Package</h2>
+                    <p class="price"><del>EGP 7,500</del> <span>EGP 3,500</span></p>
+                    <a href="#" class="animationbutttonpricieng">SUBSCRIBE NOW</a>
+                    <p class="animated-line">PER / 3 MONTHS</p>
+                    <ul>
+                        <li><i class="ri-check-fill iconprice"></i> Daily follow up every 24hrs to evaluate your progress.</li>
+                        <li><i class="ri-check-fill iconprice"></i> Customized workout program in the gym or home workouts, changing every 30 days.</li>
+                        <li><i class="ri-check-fill iconprice"></i> Weekly change in the nutrition plan to boost progress.</li>
+                        <li><i class="ri-check-fill iconprice"></i>Full Cooking Ebook👨‍🍳 with +50 healthy recipes.</li>
+                        <li><i class="ri-check-fill iconprice"></i>Recommended supplements plan with special discounts (Optional).</li>
+                        <li><i class="ri-check-fill iconprice"></i> Contact through phone calls anytime.</li>
+                        <li><i class="ri-check-fill iconprice"></i> Priority in texting back the fastest.</li>
+                        <li><i class="ri-check-fill iconprice"></i> 4 Zoom or Google meetings during your subscription.</li>
+                        <li><i class="ri-check-fill iconprice"></i> 2 One-to-one private sessions with Captain Youssef.</li>
+                        <li><i class="ri-check-fill iconprice"></i> Preparations for tournaments (Optional).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--==================== Transformation ====================-->
+        <section class="new section" id="new">
+            <h2 class="section__title" data-lang="transformation">
+                Transformations & Triumphs
+            </h2>
+            <div class="new__container container" data-aos="fade-right">
+                <div class="new__swiper swiper" id="swiper1">
+                    <div class="swiper-wrapper slide">
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans/trans1.png" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans/trans2.png" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans/trans3.png" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans/trans4.png" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans/trans5.png" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans/trans6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="new__swiper swiper" id="swiper2" data-aos="fade-left">
+                    <div class="swiper-wrapper">
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans/trans7.png" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans/trans8.png" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans/trans9.png" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans/trans10.png" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans/trans11.png" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans/trans12.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================== Clients ====================-->
+        <section class="containereea" id="clients" data-aos="fade-right">
+            <div class="testimonial mySwiper">
+                <div class="testi-content swiper-wrapper">
+                    <div class="slide swiper-slide">
+                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" alt="" class="image" />
+                        <!-- تم إضافة معرف مختلف لكل صورة -->
+                        <p>
+
+                            I'm truly happy with the program and glad I followed your guidance during the preparation. I had some bad experiences with other trainers before you, even some friends. You're a real pro and show great respect. It's not just about money for you; you genuinely
+                            focus on quality. Bless you. </p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                        <div class="details">
+                            <span class="name">Marnie Lotter</span>
+
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" id="zoomable-image-2" alt="" class="image" />
+                        <!-- تم إضافة معرف مختلف لكل صورة -->
+                        <p>
+                            In these pictures, there are two trophies. The first is the gold medal. These words make me very proud, especially coming from the best person I've ever met, my coach and brother, Dr. Mohammed El Gadi Mo Qadi. I can't express how much I appreciate what
+                            he's done for me. The second picture is just a medal 🥇. Thanks to everyone who supported me. Thank you all </p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                        <div class="details">
+                            <span class="name">Marnie Lotter</span>
+
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" id="zoomable-image-3" alt="" class="image" />
+                        <!-- تم إضافة معرف مختلف لكل صورة -->
+                        <p>
+                            You're the best coach I've ever worked with, I swear. You're like a doctor and an artist in bodybuilding. I'm really satisfied and happy. I pray for you day and night. Wherever I go, I speak highly of you. I recommend all my friends to train with you.
+                            God willing, I'll continue working with you.
+                        </p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                        <div class="details">
+                            <span class="name">Marnie Lotter</span>
+
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" id="zoomable-image-4" alt="" class="image" />
+                        <!-- تم إضافة معرف مختلف لكل صورة -->
+                        <p>
+
+                            I took the first overall in men's physique and earned a physique pro card. I came second in overall bodybuilding. It was really close between me and the other dude. I'm very happy that I worked with you, my friend. Thanks to you, I achieved all of this
+                        </p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                        <div class="details">
+                            <span class="name">Marnie Lotter</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div style="top: 26rem; right: 15px;" class="swiper-button-next nav-btn"></div>
+                <div style="top: 26rem; left: 15px;" class="swiper-button-prev nav-btn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!--==================== CONTACT ====================-->
+        <section class="discount section" id="discount" data-aos="fade-right">
+            <div class="discount__container cotainer grid">
+                <div class="discount__data">
+                    <h2 class="discount__title section__title">
+                        Up To 50% Discount
+                    </h2>
+                    <p class="discount__description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam optio nemo modi quo error eius est nostrum architecto magni rem.
+                    </p>
+                    <a href="book.html" class="button">Shop Now <i class="ri-shopping-cart-fill"></i></a>
+                </div>
+                <div class="discout__images">
+                    <img src="assets/img/book2.jpeg" alt="" class="discount__img-1">
+                    <img src="assets/img/bbokkk1.jpeg" alt="" class="discount__img-2">
+                </div>
+            </div>
+        </section>
+        <!--==================== CONTACT ====================-->
+        <section class="care section" id="care" data-aos="fade-right">
+            <h2 class="section__title">
+                Calculate Your Calories <br> Easily & Effectively!
+            </h2>
+            <div class="care__container container grid">
+                <!-- Video -->
+                <div class="care__video-container">
+                    <video id="careVideo" class="care__video" autoplay muted loop>
+                        <source src="assets/video/calc.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <!-- Video Control Button -->
+                    <button id="videoControl" class="care__button">
+                        <i class="ri-play-fill"></i>
+                    </button>
+                </div>
+                <!-- Benefits List -->
+                <ul class="care__list">
+                    <li class="care__item">
+                        <i class="ri-checkbox-circle-fill"></i>
+                        <p>
+                            Discover the perfect calorie intake for your body to reach your goals.
+                        </p>
+                    </li>
+                    <li class="care__item">
+                        <i class="ri-checkbox-circle-fill"></i>
+                        <p>
+                            Plan your meals efficiently based on your weight, height, and activity level.
+                        </p>
+                    </li>
+                    <li class="care__item">
+                        <i class="ri-checkbox-circle-fill"></i>
+                        <p>
+                            Achieve your fitness objectives, whether it’s weight loss, maintenance, or gain.
+                        </p>
+                    </li>
+                    <li class="care__item">
+                        <i class="ri-checkbox-circle-fill"></i>
+                        <p>
+                            Sign up now with your name and WhatsApp number to use our free calorie calculator!
+                        </p>
+                    </li>
+                    <a href="calc.html" class="button">Try Now <i class="ri-calculator-fill"></i></a>
+
+                </ul>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer" data-aos="fade-right">
+        <div class="footer__container container grid">
+            <div class="footer__contect grid">
+                <a href="#" class="footer__logo">Xian</a>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#home" class="footer__lik">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="footer__lik">About</a>
+                    </li>
+                    <li>
+                        <a href="#pricing" class="footer__lik">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#care" class="footer__lik">Calc</a>
+                    </li>
+                    <li>
+                        <a href="#discount" class="footer__lik">Book</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link">
+                    <i class="ri-facebook-circle-fill"></i>
+                </a>
+                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link">
+                    <i class="ri-tiktok-fill"></i>
+                </a>
+            </div>
+        </div>
+        <span class="footer__copy">
+            &#169; All Rights Reserved By Moalramly
+        </span>
+    </footer>
+
+    <!--========== whatsapp ==========-->
+
+
+    <a href="https://api.whatsapp.com/send?phone=+201021271458" class="whatsapp">
+        <i class="ri-whatsapp-fill wahtsapp-icon"></i>
+    </a>
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-double-line"></i>
+        <!-- <i class="fa-solid fa-circle-arrow-up"></i> -->
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <!-- <script>
+        const endDate = new Date();
+        endDate.setDate(endDate.getDate() + 5);
+
+        function updateCountdown() {
+            const now = new Date();
+            const timeLeft = endDate - now;
+
+            if (timeLeft <= 0) {
+                document.querySelector('.countdown-timer').innerHTML = "<h2>Offer Expired!</h2>";
+                return;
+            }
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+            const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
+            const seconds = Math.floor((timeLeft / 1000) % 60);
+
+            document.getElementById("days").textContent = days.toString().padStart(2, "0");
+            document.getElementById("hours").textContent = hours.toString().padStart(2, "0");
+            document.getElementById("minutes").textContent = minutes.toString().padStart(2, "0");
+            document.getElementById("seconds").textContent = seconds.toString().padStart(2, "0");
+        }
+
+        setInterval(updateCountdown, 1000);
+    </script> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const video = document.getElementById('careVideo');
+            const controlButton = document.getElementById('videoControl');
+            const controlIcon = controlButton.querySelector('i');
+
+            controlButton.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play();
+                    controlIcon.classList.replace('ri-play-fill', 'ri-pause-fill');
+                } else {
+                    video.pause();
+                    controlIcon.classList.replace('ri-pause-fill', 'ri-play-fill');
+                }
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1500
+        });
+    </script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="https://app.embed.im/snow.js" defer></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+
+</html>

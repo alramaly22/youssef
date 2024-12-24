@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+    <!--=============== AOS ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Responsive pizza website - Bedimcode</title>
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <!--=============== NAVBAR ===============-->
+    <header class="header" id="header">
+        <div class="navtotal container">
+            <a href="index.html" class="nav__logo"><img src="assets/img/logo2.png" alt=""></a>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#home" class="nav__link ">
+                            <i class="ri-home-smile-2-line"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="nav__link">
+                            <i class="ri-user-line"></i>
+                        </a>
+                    </li>
+
+                    <!-- Expand list -->
+                    <!-- <li>
+                        <button class="nav__expand" id="nav-expand">
+                  <i class="ri-add-line nav__expand-icon" id="nav-expand-icon"></i>
+               </button>
+
+                        <ul class="nav__expand-list" id="nav-expand-list">
+                            <li>
+                                <a href="#" class="nav__expand-link">
+                                    <i class="ri-image-2-line"></i>
+                                    <span>Gallery</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="nav__expand-link">
+                                    <i class="ri-archive-line"></i>
+                                    <span>Files</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="nav__expand-link">
+                                    <i class="ri-bookmark-3-line"></i>
+                                    <span>Saved</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li> -->
+
+                    <li>
+                        <a href="#clients" class="nav__link">
+                            <i class="ri-chat-3-fill"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#accordion" class="nav__link">
+                            <i class="ri-question-mark"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__social2">
+                <span class="footersociel"><i class="ri-moon-clear-fill change-theme" id="theme-button"></i></span>
+                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link2">
+                    <i class="ri-facebook-circle-fill"></i>
+                </a>
+                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link2">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link2">
+                    <i class="ri-tiktok-fill"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <div class="video-container">
+                <video class="home__video" autoplay muted loop>
+                    <source src="assets/video/v2.mp4" type="video/mp4" >
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="home__img">
+
+            </div>
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        <p data-lang="home1">Achieve Your Best</p>
+                        <!-- <p data-lang="home2">body with Wassim</p> -->
+                    </h1>
+
+                    <a data-lang="button" href="pricing.html" class="button button--flex">
+                        Get Start <i class="ri-arrow-right-circle-fill"></i>
+                    </a>
+                </div>
+
+                <div class="home__social">
+                    <span data-lang="follow" class="home__social-follow">Follow Us</span>
+
+                    <div class="home__social-links">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================== ABOUT ====================-->
+        <section class="features section" id="about" data-aos="fade-right">
+            <div class="choose__container container grid">
+                <div class="video__content">
+                    <video id="video-file" class="choose__img" muted autoplay>
+                        <source src="assets/video/vi.mp4" type="video/mp4">
+                    </video>
+
+                    <button class="button button--flex video__button" id="video-button">
+                        <i class=" ri-play-large-fill video__button-icon" id="video-icon"></i>
+                    </button>
+                </div>
+                <div class="choose__contect">
+                    <div class="choose__data">
+                        <h2 class="section__title creative-title">
+                            About <br>
+                            <span class="highlight">
+                                <span class="char">Y</span>
+                            <span class="char">o</span>
+                            <span class="char">u</span>
+                            <span class="char">s</span>
+                            <span class="char">s</span>
+                            <span class="char">e</span>
+                            <span class="char">f</span>
+                            </span>
+                        </h2>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, ipsam facilis delectus dolorum error sint vitae! Tempora, temporibus delectus, numquam amet et voluptate, odio adipisci ratione quidem consequuntur ducimus at.</p>
+                </div>
+            </div>
+        </section>
+        <!--==================== Clients ====================-->
+        <section class="containereea" data-aos="fade-left">
+            <div class="testimonial mySwiper">
+                <div class="testi-content swiper-wrapper">
+                    <div class="slide swiper-slide">
+                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" alt="" class="image" />
+                        <!-- تم إضافة معرف مختلف لكل صورة -->
+                        <p>
+
+                            I'm truly happy with the program and glad I followed your guidance during the preparation. I had some bad experiences with other trainers before you, even some friends. You're a real pro and show great respect. It's not just about money for you; you genuinely
+                            focus on quality. Bless you. </p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                        <div class="details">
+                            <span class="name">Marnie Lotter</span>
+
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" id="zoomable-image-2" alt="" class="image" />
+                        <!-- تم إضافة معرف مختلف لكل صورة -->
+                        <p>
+                            In these pictures, there are two trophies. The first is the gold medal. These words make me very proud, especially coming from the best person I've ever met, my coach and brother, Dr. Mohammed El Gadi Mo Qadi. I can't express how much I appreciate what
+                            he's done for me. The second picture is just a medal 🥇. Thanks to everyone who supported me. Thank you all </p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                        <div class="details">
+                            <span class="name">Marnie Lotter</span>
+
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" id="zoomable-image-3" alt="" class="image" />
+                        <!-- تم إضافة معرف مختلف لكل صورة -->
+                        <p>
+                            You're the best coach I've ever worked with, I swear. You're like a doctor and an artist in bodybuilding. I'm really satisfied and happy. I pray for you day and night. Wherever I go, I speak highly of you. I recommend all my friends to train with you.
+                            God willing, I'll continue working with you.
+                        </p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                        <div class="details">
+                            <span class="name">Marnie Lotter</span>
+
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" id="zoomable-image-4" alt="" class="image" />
+                        <!-- تم إضافة معرف مختلف لكل صورة -->
+                        <p>
+
+                            I took the first overall in men's physique and earned a physique pro card. I came second in overall bodybuilding. It was really close between me and the other dude. I'm very happy that I worked with you, my friend. Thanks to you, I achieved all of this
+                        </p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                        <div class="details">
+                            <span class="name">Marnie Lotter</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div style="top: 26rem; right: 15px;" class="swiper-button-next nav-btn"></div>
+                <div style="top: 26rem; left: 15px;" class="swiper-button-prev nav-btn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!--==================== accordion ====================-->
+        <section class="accordion section container" id="accordion" data-aos="fade-right">
+            <h2 class="section__title">Have Any Questions?</h2>
+
+            <div class="accordion__container">
+                <div class="accordion__item">
+                    <header class="accordion__header">
+                        <i class='bx bx-plus accordion__icon'></i>
+                        <h3 class="accordion__title">How can Coach youssef help me achieve my fitness goals?</h3>
+                    </header>
+                    <div class="accordion__content">
+                        <p class="accordion__description">
+                            Coach youssef offers personalized training programs tailored to your individual needs and fitness goals. Whether you're looking to lose weight, build muscle, or improve your overall fitness, these customized plans ensure you see tangible results in a
+                            short time. Using innovative training techniques and extensive experience, Coach youssef helps you achieve your goals efficiently and effectively.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <header class="accordion__header">
+                        <i class='bx bx-plus accordion__icon'></i>
+                        <h3 class="accordion__title">What makes Coach youssef's training different from other training programs?</h3>
+                    </header>
+                    <div class="accordion__content">
+                        <p class="accordion__description">
+                            Coach youssef's training focuses on the whole person, including both physical and mental aspects. He provides continuous support and motivation, helping you maintain enthusiasm and consistency. Additionally, the training programs are carefully designed
+                            to be enjoyable and effective, ensuring you achieve the best results in the least amount of time.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <header class="accordion__header">
+                        <i class='bx bx-plus accordion__icon'></i>
+                        <h3 class="accordion__title">How will training with Coach youssef impact my daily life?</h3>
+                    </header>
+                    <div class="accordion__content">
+                        <p class="accordion__description">
+                            Training with Coach youssef not only improves your physical fitness but also enhances your mental and emotional well-being. By improving your fitness level, you'll feel more energized and focused in your daily life. Achieving your fitness goals can also
+                            boost your self-confidence and motivate you to achieve more in all aspects of your life.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <header class="accordion__header">
+                        <i class='bx bx-plus accordion__icon'></i>
+                        <h3 class="accordion__title">What results can I expect from working with the coach?</h3>
+                    </header>
+                    <div class="accordion__content">
+                        <p class="accordion__description">
+                            Working with our coach, you can expect improved strength, endurance, and overall fitness levels, as well as a positive transformation in your body composition and mindset.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================== CONTACT ====================-->
+        <!-- <section class="discount section" id="discount">
+            <div class="discount__container cotainer grid">
+                <div class="discount__data">
+                    <h2 class="discount__title section__title">
+                        Up To 50% Discount
+                    </h2>
+                    <p class="discount__description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam optio nemo modi quo error eius est nostrum architecto magni rem.
+                    </p>
+                    <a href="#" class="button">Shop Now <i class="ri-shopping-cart-fill"></i></a>
+                </div>
+                <div class="discout__images">
+                    <img src="assets/img/book2.jpeg" alt="" class="discount__img-1">
+                    <img src="assets/img/bbokkk1.jpeg" alt="" class="discount__img-2">
+                </div>
+            </div>
+        </section> -->
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__contect grid">
+                <a href="#" class="footer__logo">Xian</a>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#home" class="footer__lik">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="footer__lik">About</a>
+                    </li>
+                    <li>
+                        <a href="index.html#pricing" class="footer__lik">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="calc.html" class="footer__lik">Calc</a>
+                    </li>
+                    <li>
+                        <a href="book.html" class="footer__lik">Book</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link">
+                    <i class="ri-facebook-circle-fill"></i>
+                </a>
+                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link">
+                    <i class="ri-tiktok-fill"></i>
+                </a>
+            </div>
+        </div>
+        <span class="footer__copy">
+            &#169; All Rights Reserved By Moalramly
+        </span>
+    </footer>
+
+    <!--========== whatsapp ==========-->
+
+
+    <a href="https://api.whatsapp.com/send?phone=+201021271458" class="whatsapp">
+        <i class="ri-whatsapp-fill wahtsapp-icon"></i>
+    </a>
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-double-line"></i>
+        <!-- <i class="fa-solid fa-circle-arrow-up"></i> -->
+    </a>
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1500
+        });
+    </script>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function() {
+            loader.style.display = "none";
+        })
+    </script>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script>
+        /*==================== VIDEO ====================*/
+        const videoFile = document.getElementById('video-file');
+        const videoButton = document.getElementById('video-button');
+        const videoIcon = document.getElementById('video-icon');
+
+        function playPause() {
+            if (videoFile.paused) {
+                // Play video
+                videoFile.play();
+                // Change the icon
+                videoIcon.classList.remove('ri-play-large-fill');
+                videoIcon.classList.add('ri-pause-large-fill');
+            } else {
+                // Pause video
+                videoFile.pause();
+                // Change the icon
+                videoIcon.classList.remove('ri-pause-large-fill');
+                videoIcon.classList.add('ri-play-large-fill');
+            }
+        }
+
+        videoButton.addEventListener('click', playPause);
+
+        function finalVideo() {
+            // Video ends, icon change
+            videoIcon.classList.remove('ri-pause-large-fill');
+            videoIcon.classList.add('ri-play-large-fill');
+        }
+
+        // When the video ends
+        videoFile.addEventListener('ended', finalVideo);
+    </script>
+    <script>
+        /*=============== ACCORDION ===============*/
+        const accordionItems = document.querySelectorAll('.accordion__item')
+
+        // 1. Selecionar cada item
+        accordionItems.forEach((item) => {
+            const accordionHeader = item.querySelector('.accordion__header')
+
+            // 2. Seleccionar cada click del header
+            accordionHeader.addEventListener('click', () => {
+                // 7. Crear la variable
+                const openItem = document.querySelector('.accordion-open')
+
+                // 5. Llamar a la funcion toggle item
+                toggleItem(item)
+
+                // 8. Validar si existe la clase
+                if (openItem && openItem !== item) {
+                    toggleItem(openItem)
+                }
+            })
+        })
+
+        // 3. Crear una funcion tipo constante
+        const toggleItem = (item) => {
+                // 3.1 Crear la variable
+                const accordionContent = item.querySelector('.accordion__content')
+
+                // 6. Si existe otro elemento que contenga la clase accorion-open que remueva su clase
+                if (item.classList.contains('accordion-open')) {
+                    accordionContent.removeAttribute('style')
+                    item.classList.remove('accordion-open')
+                } else {
+                    // 4. Agregar el height maximo del content
+                    accordionContent.style.height = accordionContent.scrollHeight + 'px'
+                    item.classList.add('accordion-open')
+                }
+            }
+            // calc video
+    </script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="https://app.embed.im/snow.js" defer></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
