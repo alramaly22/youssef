@@ -99,8 +99,15 @@ const swiper2 = new Swiper('#swiper2', {
         },
     }
 });
+/*=============== SHOW & HIDE MENU ===============*/
+const toggleButton = document.getElementById('floating-toggle');
 
-var loader = document.getElementById("preloader");
-window.addEventListener("load", function() {
-    loader.style.display = "none";
-})
+const toggleMenu = () => {
+    toggleButton.classList.toggle('active');
+};
+
+toggleButton.addEventListener('click', toggleMenu);
+
+document.getElementById('scroll-up').addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
