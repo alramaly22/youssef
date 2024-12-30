@@ -21,6 +21,58 @@
 
     <title>Responsive pizza website - Bedimcode</title>
 </head>
+<style>
+    #language-selector {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-weight: bold;
+        background-color: var(--first-color);
+        color: var(--body-color);
+        border: none;
+        padding: 10px;
+        border-radius: 1rem;
+        cursor: pointer;
+        outline: none;
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 20px 15px;
+        width: 120px;
+        text-align: center;
+    }
+    
+    #language-selector option {
+        font-size: 16px;
+        padding: 10px;
+        background-color: white;
+        color: black;
+    }
+    
+    #language-selector option[value="en"]::before {
+        content: url('https://flagcdn.com/w40/us.png');
+    }
+    
+    #language-selector option[value="ar"]::before {
+        content: url('https://flagcdn.com/w40/sa.png');
+    }
+    /* تحديد مكان النص للغة العربية فقط */
+    
+    .arabic-font {
+        direction: rtl;
+        text-align: center;
+    }
+    
+    .second-arabic-font {
+        direction: rtl;
+        text-align: right;
+        font-family: 'Cairo', sans-serif;
+    }
+    
+    .se-arab {
+        direction: rtl;
+        text-align: center;
+    }
+</style>
 
 <body>
     <!--=============== NAVBAR ===============-->
@@ -30,16 +82,21 @@
 
 
             <div class="footer__social2">
+                <select name="language" id="language-selector">
+                    <option value="en" data-flag="https://flagcdn.com/w40/us.png" selected>En</option>
+                    <option value="ar" data-flag="https://flagcdn.com/w40/sa.png">Ar</option>
+                </select>
                 <span class="footersociel"><i class="ri-moon-clear-fill change-theme" id="theme-button"></i></span>
-                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link2">
+                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link2 facebook">
                     <i class="ri-facebook-circle-fill"></i>
                 </a>
-                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link2">
+                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link2 instagram">
                     <i class="ri-instagram-fill"></i>
                 </a>
-                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link2">
+                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link2 tiktok">
                     <i class="ri-tiktok-fill"></i>
                 </a>
+
             </div>
         </div>
     </header>

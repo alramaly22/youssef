@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/logo2.png" type="image/x-icon">
 
     <!--=============== REMIXICONS ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
@@ -20,8 +20,60 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Responsive pizza website - Bedimcode</title>
+    <title>About</title>
 </head>
+<style>
+    #language-selector {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-weight: bold;
+        background-color: var(--first-color);
+        color: var(--body-color);
+        border: none;
+        padding: 10px;
+        border-radius: 1rem;
+        cursor: pointer;
+        outline: none;
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 20px 15px;
+        width: 120px;
+        text-align: center;
+    }
+    
+    #language-selector option {
+        font-size: 16px;
+        padding: 10px;
+        background-color: white;
+        color: black;
+    }
+    
+    #language-selector option[value="en"]::before {
+        content: url('https://flagcdn.com/w40/us.png');
+    }
+    
+    #language-selector option[value="ar"]::before {
+        content: url('https://flagcdn.com/w40/sa.png');
+    }
+    /* تحديد مكان النص للغة العربية فقط */
+    
+    .arabic-font {
+        direction: rtl;
+        text-align: center;
+    }
+    
+    .second-arabic-font {
+        direction: rtl;
+        text-align: right;
+        font-family: 'Cairo', sans-serif;
+    }
+    
+    .se-arab {
+        direction: rtl;
+        text-align: center;
+    }
+</style>
 
 <body>
     <div id="preloader">
@@ -39,69 +91,52 @@
                     <li>
                         <a href="#home" class="nav__link ">
                             <i class="ri-home-smile-2-line"></i>
+                            <span data-lang="nav1">home</span>
                         </a>
                     </li>
 
                     <li>
                         <a href="#about" class="nav__link">
                             <i class="ri-user-line"></i>
+                            <span data-lang="nav2">about</span>
                         </a>
                     </li>
 
                     <!-- Expand list -->
-                    <!-- <li>
-                        <button class="nav__expand" id="nav-expand">
-                  <i class="ri-add-line nav__expand-icon" id="nav-expand-icon"></i>
-               </button>
 
-                        <ul class="nav__expand-list" id="nav-expand-list">
-                            <li>
-                                <a href="#" class="nav__expand-link">
-                                    <i class="ri-image-2-line"></i>
-                                    <span>Gallery</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="nav__expand-link">
-                                    <i class="ri-archive-line"></i>
-                                    <span>Files</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="nav__expand-link">
-                                    <i class="ri-bookmark-3-line"></i>
-                                    <span>Saved</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li> -->
 
                     <li>
                         <a href="#clients" class="nav__link">
                             <i class="ri-chat-3-fill"></i>
+                            <span data-lang="nav3">Clients</span>
                         </a>
                     </li>
 
                     <li>
                         <a href="#accordion" class="nav__link">
                             <i class="ri-question-mark"></i>
+                            <span data-lang="nav8">Faqs</span>
                         </a>
                     </li>
                 </ul>
             </nav>
             <div class="footer__social2">
+                <select name="language" id="language-selector">
+                    <option value="en" data-flag="https://flagcdn.com/w40/us.png" selected>En</option>
+                    <option value="ar" data-flag="https://flagcdn.com/w40/sa.png">Ar</option>
+                </select>
+
                 <span class="footersociel"><i class="ri-moon-clear-fill change-theme" id="theme-button"></i></span>
-                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link2">
+                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link2 facebook">
                     <i class="ri-facebook-circle-fill"></i>
                 </a>
-                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link2">
+                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link2 instagram">
                     <i class="ri-instagram-fill"></i>
                 </a>
-                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link2">
+                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link2 tiktok">
                     <i class="ri-tiktok-fill"></i>
                 </a>
+
             </div>
         </div>
     </header>
@@ -122,12 +157,12 @@
             <div class="home__container container grid">
                 <div class="home__data">
                     <h1 class="home__title">
-                        <p data-lang="home1">Achieve Your Best</p>
+                        <p data-lang="home1" data-lang="home2pp"> Achieve Your Fitness Goals with Coach Youssef</p>
                         <!-- <p data-lang="home2">body with Wassim</p> -->
                     </h1>
 
                     <a data-lang="button" href="pricing.html" class="button button--flex">
-                        Get Start <i class="ri-arrow-right-circle-fill"></i>
+                        <span data-lang="getstatrr">Get Start</span> <i class="ri-arrow-right-circle-fill"></i>
                     </a>
                 </div>
 
@@ -160,28 +195,39 @@
                     </video>
 
                     <button class="button button--flex video__button" id="video-button">
-                        <i class=" ri-play-large-fill video__button-icon" id="video-icon"></i>
+                        <i class="ri-play-large-fill video__button-icon" id="video-icon"></i>
                     </button>
                 </div>
                 <div class="choose__contect">
                     <div class="choose__data">
                         <h2 class="section__title creative-title">
-                            About <br>
+                            <p data-lang="about1"> About</p> <br>
                             <span class="highlight">
-                                <span class="char">Y</span>
-                            <span class="char">o</span>
-                            <span class="char">u</span>
-                            <span class="char">s</span>
-                            <span class="char">s</span>
-                            <span class="char">e</span>
-                            <span class="char">f</span>
+                            <span class="char" data-lang="c">C</span>
+                            <span class="char" data-lang="dot">.</span>
+                            <span class="char" data-lang="y">Y</span>
+                            <span class="char" data-lang="o">o</span>
+                            <span class="char" data-lang="u">u</span>
+                            <span class="char" data-lang="s">s</span>
+                            <span class="char" data-lang="ss">s</span>
+                            <span class="char" data-lang="e">e</span>
+                            <span class="char" data-lang="f">f</span>
                             </span>
+
                         </h2>
                     </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, ipsam facilis delectus dolorum error sint vitae! Tempora, temporibus delectus, numquam amet et voluptate, odio adipisci ratione quidem consequuntur ducimus at.</p>
+                    <p>
+                        <p data-lang="aboutdesc1"> Youssef Yanni is a passionate and dedicated fitness coach with years of experience helping individuals achieve their fitness goals. With a strong background in personalized training and a proven track record from his time at Sky
+                            Gym, Youssef specializes in crafting tailored workout plans and providing motivational guidance.</p>
+
+                        <p data-lang="aboutdesc2"> As an Online Fitness Coach since 2021, he has expanded his reach to support clients worldwide, offering virtual coaching sessions and sharing his expertise in fitness and nutrition. Youssef’s commitment to staying updated with
+                            the latest industry trends ensures that his clients benefit from the most effective strategies for weight management and overall wellness.
+                        </p>
+                    </p>
                 </div>
             </div>
         </section>
+
         <!--==================== Clients ====================-->
         <section class="containereea" data-aos="fade-left">
             <div class="testimonial mySwiper">
@@ -253,18 +299,18 @@
         </section>
         <!--==================== accordion ====================-->
         <section class="accordion section container" id="accordion" data-aos="fade-right">
-            <h2 class="section__title">Have Any Questions?</h2>
+            <h2 class="section__title" data-lang="faqstitle">Have Any Questions?</h2>
 
             <div class="accordion__container">
                 <div class="accordion__item">
                     <header class="accordion__header">
                         <i class='bx bx-plus accordion__icon'></i>
-                        <h3 class="accordion__title">How can Coach youssef help me achieve my fitness goals?</h3>
+                        <h3 class="accordion__title" data-lang="faqs1">How can Coach Youssef help me achieve my fitness goals?</h3>
                     </header>
                     <div class="accordion__content">
-                        <p class="accordion__description">
-                            Coach youssef offers personalized training programs tailored to your individual needs and fitness goals. Whether you're looking to lose weight, build muscle, or improve your overall fitness, these customized plans ensure you see tangible results in a
-                            short time. Using innovative training techniques and extensive experience, Coach youssef helps you achieve your goals efficiently and effectively.
+                        <p class="accordion__description" data-lang="faqs2">
+                            Coach Youssef provides tailored fitness programs designed specifically for your unique goals, whether it’s weight loss, muscle building, or overall health improvement. With his extensive expertise and innovative approach, you’ll experience visible results
+                            and sustainable progress in no time.
                         </p>
                     </div>
                 </div>
@@ -272,12 +318,12 @@
                 <div class="accordion__item">
                     <header class="accordion__header">
                         <i class='bx bx-plus accordion__icon'></i>
-                        <h3 class="accordion__title">What makes Coach youssef's training different from other training programs?</h3>
+                        <h3 class="accordion__title" data-lang="faqs3">What makes Coach Youssef's approach unique?</h3>
                     </header>
                     <div class="accordion__content">
-                        <p class="accordion__description">
-                            Coach youssef's training focuses on the whole person, including both physical and mental aspects. He provides continuous support and motivation, helping you maintain enthusiasm and consistency. Additionally, the training programs are carefully designed
-                            to be enjoyable and effective, ensuring you achieve the best results in the least amount of time.
+                        <p class="accordion__description" data-lang="faqs4">
+                            Coach Youssef focuses on creating a balance between physical and mental well-being. His programs are not just about exercise but also about fostering a positive mindset and maintaining motivation. He works closely with clients, offering constant support
+                            and adapting routines to ensure they are both enjoyable and effective.
                         </p>
                     </div>
                 </div>
@@ -285,12 +331,11 @@
                 <div class="accordion__item">
                     <header class="accordion__header">
                         <i class='bx bx-plus accordion__icon'></i>
-                        <h3 class="accordion__title">How will training with Coach youssef impact my daily life?</h3>
+                        <h3 class="accordion__title" data-lang="faqs5">How will Coach Youssef’s training impact my daily life?</h3>
                     </header>
                     <div class="accordion__content">
-                        <p class="accordion__description">
-                            Training with Coach youssef not only improves your physical fitness but also enhances your mental and emotional well-being. By improving your fitness level, you'll feel more energized and focused in your daily life. Achieving your fitness goals can also
-                            boost your self-confidence and motivate you to achieve more in all aspects of your life.
+                        <p class="accordion__description" data-lang="faqs6">
+                            Training with Coach Youssef will boost your energy, improve your mood, and enhance your focus in everyday tasks. The discipline and confidence gained from his training will empower you not just in fitness but in all aspects of your life.
                         </p>
                     </div>
                 </div>
@@ -298,16 +343,31 @@
                 <div class="accordion__item">
                     <header class="accordion__header">
                         <i class='bx bx-plus accordion__icon'></i>
-                        <h3 class="accordion__title">What results can I expect from working with the coach?</h3>
+                        <h3 class="accordion__title" data-lang="faqs7">What results can I expect from working with Coach Youssef?</h3>
                     </header>
                     <div class="accordion__content">
-                        <p class="accordion__description">
-                            Working with our coach, you can expect improved strength, endurance, and overall fitness levels, as well as a positive transformation in your body composition and mindset.
+                        <p class="accordion__description" data-lang="faqs8">
+                            By working with Coach Youssef, you can expect a stronger, healthier body and a more positive outlook on life. His programs ensure improvements in strength, endurance, and overall fitness while helping you achieve the body transformation you’ve been dreaming
+                            of.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <header class="accordion__header">
+                        <i class='bx bx-plus accordion__icon'></i>
+                        <h3 class="accordion__title" data-lang="faqs9">Does Coach Youssef offer support outside the gym?</h3>
+                    </header>
+                    <div class="accordion__content">
+                        <p class="accordion__description" data-lang="faqs10">
+                            Absolutely! Coach Youssef provides continuous guidance and support, whether during in-person training sessions or online. His goal is to build a strong, trusting relationship with each client, ensuring they stay motivated and on track both inside and
+                            outside the gym.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
+
         <!--==================== CONTACT ====================-->
         <!-- <section class="discount section" id="discount">
             <div class="discount__container cotainer grid">
@@ -330,25 +390,25 @@
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-right">
         <div class="footer__container container grid">
             <div class="footer__contect grid">
-                <a href="#" class="footer__logo">Xian</a>
+                <a href="index.html" class="nav__logo"><img src="assets/img/logo2.png" alt=""></a>
                 <ul class="footer__links">
                     <li>
-                        <a href="#home" class="footer__lik">Home</a>
+                        <a href="index.html#home" class="footer__lik" data-lang="footerhome">Home</a>
                     </li>
                     <li>
-                        <a href="#about" class="footer__lik">About</a>
+                        <a href="index.html#about" class="footer__lik" data-lang="footerabout">About</a>
                     </li>
                     <li>
-                        <a href="index.html#pricing" class="footer__lik">Pricing</a>
+                        <a href="index.html#pricing" class="footer__lik" data-lang="footerpricing">Pricing</a>
                     </li>
                     <li>
-                        <a href="calc.html" class="footer__lik">Calc</a>
+                        <a href="index.html#care" class="footer__lik" data-lang="footercalc">Calc</a>
                     </li>
                     <li>
-                        <a href="book.html" class="footer__lik">Book</a>
+                        <a href="index.html#discount" class="footer__lik" data-lang="footerbook">Book</a>
                     </li>
                 </ul>
             </div>
@@ -365,35 +425,93 @@
             </div>
         </div>
         <span class="footer__copy">
-            &#169; All Rights Reserved By Moalramly
-        </span>
+    &#169; All Rights Reserved By Moalramly
+</span>
     </footer>
 
     <!--========== whatsapp ==========-->
 
 
-    <a href="https://api.whatsapp.com/send?phone=+201021271458" class="whatsapp">
-        <i class="ri-whatsapp-fill wahtsapp-icon"></i>
+    <a href="https://wa.me/201208425542" class="whatsapp">
+        <img src="assets/img/about1.jpeg" alt="WhatsApp Icon" class="whatsapp-img">
+        <span>Contact us</span>
     </a>
     <!--=============== SCROLL UP ===============-->
     <a href="#" class="scrollup" id="scroll-up">
         <i class="ri-arrow-up-double-line"></i>
         <!-- <i class="fa-solid fa-circle-arrow-up"></i> -->
     </a>
+
+
+
+
+    <script src="https://app.embed.im/snow.js" defer></script>
+    <script>
+        /*=============== CHANGE BACKGROUND HEADER ===============*/
+        const scrollHeader = () => {
+            const header = document.getElementById('header')
+                // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
+            this.scrollY >= 50 ? header.classList.add('scroll-header') :
+                header.classList.remove('scroll-header')
+        }
+        window.addEventListener('scroll', scrollHeader)
+    </script>
+    <script>
+        /*=============== DARK LIGHT THEME ===============*/
+        const themeButton = document.getElementById('theme-button')
+        const darkTheme = 'dark-theme'
+        const iconTheme = 'bx-sun'
+
+        // Previously selected topic (if user selected)
+        const selectedTheme = localStorage.getItem('selected-theme')
+        const selectedIcon = localStorage.getItem('selected-icon')
+
+        // We obtain the current theme that the interface has by validating the dark-theme class
+        const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+        const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun'
+
+        // We validate if the user previously chose a topic
+        if (selectedTheme) {
+            // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+            document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+            themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
+        }
+
+        // Activate / deactivate the theme manually with the button
+        themeButton.addEventListener('click', () => {
+            // Add or remove the dark / icon theme
+            document.body.classList.toggle(darkTheme)
+            themeButton.classList.toggle(iconTheme)
+                // We save the theme and the current icon that the user chose
+            localStorage.setItem('selected-theme', getCurrentTheme())
+            localStorage.setItem('selected-icon', getCurrentIcon())
+        })
+    </script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/language2.js "></script>
+    <script type="module " src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js "></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js "></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js "></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js "></script>
     <script>
         AOS.init({
             offset: 200,
             duration: 1500
         });
     </script>
+
     <script>
         var loader = document.getElementById("preloader");
         window.addEventListener("load", function() {
             loader.style.display = "none";
         })
     </script>
-    <!--=============== SCROLLREVEAL ===============-->
     <script>
         /*==================== VIDEO ====================*/
         const videoFile = document.getElementById('video-file');
@@ -467,12 +585,6 @@
             }
             // calc video
     </script>
-
-    <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="https://app.embed.im/snow.js" defer></script>
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

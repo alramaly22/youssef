@@ -9,20 +9,73 @@
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
 
     <!--=============== REMIXICONS ===============-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+    <meta name="description" content="Hussam Farouk, a professional bodybuilding coach with 29 years of experience, helps you achieve your goals with transformative training programs and fitness expertise." />
+    <meta property="og:title" content="Hussam Farouk - Professional Bodybuilding Coach" />
+    <meta property="og:description" content="Hussam Farouk offers personalized training programs for weight loss, muscle gain, and competition prep. Start your fitness journey today!" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!--=============== AOS ===============-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!--=============== SWIPER CSS ===============-->
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <title>Responsive pizza website - Bedimcode</title>
+    <style>
+        #language-selector {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            font-weight: bold;
+            background-color: var(--first-color);
+            color: var(--body-color);
+            border: none;
+            padding: 10px;
+            border-radius: 1rem;
+            cursor: pointer;
+            outline: none;
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 20px 15px;
+            width: 120px;
+            text-align: center;
+        }
+        
+        #language-selector option {
+            font-size: 16px;
+            padding: 10px;
+            background-color: white;
+            color: black;
+        }
+        
+        #language-selector option[value="en"]::before {
+            content: url('https://flagcdn.com/w40/us.png');
+        }
+        
+        #language-selector option[value="ar"]::before {
+            content: url('https://flagcdn.com/w40/sa.png');
+        }
+        /* تحديد مكان النص للغة العربية فقط */
+        
+        .arabic-font {
+            direction: rtl;
+            text-align: center;
+        }
+        
+        .second-arabic-font {
+            direction: rtl;
+            text-align: right;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        .se-arab {
+            direction: rtl;
+            text-align: center;
+        }
+    </style>
+    <title>Youssef Yanni</title>
 </head>
 
 <body>
@@ -41,40 +94,42 @@
                     <li>
                         <a href="#home" class="nav__link ">
                             <i class="ri-home-smile-2-line"></i>
+                            <span data-lang="nav1">home</span>
                         </a>
                     </li>
 
                     <li>
                         <a href="#about" class="nav__link">
                             <i class="ri-user-line"></i>
+                            <span data-lang="nav2">about</span>
                         </a>
                     </li>
 
                     <!-- Expand list -->
                     <li>
                         <button class="nav__expand" id="nav-expand">
-              <i class="ri-add-line nav__expand-icon" id="nav-expand-icon"></i>
-           </button>
+          <i class="ri-add-line nav__expand-icon" id="nav-expand-icon"></i>
+       </button>
 
                         <ul class="nav__expand-list" id="nav-expand-list">
                             <li>
                                 <a href="#clients" class="nav__expand-link">
                                     <i class="ri-chat-3-fill"></i>
-                                    <span>Clients</span>
+                                    <span data-lang="nav3">Clients</span>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#discount" class="nav__expand-link">
                                     <i class="ri-book-3-fill"></i>
-                                    <span>E-Book</span>
+                                    <span data-lang="nav4">E-Book</span>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#care" class="nav__expand-link">
                                     <i class="ri-calculator-fill"></i>
-                                    <span>Calculater</span>
+                                    <span data-lang="nav5">Calculater</span>
                                 </a>
                             </li>
                         </ul>
@@ -83,68 +138,46 @@
                     <li>
                         <a href="#pricing" class="nav__link">
                             <i class="ri-money-dollar-circle-line"></i>
+                            <span data-lang="nav6">Pricing</span>
                         </a>
                     </li>
 
                     <li>
                         <a href="#new" class="nav__link">
                             <i class="ri-arrow-left-right-fill"></i>
+                            <span data-lang="nav7">Trans</span>
                         </a>
                     </li>
                 </ul>
             </nav>
             <div class="footer__social2">
+                <select name="language" id="language-selector">
+                    <option value="en" data-flag="https://flagcdn.com/w40/us.png" selected>En</option>
+                    <option value="ar" data-flag="https://flagcdn.com/w40/sa.png">Ar</option>
+                </select>
+
                 <span class="footersociel"><i class="ri-moon-clear-fill change-theme" id="theme-button"></i></span>
-                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link2">
+                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link2 facebook">
                     <i class="ri-facebook-circle-fill"></i>
                 </a>
-                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link2">
+                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link2 instagram">
                     <i class="ri-instagram-fill"></i>
                 </a>
-                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link2">
+                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link2 tiktok">
                     <i class="ri-tiktok-fill"></i>
                 </a>
+
             </div>
         </div>
     </header>
-    <!-- <div class="countdown-timer-container">
-        <i class="fa-solid fa-face-grin-stars"></i>
-
-        <div class="countdown-timer">
-            <h2 class="countdown-heading">The Christmas Offer Ends In:</h2>
-            <div class="time-segment">
-                <span id="days">00</span>
-                <p>Days</p>
-            </div>
-            <div class="time-segment">
-                <span id="hours">00</span>
-                <p>Hours</p>
-            </div>
-            <div class="time-segment">
-                <span id="minutes">00</span>
-                <p>Minutes</p>
-            </div>
-            <div class="time-segment">
-                <span id="seconds">00</span>
-                <p>Seconds</p>
-            </div>
-            <p class="countdown-footer">Hurry up! Don't miss the Christmas deal!</p>
-        </div>
-
-        <i class="fas fa-sleigh"></i>
-    </div> -->
-
-
-
-
     <!--==================== MAIN ====================-->
     <main class="main">
         <!--==================== HOME ====================-->
         <section class="home" id="home" data-aos="fade-right">
             <div class="video-container">
                 <video class="home__video" autoplay muted loop>
-                    <source src="assets/video/v3.mp4" type="video/mp4" >
-                </video>
+                        <source src="assets/video/v3.mp4" type="video/mp4" >
+                    </video>
                 <div class="video-overlay"></div>
             </div>
             <div class="home__img">
@@ -153,19 +186,19 @@
             <div class="home__container container grid">
                 <div class="home__data">
                     <h1 class="home__title">
-                        <p data-lang="home1">Achieve Your Best</p>
+                        <p data-lang="home1">Your results , My passion</p>
                         <!-- <p data-lang="home2">body with Wassim</p> -->
                     </h1>
                     <!-- <p data-lang="home3" class="home__description">
-                        Welcome to Wassim, your ultimate destination for fitness guidance and inspiration.
-                    </p> -->
-                    <a data-lang="button" href="pricing.html" class="button button--flex">
-                        Get Start <i class="ri-arrow-right-circle-fill"></i>
+                            Welcome to Wassim, your ultimate destination for fitness guidance and inspiration.
+                        </p> -->
+                    <a data-lang="button" href="#pricing" class="button button--flex">
+                        <span data-lang="homebutton">Get Start</span> <i class="ri-arrow-right-circle-fill"></i>
                     </a>
                 </div>
 
                 <div class="home__social">
-                    <span data-lang="follow" class="home__social-follow">Follow Us</span>
+                    <span class="home__social-follow">Follow Us</span>
 
                     <div class="home__social-links">
                         <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
@@ -187,7 +220,7 @@
         <!--==================== STEPS ====================-->
         <section class="steps" id="steps" data-aos="fade-right">
             <div class="steps__bg section">
-                <h2 class="section__title">
+                <h2 class="section__title" data-lang="steps">
                     Steps of manufacturing our products
                 </h2>
                 <div class="steps__container container grid">
@@ -199,10 +232,10 @@
                                 <div class="steps__subcircle">
                                     01
                                 </div>
-                                <img src="assets/img/num11.png" alt="" class="steps__img">
+                                <img src="assets/img/oo.png" alt="" class="steps__img">
                             </div>
-                            <p class="steps__description">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed temporibus ex quos nemo excepturi quas!
+                            <p class="steps__description" data-lang="step1">
+                                Step 1: Choose a Package. Browse through our available packages and click "Subscribe Now" to get started.
                             </p>
                         </div>
 
@@ -211,10 +244,10 @@
                                 <div class="steps__subcircle">
                                     02
                                 </div>
-                                <img src="assets/img/oo.png" alt="" class="steps__img">
+                                <img src="assets/img/2.png" alt="" class="steps__img">
                             </div>
-                            <p class="steps__description">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil voluptatem expedita optio nostrum aperiam!
+                            <p class="steps__description" data-lang="step2">
+                                Step 2: Confirm Payment. Transfer the package fee and take a screenshot of the successful transaction.
                             </p>
                         </div>
 
@@ -223,10 +256,10 @@
                                 <div class="steps__subcircle">
                                     03
                                 </div>
-                                <img src="assets/img/po.png" alt="" class="steps__img">
+                                <img src="assets/img/3.png" alt="" class="steps__img">
                             </div>
-                            <p class="steps__description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia assumenda quis ratione?
+                            <p class="steps__description" data-lang="step3">
+                                Step 3: Send Proof on WhatsApp. Share the payment screenshot with us, and our coach will respond promptly.
                             </p>
                         </div>
                     </div>
@@ -238,23 +271,27 @@
             <div class="about__container container grid">
                 <div class="about__data">
                     <h2 class="section__title creative-title">
-                        About <br>
+                        <p data-lang="about1"> About</p> <br>
                         <span class="highlight">
-                            <span class="char">Y</span>
-                        <span class="char">o</span>
-                        <span class="char">u</span>
-                        <span class="char">s</span>
-                        <span class="char">s</span>
-                        <span class="char">e</span>
-                        <span class="char">f</span>
+                    <span class="char" data-lang="c">C</span>
+                        <span class="char" data-lang="dot">.</span>
+                        <span class="char" data-lang="y">Y</span>
+                        <span class="char" data-lang="o">o</span>
+                        <span class="char" data-lang="u">u</span>
+                        <span class="char" data-lang="s">s</span>
+                        <span class="char" data-lang="ss">s</span>
+                        <span class="char" data-lang="e">e</span>
+                        <span class="char" data-lang="f">f</span>
                         </span>
+
                     </h2>
 
-                    <p class="about__description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque tempore asperiores corporis magni optio aspernatur, eius non omnis laborum a.
+                    <p class="about__description" data-lang="about1description">
+                        Meet Youssef, an experienced online fitness coach and certified nutritionist. With a passion for helping clients achieve their health goals, Youssef combines personalized training and expert guidance to transform lives.
                     </p>
+
                     <a href="about.html" class="button">
-                        Learn More <i class="ri-quill-pen-ai-fill"></i>
+                        <span data-lang="learnmore">Learn More</span> <i class="ri-quill-pen-ai-fill"></i>
                     </a>
                 </div>
                 <div class="about__image">
@@ -264,70 +301,13 @@
                 </div>
             </div>
         </section>
-        <!--==================== PRICING ====================-->
-        <section class="packages section" id="pricing">
-            <h1 class="section__title">CHOOSE THE PACKAGE</h1>
-            <!-- <p>I will help you reach the best version of yourself</p> -->
-            <div class="package-container">
-                <!-- Package Basic -->
-                <div class="package silver" data-aos="fade-right">
-                    <h2>Ignite Package</h2>
-                    <p class="price"><del>EGP 2,500</del> <span>EGP 1,499</span></p>
-                    <a href="#" class="animationbutttonpricieng">SUBSCRIBE NOW</a>
-                    <p class="animated-line">PER / 3 MONTHS</p>
-                    <ul>
-                        <li><i class="ri-check-fill iconprice"></i> Weekly follow up.</li>
-                        <li><i class="ri-check-fill iconprice"></i> Customized workout program in the gym or home workouts, changing every 45 days.</li>
-                        <li><i class="ri-check-fill iconprice"></i> Changing the nutrition plan every 3 weeks.</li>
-                        <li><i class="ri-check-fill iconprice"></i> Mini Cooking Ebook👨‍🍳 with 7 healthy recipes.</li>
-                        <li><i class="ri-check-fill iconprice"></i> Recommended supplements plan (Optional).</li>
-                        <li><i style="color: red;" class="ri-close-fill iconprice xx"></i> No contacts through phone calls.</li>
-                    </ul>
-                </div>
 
-                <!-- Package 1 Premium -->
-                <div class="package gold" data-aos="fade-left">
-                    <h2>Power Package</h2>
-                    <p class="price"><del>EGP 4,000</del> <span>EGP 1,999</span></p>
-                    <a href="#" class="animationbutttonpricieng">SUBSCRIBE NOW</a>
-                    <p class="animated-line">PER / 3 MONTHS</p>
-                    <ul>
-                        <li><i class="ri-check-fill iconprice"></i> Follow up every 3-4 days to evaluate your progress.</li>
-                        <li><i class="ri-check-fill iconprice"></i> Customized workout program in the gym or home workouts, changing every 30 days.</li>
-                        <li><i class="ri-check-fill iconprice"></i> Changing the nutrition plan every 2 weeks.</li>
-                        <li><i class="ri-check-fill iconprice"></i> Full Cooking Ebook👨‍🍳 with +50 healthy recipes.</li>
-                        <li><i class="ri-check-fill iconprice"></i> Recommended supplements plan with special discounts (Optional).</li>
-                        <li><i class="ri-check-fill iconprice"></i> You can contact through phone calls.</li>
-                    </ul>
-                </div>
-
-                <!-- Package 2 VIP -->
-                <div class="package vip" data-aos="fade-right">
-                    <h2>Limit break Package</h2>
-                    <p class="price"><del>EGP 7,500</del> <span>EGP 3,500</span></p>
-                    <a href="#" class="animationbutttonpricieng">SUBSCRIBE NOW</a>
-                    <p class="animated-line">PER / 3 MONTHS</p>
-                    <ul>
-                        <li><i class="ri-check-fill iconprice"></i> Daily follow up every 24hrs to evaluate your progress.</li>
-                        <li><i class="ri-check-fill iconprice"></i> Customized workout program in the gym or home workouts, changing every 30 days.</li>
-                        <li><i class="ri-check-fill iconprice"></i> Weekly change in the nutrition plan to boost progress.</li>
-                        <li><i class="ri-check-fill iconprice"></i>Full Cooking Ebook👨‍🍳 with +50 healthy recipes.</li>
-                        <li><i class="ri-check-fill iconprice"></i>Recommended supplements plan with special discounts (Optional).</li>
-                        <li><i class="ri-check-fill iconprice"></i> Contact through phone calls anytime.</li>
-                        <li><i class="ri-check-fill iconprice"></i> Priority in texting back the fastest.</li>
-                        <li><i class="ri-check-fill iconprice"></i> 4 Zoom or Google meetings during your subscription.</li>
-                        <li><i class="ri-check-fill iconprice"></i> 2 One-to-one private sessions with Captain Youssef.</li>
-                        <li><i class="ri-check-fill iconprice"></i> Preparations for tournaments (Optional).</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
         <!--==================== Transformation ====================-->
-        <section class="new section" id="new">
+        <section class="new section" id="new" data-aos="fade-right">
             <h2 class="section__title" data-lang="transformation">
                 Transformations & Triumphs
             </h2>
-            <div class="new__container container" data-aos="fade-right">
+            <div class="new__container container">
                 <div class="new__swiper swiper" id="swiper1">
                     <div class="swiper-wrapper slide">
                         <div class="image swiper-slide">
@@ -342,15 +322,24 @@
                         <div class="image swiper-slide">
                             <img src="assets/img/trans/trans4.png" alt="">
                         </div>
-                        <div class="image swiper-slide">
-                            <img src="assets/img/trans/trans5.png" alt="">
-                        </div>
+                        <!-- <div class="image swiper-slide">
+                                    <img src="assets/img/trans/trans5.png" alt="">
+                                </div> -->
                         <div class="image swiper-slide">
                             <img src="assets/img/trans/trans6.png" alt="">
                         </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans/25.png" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans/26.png" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans/27.png" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="new__swiper swiper" id="swiper2" data-aos="fade-left">
+                <div class="new__swiper swiper" id="swiper2">
                     <div class="swiper-wrapper">
                         <div class="image swiper-slide">
                             <img src="assets/img/trans/trans7.png" alt="">
@@ -370,8 +359,22 @@
                         <div class="image swiper-slide">
                             <img src="assets/img/trans/trans12.png" alt="">
                         </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans/20.png" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans/21.png" alt="">
+                        </div>
+                        <div class="image swiper-slide">
+                            <img src="assets/img/trans/22.png" alt="">
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <a href="https://www.instagram.com/teamyanni_transformations/" class="button">
+                    <span data-lang="moretransformation">More Transformations</span> <i class="ri-eye-fill"></i>
+                </a>
             </div>
         </section>
         <!--==================== Clients ====================-->
@@ -445,26 +448,27 @@
         </section>
         <!--==================== CONTACT ====================-->
         <section class="discount section" id="discount" data-aos="fade-right">
-            <div class="discount__container cotainer grid">
+            <div class="discount__container container grid">
                 <div class="discount__data">
-                    <h2 class="discount__title section__title">
-                        Up To 50% Discount
+                    <h2 class="discount__title section__title" data-lang="discountebook">
+                        Up To 50% Off On Our Exclusive E-Book!
                     </h2>
-                    <p class="discount__description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam optio nemo modi quo error eius est nostrum architecto magni rem.
+                    <p class="discount__description" data-lang="discountebookdescription">
+                        Discover easy, low-calorie recipes that help you stay fit and enjoy delicious meals at the same time. This e-book is your perfect companion for a healthy lifestyle and weight management journey. Don’t miss this limited-time offer!
                     </p>
-                    <a href="book.html" class="button">Shop Now <i class="ri-shopping-cart-fill"></i></a>
+                    <a href="book.html" class="button"><span data-lang="getyourcopy">Get Your Copy</span> <i class="ri-shopping-cart-fill"></i></a>
                 </div>
                 <div class="discout__images">
-                    <img src="assets/img/book2.jpeg" alt="" class="discount__img-1">
-                    <img src="assets/img/bbokkk1.jpeg" alt="" class="discount__img-2">
+                    <img src="assets/img/book2.jpeg" alt="E-Book Cover" class="discount__img-1">
+                    <img src="assets/img/bbokkk1.jpeg" alt="Healthy Recipes" class="discount__img-2">
                 </div>
             </div>
         </section>
+
         <!--==================== CONTACT ====================-->
         <section class="care section" id="care" data-aos="fade-right">
             <h2 class="section__title">
-                Calculate Your Calories <br> Easily & Effectively!
+                <span data-lang="calc1">Calculate Your Calories </span><br><span data-lang="alc2"> Easily & Effectively!</span>
             </h2>
             <div class="care__container container grid">
                 <!-- Video -->
@@ -482,58 +486,121 @@
                 <ul class="care__list">
                     <li class="care__item">
                         <i class="ri-checkbox-circle-fill"></i>
-                        <p>
+                        <p data-lang="calc3">
                             Discover the perfect calorie intake for your body to reach your goals.
                         </p>
                     </li>
                     <li class="care__item">
                         <i class="ri-checkbox-circle-fill"></i>
-                        <p>
+                        <p data-lang="calc4">
                             Plan your meals efficiently based on your weight, height, and activity level.
                         </p>
                     </li>
                     <li class="care__item">
                         <i class="ri-checkbox-circle-fill"></i>
-                        <p>
+                        <p data-lang="calc5">
                             Achieve your fitness objectives, whether it’s weight loss, maintenance, or gain.
                         </p>
                     </li>
                     <li class="care__item">
                         <i class="ri-checkbox-circle-fill"></i>
-                        <p>
+                        <p data-lang="calc6">
                             Sign up now with your name and WhatsApp number to use our free calorie calculator!
                         </p>
                     </li>
-                    <a href="calc.html" class="button">Try Now <i class="ri-calculator-fill"></i></a>
+                    <a href="calc.html" class="button"><span data-lang="trynow">Try Now </span><i class="ri-calculator-fill"></i></a>
 
                 </ul>
             </div>
 
         </section>
+        <!--==================== PRICING ====================-->
+        <section class="packages section" id="pricing" data-aos="fade-right">
+            <h1 class="section__title" data-lang="packages">CHOOSE THE PACKAGE</h1>
+            <!-- <p>I will help you reach the best version of yourself</p> -->
+            <div class="package-container">
+                <!-- Package Basic -->
+                <div class="package silver">
+                    <h2 data-lang="ignitepackage">Ignite Package</h2>
+                    <p class="price"><del>EGP 2,500</del> <span>EGP 1,499</span></p>
+                    <a href="card.html" class="animationbutttonpricieng" data-lang="packagebutton">SUBSCRIBE NOW</a>
+                    <p class="animated-line" data-lang="per3month">PER / 3 MONTHS</p>
+                    <ul>
+                        <li><i class="ri-check-fill iconprice"></i><span data-lang="ignite1"> Weekly follow up.</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span data-lang="ignite2"> Customized workout program in the gym or home workouts, changing every 45 days.</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span data-lang="ignite3"> Changing the nutrition plan every 3 weeks.</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span data-lang="ignite4"> Mini Cooking Ebook👨‍🍳 with 7 healthy recipes.</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span data-lang="ignite5"> Recommended supplements plan (Optional).</span></li>
+                        <li><i style="color: red;" class="ri-close-fill iconprice xx"></i> <span data-lang="ignite6">No contacts through phone calls.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Package 1 Premium -->
+                <div class="package gold" style="position: relative;">
+                    <div class="most-popular-banner">
+                        <span data-lang="most">MOST SELLER</span>
+                    </div>
+                    <h2 data-lang="powerpackage">Power Package</h2>
+                    <p class="price"><del>EGP 4,000</del> <span>EGP 1,999</span></p>
+                    <a href="card.html" class="animationbutttonpricieng" data-lang="packagebutton">SUBSCRIBE NOW</a>
+                    <p class="animated-line" data-lang="per3month">PER / 3 MONTHS</p>
+                    <ul>
+                        <li><i class="ri-check-fill iconprice"></i><span data-lang="power1"> Follow up every 3-4 days to evaluate your progress.</span></li>
+                        <li><i class="ri-check-fill iconprice"></i> <span data-lang="power2">Customized workout program in the gym or home workouts, changing every 30 days.</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span data-lang="power3"> Changing the nutrition plan every 2 weeks.</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span data-lang="power4"> Full Cooking Ebook👨‍🍳 with +50 healthy recipes.</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span data-lang="power5"> Recommended supplements plan with special discounts (Optional).</span></li>
+                        <li><i class="ri-check-fill iconprice"></i> <span data-lang="power6">You can contact through phone calls.</span></li>
+                    </ul>
+                </div>
 
 
+
+
+
+                <!-- Package 2 VIP -->
+                <div class="package vip">
+                    <h2 data-lang="limt">Limit break Package</h2>
+                    <p class="price"><del>EGP 7,500</del> <span>EGP 3,500</span></p>
+                    <a href="card.html" class="animationbutttonpricieng" data-lang="packagebutton">SUBSCRIBE NOW</a>
+                    <p class="animated-line" data-lang="per3month">PER / 3 MONTHS</p>
+                    <ul>
+                        <li><i class="ri-check-fill iconprice"></i><span data-lang="limt1"> Daily follow up every 24hrs to evaluate your progress.</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span data-lang="limt2"> Customized workout program in the gym or home workouts, changing every 30 days.</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span data-lang="limt3"> Weekly change in the nutrition plan to boost progress.</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span data-lang="limt4">Full Cooking Ebook👨‍🍳 with +50 healthy recipes.</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span data-lang="limt5">Recommended supplements plan with special discounts (Optional).</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span data-lang="limt6"> Contact through phone calls anytime.</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span data-lang="limt7"> Priority in texting back the fastest.</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span data-lang="limt8"> 4 Zoom or Google meetings during your subscription.</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span data-lang="limt9"> 2 One-to-one private sessions with Captain Youssef.</span></li>
+                        <li><i class="ri-check-fill iconprice"></i><span data-lang="limt10"> Preparations for tournaments (Optional).</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer" data-aos="fade-right">
+    <footer class="footer">
         <div class="footer__container container grid">
             <div class="footer__contect grid">
-                <a href="#" class="footer__logo">Xian</a>
+                <a href="index.html" class="nav__logo"><img src="assets/img/logo2.png" alt=""></a>
                 <ul class="footer__links">
                     <li>
-                        <a href="#home" class="footer__lik">Home</a>
+                        <a href="#home" class="footer__lik" data-lang="footerhome">Home</a>
                     </li>
                     <li>
-                        <a href="#about" class="footer__lik">About</a>
+                        <a href="#about" class="footer__lik" data-lang="footerabout">About</a>
                     </li>
                     <li>
-                        <a href="#pricing" class="footer__lik">Pricing</a>
+                        <a href="#pricing" class="footer__lik" data-lang="footerpricing">Pricing</a>
                     </li>
                     <li>
-                        <a href="#care" class="footer__lik">Calc</a>
+                        <a href="#care" class="footer__lik" data-lang="footercalc">Calc</a>
                     </li>
                     <li>
-                        <a href="#discount" class="footer__lik">Book</a>
+                        <a href="#discount" class="footer__lik" data-lang="footerbook">Book</a>
                     </li>
                 </ul>
             </div>
@@ -553,46 +620,75 @@
             &#169; All Rights Reserved By Moalramly
         </span>
     </footer>
-
     <!--========== whatsapp ==========-->
+    <div class="floating">
+        <div class="floating__container">
+            <div class="floating__toggle" id="floating-toggle">
+                <i class="ri-add-line"></i>
+            </div>
 
+            <ul>
+                <!-- <a href="#" class="floating__link">
+                    <div class="floating__icon">
+                        <i class="ri-pencil-fill"></i>
+                    </div>
+                </a> -->
 
-    <a href="https://api.whatsapp.com/send?phone=+201021271458" class="whatsapp">
-        <i class="ri-whatsapp-fill wahtsapp-icon"></i>
+                <a href="https://wa.me/201208425542" class=" floating__link">
+                    <div class="floating__icon">
+                        <i class="ri-whatsapp-fill wahtsapp-icon"></i>
+                    </div>
+                </a>
+
+                <a href="pricing.html" class="floating-pricing floating__link">
+                    <div class="floating__icon">
+                        <i class="ri-money-dollar-circle-line"></i>
+                    </div>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <!-- <a href="pricing.html" class="floating-pricing floating__link">
+        <i class="ri-money-dollar-circle-line"></i>
+        <span class="pricing-tooltip">عرض الأسعار</span>
     </a>
+    <a href="https://wa.me/201208425542" class="whatsapp floating__link">
+        <img src="assets/img/about1.jpeg" alt="WhatsApp Icon" class="whatsapp-img">
+        <span>Contact us</span>
+    </a> -->
+
     <!--=============== SCROLL UP ===============-->
     <a href="#" class="scrollup" id="scroll-up">
         <i class="ri-arrow-up-double-line"></i>
-        <!-- <i class="fa-solid fa-circle-arrow-up"></i> -->
     </a>
+    <script src="https://app.embed.im/snow.js" defer></script>
 
-    <!--=============== SCROLLREVEAL ===============-->
-    <!-- <script>
-        const endDate = new Date();
-        endDate.setDate(endDate.getDate() + 5);
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/language.js "></script>
+    <script type="module " src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js "></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js "></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js "></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js "></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1500
+        });
+    </script>
 
-        function updateCountdown() {
-            const now = new Date();
-            const timeLeft = endDate - now;
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function() {
+            loader.style.display = "none";
+        })
+    </script>
 
-            if (timeLeft <= 0) {
-                document.querySelector('.countdown-timer').innerHTML = "<h2>Offer Expired!</h2>";
-                return;
-            }
-
-            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
-            const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
-            const seconds = Math.floor((timeLeft / 1000) % 60);
-
-            document.getElementById("days").textContent = days.toString().padStart(2, "0");
-            document.getElementById("hours").textContent = hours.toString().padStart(2, "0");
-            document.getElementById("minutes").textContent = minutes.toString().padStart(2, "0");
-            document.getElementById("seconds").textContent = seconds.toString().padStart(2, "0");
-        }
-
-        setInterval(updateCountdown, 1000);
-    </script> -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const video = document.getElementById('careVideo');
@@ -610,21 +706,6 @@
             });
         });
     </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
-    <script>
-        AOS.init({
-            offset: 200,
-            duration: 1500
-        });
-    </script>
-    <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="https://app.embed.im/snow.js" defer></script>
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
-
 </body>
-
-</html>
 
 </html>

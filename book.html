@@ -10,8 +10,7 @@
 
     <!--=============== REMIXICONS ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
-    <!--=============== AOS ===============-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!--=============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
@@ -19,8 +18,59 @@
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <title>Responsive pizza website - Bedimcode</title>
+    <style>
+        #language-selector {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            font-weight: bold;
+            background-color: var(--first-color);
+            color: var(--body-color);
+            border: none;
+            padding: 10px;
+            border-radius: 1rem;
+            cursor: pointer;
+            outline: none;
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 20px 15px;
+            width: 120px;
+            text-align: center;
+        }
+        
+        #language-selector option {
+            font-size: 16px;
+            padding: 10px;
+            background-color: white;
+            color: black;
+        }
+        
+        #language-selector option[value="en"]::before {
+            content: url('https://flagcdn.com/w40/us.png');
+        }
+        
+        #language-selector option[value="ar"]::before {
+            content: url('https://flagcdn.com/w40/sa.png');
+        }
+        /* تحديد مكان النص للغة العربية فقط */
+        
+        .arabic-font {
+            direction: rtl;
+            text-align: center;
+        }
+        
+        .second-arabic-font {
+            direction: rtl;
+            text-align: right;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        .se-arab {
+            direction: rtl;
+            text-align: center;
+        }
+    </style>
+    <title>E-Book</title>
 </head>
 
 <body>
@@ -37,40 +87,50 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li>
-                        <a href="#home" class="nav__link ">
+                        <a href="#home2" class="nav__link ">
                             <i class="ri-home-smile-2-line"></i>
+                            <span data-lang="nav1">home</span>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#des" class="nav__link">
-                            <i class="ri-discount-percent-fill"></i>
+                        <a href="#download" class="nav__link">
+                            <i class="ri-download-cloud-fill"></i>
+                            <span data-lang="nav10">download</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#pricing" class="nav__link">
+                        <a href="#price" class="nav__link">
                             <i class="ri-money-dollar-circle-line"></i>
+                            <span data-lang="nav6">Pricing</span>
                         </a>
                     </li>
 
                     <li>
                         <a href="#clients" class="nav__link">
                             <i class="ri-chat-3-fill"></i>
+                            <span data-lang="nav3">Clients</span>
                         </a>
                     </li>
                 </ul>
             </nav>
             <div class="footer__social2">
+                <select name="language" id="language-selector">
+                    <option value="en" data-flag="https://flagcdn.com/w40/us.png" selected>En</option>
+                    <option value="ar" data-flag="https://flagcdn.com/w40/sa.png">Ar</option>
+                </select>
+
                 <span class="footersociel"><i class="ri-moon-clear-fill change-theme" id="theme-button"></i></span>
-                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link2">
+                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link2 facebook">
                     <i class="ri-facebook-circle-fill"></i>
                 </a>
-                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link2">
+                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link2 instagram">
                     <i class="ri-instagram-fill"></i>
                 </a>
-                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link2">
+                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link2 tiktok">
                     <i class="ri-tiktok-fill"></i>
                 </a>
+
             </div>
         </div>
     </header>
@@ -82,10 +142,12 @@
             <div class="home2__container container">
                 <div class="home__data5">
                     <h1 class="home__title5">
-                        Browse & <br> Select E-books
+                        <p data-lang="home3p3">Achieve Your Fitness Goals &</p>
+                        <p data-lang="home3p2">Transform Your Lifestyle</p>
                     </h1>
-                    <p class="home__description5">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt voluptates sapiente ut consectetur blanditiis qui repellendus unde quasi praesentium dolores, eveniet nobis similique quam minima at est impedit, laudantium ullam.
+                    <p class="home__description5" data-lang="home3p1">
+                        This e-book is your ultimate guide to achieving a healthier and more active lifestyle. Packed with easy-to-follow meal plans, organized recipes, and low-calorie options, it offers simple and effective ways to meet your fitness goals. Whether you're just
+                        starting or looking to refine your diet, this guide is designed to make healthy living effortless. Start your journey today and invest in a better, healthier you!
                     </p>
                     <!-- <a href="#" class="button">Buy Now</a> -->
                 </div>
@@ -109,58 +171,70 @@
             </div>
         </section>
 
+        <!--==================== blog ====================-->
 
-        <section class="blog-section" data-aos="fade-right">
-            <h1>Blog Posts</h1>
+        <section class="blog-section" id="blogs" data-aos="fade-right">
+            <h1 data-lang="blog1">Discover Delicious Recipes from Our E-Book</h1>
             <div class="blog-grid">
                 <div class="blog-card">
-                    <img src="assets/img/food/food4.jpeg" alt="Breakfast" class="blog-image">
+                    <img src="assets/img/food/food5.jpeg" alt="Pancakes" class="blog-image">
                     <div class="blog-content">
-                        <h2 class="blog-title">2*1 Healthy Breakfast Idea</h2>
-                        <p class="blog-text">Discover a fun and quick breakfast idea to start your day right.</p>
+                        <h2 class="blog-title" data-lang="blog2">Fluffy Pancakes</h2>
+                        <p class="blog-text" data-lang="blog3">
+                            A sneak peek from our e-book: these light and fluffy pancakes are easy to make with simple ingredients. Perfect for a healthy and quick breakfast!
+                        </p>
+                        <a href="#" class="blog-button" data-lang="blogbutton">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="assets/img/food/food6.jpeg" alt="Pizza" class="blog-image">
+                    <div class="blog-content">
+                        <h2 class="blog-title" data-lang="bloghealthy">Healthy Pizza</h2>
+                        <p class="blog-text" data-lang="blogdescription">
+                            Straight from the e-book, this pizza is made with a nutritious twist and simple toppings. A guilt-free delight for pizza lovers!
+                        </p>
+                        <a href="#" class="blog-button" data-lang="blogbuttonreamode ">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="assets/img/food/food7.jpeg" alt="Cupcakes" class="blog-image">
+                    <div class="blog-content">
+                        <h2 class="blog-title" data-lang="bloglowcalore">Low-Calorie Cupcakes</h2>
+                        <p class="blog-text" data-lang="bloglowcaloreidescription">
+                            These cupcakes are a highlight from the e-book, featuring a low-calorie recipe that’s both delicious and easy to prepare.
+                        </p>
                         <a href="#" class="blog-button">Read More</a>
                     </div>
                 </div>
                 <div class="blog-card">
-                    <img src="assets/img/food/food3.jpeg" alt="Grilled Steak" class="blog-image">
+                    <img src="assets/img/food/food8.jpeg" alt="Egg Rolls" class="blog-image">
                     <div class="blog-content">
-                        <h2 class="blog-title">Grilled Steak Rosemary Garlic Butter</h2>
-                        <p class="blog-text">Enjoy a flavorful steak bursting with garlic and rosemary.</p>
-                        <a href="#" class="blog-button">Read More</a>
-                    </div>
-                </div>
-                <div class="blog-card">
-                    <img src="assets/img/food/food2.jpeg" alt="Vegan French Toast" class="blog-image">
-                    <div class="blog-content">
-                        <h2 class="blog-title">Buttery Vegan French Toast</h2>
-                        <p class="blog-text">A decadent yet plant-based breakfast option for everyone.</p>
-                        <a href="#" class="blog-button">Read More</a>
-                    </div>
-                </div>
-                <div class="blog-card">
-                    <img src="assets/img/food/food2.jpeg" alt="Gluten-Free Food" class="blog-image">
-                    <div class="blog-content">
-                        <h2 class="blog-title">Gluten-Free Food</h2>
-                        <p class="blog-text">Delicious options for a gluten-free lifestyle await you.</p>
+                        <h2 class="blog-title" data-lang="blogegg">Egg Rolls</h2>
+                        <p class="blog-text" data-lang="blogeggebook">
+                            From the e-book’s collection: these egg rolls are packed with flavor and require minimal effort to prepare. Perfect for any time of day!
+                        </p>
                         <a href="#" class="blog-button">Read More</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="discount-section" id="des" data-aos="fade-left">
+        <!--==================== offer ====================-->
+
+        <section class="discount-section" id="download" data-aos="fade-left">
             <div class="discount-content">
                 <div class="discount-text-container">
-                    <h2 class="discount-title">Get 50% Off on the Recipe Book!</h2>
-                    <p class="discount-text">
+                    <h2 class="discount-title" data-lang="offer">Get 50% Off on the Recipe Book!</h2>
+                    <p class="discount-text" data-lang="offerp">
                         Take advantage of this opportunity to get the book with the best healthy and easy recipes. Offer valid for a limited time only!
                     </p>
-                    <p class="discount-demo-text">
-                        You can download a small demo version for free to check the quality and simplicity of the recipes.
+                    <p class="discount-demo-text" data-lang="offerp2">
+                        Available Now: You can download a free version to explore the quality and simplicity of the recipes.
                     </p>
+
                     <div class="discount-buttons">
-                        <a href="assets/YOUR_FAVORITE_COOKING_EBOOK.pdf" class="btn btn-demo" download="">Download Demo</a>
-                        <a href="#" class="btn btn-buy">Buy Now</a>
+                        <a href="#price" class="btn btn-buy" data-lang="offerbuttonbut">Buy Now</a>
+                        <a href="assets/FREE TRIAL‼️👨_🍳 5 Recipes .pdf" download="" class="btn btn-demo" data-lang="offerdownload">Download</a>
                     </div>
                 </div>
                 <div class="discount-image-container">
@@ -171,32 +245,63 @@
 
 
 
+        <!--==================== package ====================-->
 
-        <section class="packages section" id="pricing" data-aos="fade-right">
-            <h1 class="section__title">CHOOSE THE PACKAGE</h1>
+        <section class="packages section" id="price" data-aos="fade-right">
+            <h1 class="section__title" data-lang="pricingselect">Select Your Boost</h1>
             <div class="package-container">
                 <!-- Package 1 Premium -->
                 <div class="package bookpachage">
-                    <h2>Healthy Recipe Book</h2>
+                    <h2 data-lang="pricinghealthriciper">Healthy Recipe Book</h2>
                     <p class="price"><del>EGP 500</del> <span>EGP 400</span></p>
-                    <a href="#" class="animationbutttonpricieng">Buy Now</a>
-                    <p class="animated-line">Available Now</p>
+                    <button class="animationbutttonpricieng" id="buy-now" data-lang="buynowpricing">Buy Now</button>
+                    <p class="animated-line" data-lang="pricingavailable">Available Now</p>
                     <ul>
-                        <li><i class="ri-check-fill iconprice"></i> Over 50 quick and healthy recipes you won't get bored of.</li>
-                        <li><i class="ri-check-fill iconprice"></i> Low-calorie recipes including desserts, savory dishes, and drinks.</li>
-                        <li><i class="ri-check-fill iconprice"></i> Simple and quick preparation methods to save you time and achieve amazing results.</li>
-                        <li><i class="ri-check-fill iconprice"></i> A book designed to help you reach your health goals without excuses.</li>
-                        <li><i class="ri-check-fill iconprice"></i> Innovative recipes that deliver great results with the least amount of calories.</li>
+                        <li><i class="ri-check-fill iconprice"></i>
+                            <span data-lang="pricingover1"> Over 50 quick and healthy recipes that you'll never get bored of.</span>
+                        </li>
+                        <li><i class="ri-check-fill iconprice"></i>
+                            <span data-lang="pricingover2"> Low-calorie recipes, including desserts, savory dishes, and drinks.</span>
+                        </li>
+                        <li><i class="ri-check-fill iconprice"></i>
+                            <span data-lang="pricingover3"> Simple and quick preparation methods to save time and deliver amazing results.</span>
+                        </li>
+                        <li><i class="ri-check-fill iconprice"></i>
+                            <span data-lang="pricingover4"> A book designed to help you achieve your health goals with no excuses.</span>
+                        </li>
+                        <li><i class="ri-check-fill iconprice"></i>
+                            <span data-lang="pricingover5"> Innovative recipes that provide great results with minimal calories.</span>
+                        </li>
                     </ul>
+
                     <p class="descriptionbookred">
-                        <span>Discover the Secret to Healthy Living!</span>
+                        <span data-lang="pricingspan">Discover the Secret to Healthy Living!</span>
                         <br>
-                        <br> The book contains over 50 quick and easy-to-prepare healthy recipes, helping you achieve great results without excuses. Each recipe is carefully crafted to save you time and offer healthy, delicious meals with minimal calories.
+                        <br><span data-lang="pricingspan2" style="font-size: .9rem;color: white;"> The book features over 50 quick and easy-to-prepare healthy recipes, designed to help you achieve amazing results effortlessly. Each recipe is carefully crafted to save time while offering delicious, nutritious meals with
+                            minimal calories.</span>
                     </p>
+
                 </div>
             </div>
         </section>
 
+
+        <!--==================== custom ====================-->
+
+        <div class="custom-alert-container" id="alert-container">
+            <div class="custom-alert-box">
+                <button class="custom-alert-close-btn" id="close-alert">&times;</button>
+                <h2 class="custom-alert-title" data-lang="customer1"></h2>
+                <form action="" id="contact-form">
+                    <input type="text" name="user_name" class="custom-alert-input" id="name" placeholder="Name">
+                    <input type="number" name="whats_app" class="custom-alert-input" id="whatsapp" placeholder="WhatsApp Number">
+                    <input type="email" name="user_email" class="custom-alert-input" id="email" placeholder="Email">
+                    <button class="custom-alert-btn" id="submit-alert" data-lang="customer2">Submit</button>
+                </form>
+                <p class="custom-alert-success" id="success-message" data-lang="customer3">Booking confirmed. The coach will contact you shortly.</p>
+                <p id="contact-message"></p>
+            </div>
+        </div>
 
 
         <!--==================== Clients ====================-->
@@ -204,61 +309,59 @@
             <div class="testimonial mySwiper">
                 <div class="testi-content swiper-wrapper">
                     <div class="slide swiper-slide">
-                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" alt="" class="image" />
+                        <img src="assets/img/clients/client1.jpeg" alt="" class="image" />
                         <!-- تم إضافة معرف مختلف لكل صورة -->
-                        <p>
-
-                            I'm truly happy with the program and glad I followed your guidance during the preparation. I had some bad experiences with other trainers before you, even some friends. You're a real pro and show great respect. It's not just about money for you; you genuinely
-                            focus on quality. Bless you. </p>
+                        <p data-lang="clientsp1">
+                            You completely changed my perspective on healthy eating. I always felt like the options were limited and boring, but now everything feels so different </p>
 
                         <i class="bx bxs-quote-alt-left quote-icon"></i>
 
                         <div class="details">
-                            <span class="name">Marnie Lotter</span>
+                            <span class="name" data-lang="clientsname1">simone Abdo</span>
 
                         </div>
                     </div>
                     <div class="slide swiper-slide">
-                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" id="zoomable-image-2" alt="" class="image" />
+                        <img src="assets/img/clients/client2.jpeg" id="zoomable-image-2" alt="" class="image" />
                         <!-- تم إضافة معرف مختلف لكل صورة -->
-                        <p>
-                            In these pictures, there are two trophies. The first is the gold medal. These words make me very proud, especially coming from the best person I've ever met, my coach and brother, Dr. Mohammed El Gadi Mo Qadi. I can't express how much I appreciate what
-                            he's done for me. The second picture is just a medal 🥇. Thanks to everyone who supported me. Thank you all </p>
+                        <p data-lang="clientsp2">
+
+                            Yo Joe, good evening. Honestly, I don’t even know what to say. I haven’t been doing great lately, but starting tomorrow, I promise to get back on track and stick to everything you told me. I can’t believe you actually did this. I’m trying it out, and
+                            honestly, this is one of the best things I’ve ever seen </p>
 
                         <i class="bx bxs-quote-alt-left quote-icon"></i>
 
                         <div class="details">
-                            <span class="name">Marnie Lotter</span>
+                            <span class="name" data-lang="clientsname2">Ahmed Adel</span>
 
                         </div>
                     </div>
                     <div class="slide swiper-slide">
-                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" id="zoomable-image-3" alt="" class="image" />
+                        <img src="assets/img/clients/client3.jpeg" id="zoomable-image-3" alt="" class="image" />
                         <!-- تم إضافة معرف مختلف لكل صورة -->
-                        <p>
-                            You're the best coach I've ever worked with, I swear. You're like a doctor and an artist in bodybuilding. I'm really satisfied and happy. I pray for you day and night. Wherever I go, I speak highly of you. I recommend all my friends to train with you.
-                            God willing, I'll continue working with you.
+                        <p data-lang="clientsp3">
+                            What’s this? If it’s like this, I’ll love the diet, honestly. If it’s like this, I don’t even need a cheat meal. And the best part is that there are ways to set goals directly. I really liked the diet.
                         </p>
 
                         <i class="bx bxs-quote-alt-left quote-icon"></i>
 
                         <div class="details">
-                            <span class="name">Marnie Lotter</span>
+                            <span class="name" data-lang="clientsname3">Mahmoud Sherif</span>
 
                         </div>
                     </div>
                     <div class="slide swiper-slide">
-                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" id="zoomable-image-4" alt="" class="image" />
+                        <img src="assets/img/clients/client4.jpg" id="zoomable-image-4" alt="" class="image" />
                         <!-- تم إضافة معرف مختلف لكل صورة -->
-                        <p>
+                        <p data-lang="clientsp4">
 
-                            I took the first overall in men's physique and earned a physique pro card. I came second in overall bodybuilding. It was really close between me and the other dude. I'm very happy that I worked with you, my friend. Thanks to you, I achieved all of this
+                            The cooking book is really great, it has a lot of variety, truly amazing work. It really makes you discover new recipes. Everything is simple and easy, plus it has a variety of meal ideas
                         </p>
 
                         <i class="bx bxs-quote-alt-left quote-icon"></i>
 
                         <div class="details">
-                            <span class="name">Marnie Lotter</span>
+                            <span class="name" data-lang="clientsname4">lucie samy</span>
 
                         </div>
                     </div>
@@ -271,28 +374,31 @@
 
 
 
+        </section>
+
+
     </main>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer" data-aos="fade-right">
         <div class="footer__container container grid">
             <div class="footer__contect grid">
-                <a href="#" class="footer__logo">Xian</a>
+                <a href="index.html" class="nav__logo"><img src="assets/img/logo2.png" alt=""></a>
                 <ul class="footer__links">
                     <li>
-                        <a href="#home" class="footer__lik">Home</a>
+                        <a href="index.html#home" class="footer__lik" data-lang="footerhome">Home</a>
                     </li>
                     <li>
-                        <a href="about.html" class="footer__lik">About</a>
+                        <a href="index.html#about" class="footer__lik" data-lang="footerabout">About</a>
                     </li>
                     <li>
-                        <a href="index.html#pricing" class="footer__lik">Pricing</a>
+                        <a href="index.html#pricing" class="footer__lik" data-lang="footerpricing">Pricing</a>
                     </li>
                     <li>
-                        <a href="calc.html" class="footer__lik">Calc</a>
+                        <a href="index.html#care" class="footer__lik" data-lang="footercalc">Calc</a>
                     </li>
                     <li>
-                        <a href="book.html" class="footer__lik">Book</a>
+                        <a href="index.html#discount" class="footer__lik" data-lang="footerbook">Book</a>
                     </li>
                 </ul>
             </div>
@@ -309,15 +415,16 @@
             </div>
         </div>
         <span class="footer__copy">
-            &#169; All Rights Reserved By Moalramly
-        </span>
+        &#169; All Rights Reserved By Moalramly
+    </span>
     </footer>
 
     <!--========== whatsapp ==========-->
 
 
-    <a href="https://api.whatsapp.com/send?phone=+201021271458" class="whatsapp">
-        <i class="ri-whatsapp-fill wahtsapp-icon"></i>
+    <a href="https://wa.me/201208425542" class="whatsapp">
+        <img src="assets/img/about1.jpeg" alt="WhatsApp Icon" class="whatsapp-img">
+        <span>Contact us</span>
     </a>
     <!--=============== SCROLL UP ===============-->
     <a href="#" class="scrollup" id="scroll-up">
@@ -326,6 +433,19 @@
     </a>
 
     <!--=============== SCROLLREVEAL ===============-->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script>
+        /*=============== CHANGE BACKGROUND HEADER ===============*/
+        const scrollHeader = () => {
+            const header = document.getElementById('header')
+                // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
+            this.scrollY >= 50 ? header.classList.add('scroll-header') :
+                header.classList.remove('scroll-header')
+        }
+        window.addEventListener('scroll', scrollHeader)
+    </script>
     <script>
         var loader = document.getElementById("preloader");
         window.addEventListener("load", function() {
@@ -334,24 +454,64 @@
     </script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const buyNowButton = document.querySelector('.animationbutttonpricieng');
-            const alertContainer = document.getElementById('alert-container');
-            const closeButton = document.getElementById('close-btn'); // زر الإغلاق
+            // Initialize EmailJS
+            emailjs.init('V0PDbA02Wxns8ppoS'); // استبدل YOUR_USER_ID بالمفتاح العام الخاص بك
 
-            if (buyNowButton && alertContainer) {
-                buyNowButton.addEventListener('click', function(e) {
-                    e.preventDefault(); // منع السلوك الافتراضي
-                    alertContainer.classList.add('active'); // إظهار الـ alert
-                });
+            document.getElementById('buy-now').addEventListener('click', function() {
+                document.getElementById('alert-container').classList.add('active');
+            });
+
+            document.getElementById('close-alert').addEventListener('click', function() {
+                document.getElementById('alert-container').classList.remove('active');
+            });
+
+            document.getElementById('submit-alert').addEventListener('click', function() {
+                const name = document.getElementById('name').value;
+                const whatsapp = document.getElementById('whatsapp').value;
+                const email = document.getElementById('email').value;
+
+                if (name && whatsapp && email) {
+                    document.getElementById('success-message').style.display = 'block';
+                    setTimeout(function() {
+                        document.getElementById('alert-container').classList.remove('active');
+                        document.getElementById('success-message').style.display = 'none';
+                    }, 3000);
+                } else {
+                    alert('يرجى ملء جميع الحقول.');
+                }
+            });
+
+            const contactForm = document.getElementById('contact-form');
+            const contactMessage = document.getElementById('contact-message');
+
+            const sendEmail = (e) => {
+                e.preventDefault();
+
+                // Service Id - templateID - #form -publickey
+                emailjs.sendForm('service_q6ibnrf', 'template_zvlj959', '#contact-form', 'V0PDbA02Wxns8ppoS')
+                    .then(() => {
+                        // Show sent message
+                        contactMessage.textContent = 'Message sent successfully';
+
+                        // Remove message after five seconds
+                        setTimeout(() => {
+                            contactMessage.textContent = '';
+                        }, 5000);
+
+                        // Clear input 
+                        contactForm.reset();
+                    }, () => {
+                        // Show error message
+                        contactMessage.textContent = 'Message not sent (service error)';
+                    });
             }
 
-            if (closeButton && alertContainer) {
-                closeButton.addEventListener('click', function() {
-                    alertContainer.classList.remove('active'); // إخفاء الـ alert
-                });
-            }
+            contactForm.addEventListener('submit', sendEmail);
         });
     </script>
+
+
+
     <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
     <script>
         AOS.init({
@@ -363,7 +523,8 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="https://app.embed.im/snow.js" defer></script>
     <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+    <script src=" assets/js/main.js "></script>
+    <script src="assets/js/language.js"></script>
 </body>
 
 </html>
