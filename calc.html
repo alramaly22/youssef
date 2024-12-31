@@ -27,18 +27,21 @@
         -webkit-appearance: none;
         -moz-appearance: none;
         font-weight: bold;
-        background-color: var(--first-color);
-        color: var(--body-color);
-        border: none;
-        padding: 10px;
-        border-radius: 1rem;
+        background-color: #91919159;
+        border: 1px solid;
+        padding: 3px 9px !important;
+        color: hsl(0deg 0% 100%);
+        /* border: none; */
+        /* border-radius: 1rem; */
         cursor: pointer;
         outline: none;
         background-repeat: no-repeat;
         background-position: right 10px center;
         background-size: 20px 15px;
-        width: 120px;
+        width: 76px;
         text-align: center;
+        direction: ltr;
+        text-align: left;
     }
     
     #language-selector option {
@@ -73,24 +76,32 @@
         text-align: center;
     }
 </style>
+<title>Youssef Yanni</title>
+</head>
 
 <body>
+    <!-- <div id="preloader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div> -->
+    <!--=============== NAVBAR ===============-->
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Youssef Yanni</a>
+            <a href="index.html" class="nav__logo">Youssef Yanni</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li><a href="#home" class="nav__link" data-lang="nav1">Home</a></li>
-                    <li><a href="#pricing" class="nav__link" data-lang="nav6">Packages</a></li>
-                    <li><a href="#new" class="nav__link" data-lang="nav7">Transformations</a></li>
-                    <li><a href="#discount" class="nav__link cookingnav" data-lang="nav4">Cooking E-book</a></li>
-                    <li><a href="#about" class="nav__link" data-lang="nav2">About Us</a></li>
+                    <li><a href="index.html" class="nav__link" data-lang="nav1">Home</a></li>
+                    <li><a href="index.html#pricing" class="nav__link" data-lang="nav6">Packages</a></li>
+                    <li><a href="index.html#new" class="nav__link" data-lang="nav7">Transformations</a></li>
+                    <li><a href="book.html" class="nav__link cookingnav" data-lang="nav4">Cooking E-book</a></li>
+                    <li><a href="index.html#about" class="nav__link" data-lang="nav2">About Us</a></li>
                     <li><a href="calc.html" class="nav__link calcnav" data-lang="nav5">Calorie calculator</a></li>
-                    <li><select name="language" id="language-selector">
-                        <option value="en" data-flag="https://flagcdn.com/w40/us.png" selected>En</option>
-                        <option value="ar" data-flag="https://flagcdn.com/w40/sa.png">Ar</option>
-                    </select></li>
+                    <!-- <li><select name="language" id="language-selector">
+                    <option value="en" data-flag="https://flagcdn.com/w40/us.png" selected>En</option>
+                    <option value="ar" data-flag="https://flagcdn.com/w40/eg.png">EG</option>
+                </select></li> -->
                 </ul>
             </div>
             <div class="nav__toggle" id="nav-toggle">
@@ -241,6 +252,7 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+    <!-- <Script src="assets/js/language.js"></Script> -->
 </body>
 
 </html>

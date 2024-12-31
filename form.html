@@ -25,18 +25,21 @@
             -webkit-appearance: none;
             -moz-appearance: none;
             font-weight: bold;
-            background-color: var(--first-color);
-            color: var(--body-color);
-            border: none;
-            padding: 10px;
-            border-radius: 1rem;
+            background-color: #91919159;
+            border: 1px solid;
+            padding: 3px 9px !important;
+            color: hsl(0deg 0% 100%);
+            /* border: none; */
+            /* border-radius: 1rem; */
             cursor: pointer;
             outline: none;
             background-repeat: no-repeat;
             background-position: right 10px center;
             background-size: 20px 15px;
-            width: 120px;
+            width: 76px;
             text-align: center;
+            direction: ltr;
+            text-align: left;
         }
         
         #language-selector option {
@@ -570,6 +573,7 @@
                     <input type="button" name="next" class="next action-button butt" value="Next" />
                 </fieldset>
                 <!-- ===================================== New 12 ======================= -->
+                <!-- ===================================== New 12 ======================= -->
                 <fieldset>
                     <h2 class="fs-title" data-lang="qution16">Question 16</h2>
                     <h3 class="fs-subtitle" data-lang="qutionothersports">Do you play other sports?</h3>
@@ -586,11 +590,18 @@
                             <input class="checkboxo" type="radio" name="CAT_Custom_6" id="sports-no" value="No" required>
                             <!-- تعيين القيمة "لا" للإجابة السلبية -->
                         </div>
+
+                        <div class="fa">
+                            <label style="color: white;" for="sports-other" data-lang="qutionothersports">Another Sports</label>
+                            <input class="checkboxo" type="radio" name="CAT_Custom_6" id="sports-other" value="Another Sports" required>
+                            <!-- تعيين القيمة "ألعاب رياضية أخرى" -->
+                        </div>
                     </div>
 
                     <input type="button" name="previous" class="previous action-button butt" value="Previous" />
                     <input type="button" name="next" class="next action-button butt" value="Next" />
                 </fieldset>
+
                 <!-- ===================================== New 13 ======================= -->
                 <fieldset>
                     <h2 class="fs-title" data-lang="question17">16- Do you have any current injuries or chronic diseases?</h2>

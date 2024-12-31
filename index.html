@@ -29,18 +29,21 @@
             -webkit-appearance: none;
             -moz-appearance: none;
             font-weight: bold;
-            background-color: var(--first-color);
-            color: var(--body-color);
-            border: none;
-            padding: 10px;
-            border-radius: 1rem;
+            background-color: #91919159;
+            border: 1px solid;
+            padding: 3px 9px !important;
+            color: hsl(0deg 0% 100%);
+            /* border: none; */
+            /* border-radius: 1rem; */
             cursor: pointer;
             outline: none;
             background-repeat: no-repeat;
             background-position: right 10px center;
             background-size: 20px 15px;
-            width: 120px;
+            width: 76px;
             text-align: center;
+            direction: ltr;
+            text-align: left;
         }
         
         #language-selector option {
@@ -88,7 +91,7 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Youssef Yanni</a>
+            <a href="index.html" class="nav__logo">Youssef Yanni</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li><a href="#home" class="nav__link" data-lang="nav1">Home</a></li>
@@ -99,7 +102,7 @@
                     <li><a href="calc.html" class="nav__link calcnav" data-lang="nav5">Calorie calculator</a></li>
                     <li><select name="language" id="language-selector">
                         <option value="en" data-flag="https://flagcdn.com/w40/us.png" selected>En</option>
-                        <option value="ar" data-flag="https://flagcdn.com/w40/sa.png">Ar</option>
+                        <option value="ar" data-flag="https://flagcdn.com/w40/eg.png">EG</option>
                     </select></li>
                 </ul>
             </div>
@@ -219,8 +222,8 @@
                         <span data-lang="homebutton">Get Start</span> <i class="ri-arrow-right-circle-fill"></i>
                     </a> -->
                     <div class="home__buttons">
-                        <a href="#pricing" class="button">Subscribe Now</a>
-                        <a href="#new " class="button__ghost button">Transformations</a>
+                        <a href="#pricing" class="button" data-lang="Subscr">Subscribe Now</a>
+                        <a href="#new " class="button__ghost button" data-lang="transbuttongg">Transformations</a>
                     </div>
                 </div>
 
@@ -249,17 +252,17 @@
             <div class="containere">
                 <i class="fa-brands fa-tiktok"><a href="https://www.facebook.com/"></a></i>
                 <span class="num" data-val="10" data-unit="y">+0</span>
-                <span class="text">Experience</span>
+                <span class="text" data-lang="ecxprp">Experience</span>
             </div>
             <div class="containere">
                 <i class="fab fa-facebook-f"></i>
                 <span class="num" data-val="300">+0</span>
-                <span class="text">Transformations</span>
+                <span class="text" data-lang="wtapertr">Transformations</span>
             </div>
             <div class="containere">
                 <i class="fab fa-instagram"></i>
                 <span class="num" data-val="1000">+0</span>
-                <span class="text">Clients</span>
+                <span class="text" data-lang="wraperclients">Clients</span>
             </div>
         </div>
 
@@ -317,7 +320,7 @@
                 <div class="about__data">
                     <h2 class="section__title creative-title">
                         <p data-lang="about1"> About</p>
-                        <p>Yousse Yanni</p>
+                        <p data-lang="youssefyanni">Youssef Yanni</p>
                         <!-- <span class="highlight">
                     <span class="char" data-lang="c">C</span>
                         <span class="char" data-lang="dot">.</span>
@@ -350,7 +353,7 @@
 
         <!--==================== Transformation ====================-->
         <section class="new section" id="new" data-aos="fade-right">
-            <h2 style="color: black;" class="section__title" data-lang="transformation">
+            <h2 style="color: black;  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);" class="section__title" data-lang="transformation">
                 Your results, my passion.
             </h2>
             <div class="new__container container">
@@ -428,61 +431,59 @@
             <div class="testimonial mySwiper">
                 <div class="testi-content swiper-wrapper">
                     <div class="slide swiper-slide">
-                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" alt="" class="image" />
+                        <img src="assets/img/clients/client8.jpeg" alt="" class="image" />
                         <!-- تم إضافة معرف مختلف لكل صورة -->
                         <p>
 
-                            I'm truly happy with the program and glad I followed your guidance during the preparation. I had some bad experiences with other trainers before you, even some friends. You're a real pro and show great respect. It's not just about money for you; you genuinely
-                            focus on quality. Bless you. </p>
+                            الحمدلله والله انا مبسوط جدا بأمانه اول ما شوفت الانبودي يا كوتش انت رهييييب اقسم بالله مش عارف ازاي عملت كده 😂❤️❤️ انا انهارده من اسعد ايام حياتي </p>
 
                         <i class="bx bxs-quote-alt-left quote-icon"></i>
 
                         <div class="details">
-                            <span class="name">Marnie Lotter</span>
+                            <span class="name">Eslam reda </span>
 
                         </div>
                     </div>
                     <div class="slide swiper-slide">
-                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" id="zoomable-image-2" alt="" class="image" />
+                        <img src="assets/img/clients/client6.jpeg" id="zoomable-image-2" alt="" class="image" />
                         <!-- تم إضافة معرف مختلف لكل صورة -->
                         <p>
-                            In these pictures, there are two trophies. The first is the gold medal. These words make me very proud, especially coming from the best person I've ever met, my coach and brother, Dr. Mohammed El Gadi Mo Qadi. I can't express how much I appreciate what
-                            he's done for me. The second picture is just a medal 🥇. Thanks to everyone who supported me. Thank you all </p>
+                            والله يا جو، أول مرة أشوف النتائج دي في حياتي! بجد، انت مش متخيل إن ده أعلى من توقعاتي بكتير جدًا</p>
 
                         <i class="bx bxs-quote-alt-left quote-icon"></i>
 
                         <div class="details">
-                            <span class="name">Marnie Lotter</span>
+                            <span class="name">Ahmed Mohsen</span>
 
                         </div>
                     </div>
                     <div class="slide swiper-slide">
-                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" id="zoomable-image-3" alt="" class="image" />
+                        <img src="assets/img/clients/client7.jpeg" id="zoomable-image-3" alt="" class="image" />
                         <!-- تم إضافة معرف مختلف لكل صورة -->
                         <p>
-                            You're the best coach I've ever worked with, I swear. You're like a doctor and an artist in bodybuilding. I'm really satisfied and happy. I pray for you day and night. Wherever I go, I speak highly of you. I recommend all my friends to train with you.
-                            God willing, I'll continue working with you.
+                            كل حاجة واضحة بجد، والأكل واضح، والشهادات واضحة، وكل حاجة مظبوطة. مش محتاج أجيلك وأسألك: هناكل إيه؟ طيب مفيش شوفان، أكل إيه بداله؟ فاهم؟ الدنيا واضحة جدًا. أنا بشجعك إنك تكبر وتطور أكتر
                         </p>
 
                         <i class="bx bxs-quote-alt-left quote-icon"></i>
 
                         <div class="details">
-                            <span class="name">Marnie Lotter</span>
+                            <span class="name">Robert Ramzy</span>
 
                         </div>
                     </div>
                     <div class="slide swiper-slide">
-                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" id="zoomable-image-4" alt="" class="image" />
+                        <img src="assets/img/clients/client5.jpeg" id="zoomable-image-4" alt="" class="image" />
                         <!-- تم إضافة معرف مختلف لكل صورة -->
                         <p>
 
-                            I took the first overall in men's physique and earned a physique pro card. I came second in overall bodybuilding. It was really close between me and the other dude. I'm very happy that I worked with you, my friend. Thanks to you, I achieved all of this
+                            باسل كان متربي معانا وكان بيحكي لنا عنك بطريقة، الصراحة، تشجع أي حد يتعرف عليك بشخصك، مش بس علشان أنت بروفشنال. أنا كنت فخورة بكل اللي أنت بتعمله من كلام باسل، بصراحة. بس دلوقتي أنا انبهرت بالمجهود اللي معمول في كل التفاصيل. ربنا يبارك لك أكتر وأكتر،
+                            وكمل، وإن شاء الله من نجاح لنجاح.
                         </p>
 
                         <i class="bx bxs-quote-alt-left quote-icon"></i>
 
                         <div class="details">
-                            <span class="name">Marnie Lotter</span>
+                            <span class="name">Silvana Ibrahim</span>
 
                         </div>
                     </div>
@@ -495,7 +496,7 @@
 
         <!--==================== PRICING ====================-->
         <section class="packages section" id="pricing">
-            <h1 class="section__title" data-lang="packages">CHOOSE THE PACKAGE</h1>
+            <h1 class="section__title" data-lang="packages">Exclusive Now</h1>
             <!-- <p>I will help you reach the best version of yourself</p> -->
             <div class="package-container">
                 <!-- Package Basic -->
@@ -579,12 +580,12 @@
 
 
     </main>
-
     <!--==================== FOOTER ====================-->
     <footer class="footer">
         <div class="footer__container container grid">
+            <a style="width: 50%;" href="index.html" class="nav__logo"><img src="assets/img/logo2.png" alt=""></a>
             <div class="footer__contect grid">
-                <a href="index.html" class="nav__logo"><img src="assets/img/logo2.png" alt=""></a>
+
                 <ul class="footer__links">
                     <li>
                         <a href="#home" class="footer__lik" data-lang="footerhome">Home</a>
@@ -599,18 +600,18 @@
                         <a href="#care" class="footer__lik" data-lang="footercalc">Calc</a>
                     </li>
                     <li>
-                        <a href="#discount" class="footer__lik" data-lang="footerbook">Book</a>
+                        <a href="#discount" class="footer__lik" data-lang="nav4">Book</a>
                     </li>
                 </ul>
             </div>
             <div class="footer__social">
-                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link">
+                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link facebook">
                     <i class="ri-facebook-circle-fill"></i>
                 </a>
-                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link">
+                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link instagram">
                     <i class="ri-instagram-fill"></i>
                 </a>
-                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link">
+                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link tiktok">
                     <i class="ri-tiktok-fill"></i>
                 </a>
             </div>

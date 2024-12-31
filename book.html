@@ -24,18 +24,21 @@
             -webkit-appearance: none;
             -moz-appearance: none;
             font-weight: bold;
-            background-color: var(--first-color);
-            color: var(--body-color);
-            border: none;
-            padding: 10px;
-            border-radius: 1rem;
+            background-color: #91919159;
+            border: 1px solid;
+            padding: 3px 9px !important;
+            color: hsl(0deg 0% 100%);
+            /* border: none; */
+            /* border-radius: 1rem; */
             cursor: pointer;
             outline: none;
             background-repeat: no-repeat;
             background-position: right 10px center;
             background-size: 20px 15px;
-            width: 120px;
+            width: 76px;
             text-align: center;
+            direction: ltr;
+            text-align: left;
         }
         
         #language-selector option {
@@ -70,7 +73,7 @@
             text-align: center;
         }
     </style>
-    <title>E-Book</title>
+    <title>Youssef Yanni</title>
 </head>
 
 <body>
@@ -79,10 +82,11 @@
         <div class="circle"></div>
         <div class="circle"></div>
     </div>
+    <!--=============== NAVBAR ===============-->
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Youssef Yanni</a>
+            <a href="index.html" class="nav__logo">Youssef Yanni</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li><a href="#home" class="nav__link" data-lang="nav1">Home</a></li>
@@ -93,7 +97,7 @@
                     <li><a href="calc.html" class="nav__link calcnav" data-lang="nav5">Calorie calculator</a></li>
                     <li><select name="language" id="language-selector">
                         <option value="en" data-flag="https://flagcdn.com/w40/us.png" selected>En</option>
-                        <option value="ar" data-flag="https://flagcdn.com/w40/sa.png">Ar</option>
+                        <option value="ar" data-flag="https://flagcdn.com/w40/eg.png">EG</option>
                     </select></li>
                 </ul>
             </div>
@@ -110,8 +114,8 @@
             <div class="home2__container container">
                 <div class="home__data5">
                     <h1 class="home__title5">
-                        <p data-lang="home3p3">Achieve Your Fitness Goals &</p>
-                        <p data-lang="home3p2">Transform Your Lifestyle</p>
+                        <p data-lang="home3p3">Achieve Your Fitness Goals & Transform</p>
+                        <p data-lang="home3p2"> Your Lifestyle</p>
                     </h1>
                     <p class="home__description5" data-lang="home3p1">
                         This e-book is your ultimate guide to achieving a healthier and more active lifestyle. Packed with easy-to-follow meal plans, organized recipes, and low-calorie options, it offers simple and effective ways to meet your fitness goals. Whether you're just
@@ -123,13 +127,13 @@
                     <div style="margin-inline: initial;" class="home__swiper swiper">
                         <div class="swiper-wrapper">
                             <article style="text-align: center;" class="homee2__article swiper-slide">
-                                <img src="assets/img/book.jpeg" alt="" class="home2__img">
+                                <img src="assets/img/book/book3.jpeg" alt="" class="home2__img">
                             </article>
                             <article style="text-align: center;" class="homee2__article swiper-slide">
-                                <img src="assets/img/book2.jpeg" alt="" class="home2__img">
+                                <img src="assets/img/book/book2.jpeg" alt="" class="home2__img">
                             </article>
                             <article style="text-align: center;" class="homee2__article swiper-slide">
-                                <img src="assets/img/book3.jpeg" alt="" class="home2__img">
+                                <img src="assets/img/book/book1.jpeg" alt="" class="home2__img">
                             </article>
                         </div>
                     </div>
@@ -202,11 +206,11 @@
 
                     <div class="discount-buttons">
                         <a href="#price" class="btn btn-buy" data-lang="offerbuttonbut">Buy Now</a>
-                        <a href="assets/FREE TRIAL‼️👨_🍳 5 Recipes .pdf" download="" class="btn btn-demo" data-lang="offerdownload">Download</a>
+                        <a href="assets/FREE TRIAL‼️👨_🍳 5 Recipes .pdf" download="" class="btn btn-demo" data-lang="offerdownload">Download The Free Trial</a>
                     </div>
                 </div>
                 <div class="discount-image-container">
-                    <img src="assets/img/book2.jpeg" alt="Recipe Book Image" class="discount-image">
+                    <img src="assets/img/book/book1.jpeg" alt="Recipe Book Image" class="discount-image">
                 </div>
             </div>
         </section>
@@ -221,24 +225,24 @@
                 <!-- Package 1 Premium -->
                 <div class="package bookpachage">
                     <h2 data-lang="pricinghealthriciper">Healthy Recipe Book</h2>
-                    <p class="price"><del>EGP 500</del> <span>EGP 400</span></p>
+                    <p class="price"><del>EGP 500</del> <span>EGP 399</span></p>
                     <button class="animationbutttonpricieng" id="buy-now" data-lang="buynowpricing">Buy Now</button>
                     <p class="animated-line" data-lang="pricingavailable">Available Now</p>
                     <ul>
                         <li><i class="ri-check-fill iconprice"></i>
-                            <span data-lang="pricingover1"> Over 50 quick and healthy recipes that you'll never get bored of.</span>
+                            <span data-lang="pricingover1" style="color: white;"> Over 50 quick and healthy recipes that you'll never get bored of.</span>
                         </li>
                         <li><i class="ri-check-fill iconprice"></i>
-                            <span data-lang="pricingover2"> Low-calorie recipes, including desserts, savory dishes, and drinks.</span>
+                            <span data-lang="pricingover2" style="color: white;"> Low-calorie recipes, including desserts, savory dishes, and drinks.</span>
                         </li>
                         <li><i class="ri-check-fill iconprice"></i>
-                            <span data-lang="pricingover3"> Simple and quick preparation methods to save time and deliver amazing results.</span>
+                            <span data-lang="pricingover3" style="color: white;"> Simple and quick preparation methods to save time and deliver amazing results.</span>
                         </li>
                         <li><i class="ri-check-fill iconprice"></i>
-                            <span data-lang="pricingover4"> A book designed to help you achieve your health goals with no excuses.</span>
+                            <span data-lang="pricingover4" style="color: white;"> A book designed to help you achieve your health goals with no excuses.</span>
                         </li>
                         <li><i class="ri-check-fill iconprice"></i>
-                            <span data-lang="pricingover5"> Innovative recipes that provide great results with minimal calories.</span>
+                            <span data-lang="pricingover5" style="color: white;"> Innovative recipes that provide great results with minimal calories.</span>
                         </li>
                     </ul>
 
@@ -279,8 +283,8 @@
                     <div class="slide swiper-slide">
                         <img src="assets/img/clients/client1.jpeg" alt="" class="image" />
                         <!-- تم إضافة معرف مختلف لكل صورة -->
-                        <p data-lang="clientsp1">
-                            You completely changed my perspective on healthy eating. I always felt like the options were limited and boring, but now everything feels so different </p>
+                        <p>
+                            انت خليتني اغير من طريقه تفكيري عن الاكل خالص انا كنت بنهار من قله الاكل و الصحه قبل كده فعلا</p>
 
                         <i class="bx bxs-quote-alt-left quote-icon"></i>
 
@@ -292,10 +296,9 @@
                     <div class="slide swiper-slide">
                         <img src="assets/img/clients/client2.jpeg" id="zoomable-image-2" alt="" class="image" />
                         <!-- تم إضافة معرف مختلف لكل صورة -->
-                        <p data-lang="clientsp2">
+                        <p>
 
-                            Yo Joe, good evening. Honestly, I don’t even know what to say. I haven’t been doing great lately, but starting tomorrow, I promise to get back on track and stick to everything you told me. I can’t believe you actually did this. I’m trying it out, and
-                            honestly, this is one of the best things I’ve ever seen </p>
+                            انا مش متخيل انك عامل الكتاب ده انا بطبخ و بقولك ان ديه من احسن الحاجات اللي شوفتها والله </p>
 
                         <i class="bx bxs-quote-alt-left quote-icon"></i>
 
@@ -307,8 +310,8 @@
                     <div class="slide swiper-slide">
                         <img src="assets/img/clients/client3.jpeg" id="zoomable-image-3" alt="" class="image" />
                         <!-- تم إضافة معرف مختلف لكل صورة -->
-                        <p data-lang="clientsp3">
-                            What’s this? If it’s like this, I’ll love the diet, honestly. If it’s like this, I don’t even need a cheat meal. And the best part is that there are ways to set goals directly. I really liked the diet.
+                        <p>
+                            انا حبيت الدايت بسببه والله و انا لو كده اصلا مش هحتاج شيت ميل , و الجامد كمان ان فيه طريقه التحضير فخلاني احب الدايت
                         </p>
 
                         <i class="bx bxs-quote-alt-left quote-icon"></i>
@@ -321,9 +324,9 @@
                     <div class="slide swiper-slide">
                         <img src="assets/img/clients/client4.jpg" id="zoomable-image-4" alt="" class="image" />
                         <!-- تم إضافة معرف مختلف لكل صورة -->
-                        <p data-lang="clientsp4">
+                        <p>
 
-                            The cooking book is really great, it has a lot of variety, truly amazing work. It really makes you discover new recipes. Everything is simple and easy, plus it has a variety of meal ideas
+                            حلو جدا الكتاب و فيه طرق مختلفه كتير اوي ,بجد احلي شغل
                         </p>
 
                         <i class="bx bxs-quote-alt-left quote-icon"></i>
@@ -348,36 +351,37 @@
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer" data-aos="fade-right">
+    <footer class="footer">
         <div class="footer__container container grid">
+            <a style="width: 50%;" href="index.html" class="nav__logo"><img src="assets/img/logo2.png" alt=""></a>
             <div class="footer__contect grid">
-                <a href="index.html" class="nav__logo"><img src="assets/img/logo2.png" alt=""></a>
+
                 <ul class="footer__links">
                     <li>
-                        <a href="index.html#home" class="footer__lik" data-lang="footerhome">Home</a>
+                        <a href="index.html" class="footer__lik" data-lang="footerhome">Home</a>
                     </li>
                     <li>
-                        <a href="index.html#about" class="footer__lik" data-lang="footerabout">About</a>
+                        <a href="about.html" class="footer__lik" data-lang="footerabout">About</a>
                     </li>
                     <li>
                         <a href="index.html#pricing" class="footer__lik" data-lang="footerpricing">Pricing</a>
                     </li>
                     <li>
-                        <a href="index.html#care" class="footer__lik" data-lang="footercalc">Calc</a>
+                        <a href="calc.html" class="footer__lik" data-lang="footercalc">Calc</a>
                     </li>
                     <li>
-                        <a href="index.html#discount" class="footer__lik" data-lang="footerbook">Book</a>
+                        <a href="book.html" class="footer__lik" data-lang="nav4">Book</a>
                     </li>
                 </ul>
             </div>
             <div class="footer__social">
-                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link">
+                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link facebook">
                     <i class="ri-facebook-circle-fill"></i>
                 </a>
-                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link">
+                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link instagram">
                     <i class="ri-instagram-fill"></i>
                 </a>
-                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link">
+                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link tiktok">
                     <i class="ri-tiktok-fill"></i>
                 </a>
             </div>
@@ -387,9 +391,11 @@
     </span>
     </footer>
 
-    <!--========== whatsapp ==========-->
 
 
+    <!-- <a href="#pricing" class="whatsapp2">
+        <h1>Subscribe Now</h1>
+    </a> -->
     <a href="https://wa.me/201208425542" class="whatsapp">
         <i class="ri-whatsapp-fill"></i>
     </a>
@@ -397,7 +403,6 @@
     <!--=============== SCROLL UP ===============-->
     <a href="#" class="scrollup" id="scroll-up">
         <i class="ri-arrow-up-double-line"></i>
-        <!-- <i class="fa-solid fa-circle-arrow-up"></i> -->
     </a>
 
     <!--=============== SCROLLREVEAL ===============-->

@@ -28,18 +28,21 @@
         -webkit-appearance: none;
         -moz-appearance: none;
         font-weight: bold;
-        background-color: var(--first-color);
-        color: var(--body-color);
-        border: none;
-        padding: 10px;
-        border-radius: 1rem;
+        background-color: #91919159;
+        border: 1px solid;
+        padding: 3px 9px !important;
+        color: hsl(0deg 0% 100%);
+        /* border: none; */
+        /* border-radius: 1rem; */
         cursor: pointer;
         outline: none;
         background-repeat: no-repeat;
         background-position: right 10px center;
         background-size: 20px 15px;
-        width: 120px;
+        width: 76px;
         text-align: center;
+        direction: ltr;
+        text-align: left;
     }
     
     #language-selector option {
@@ -74,6 +77,8 @@
         text-align: center;
     }
 </style>
+<title>About Youssef</title>
+</head>
 
 <body>
     <div id="preloader">
@@ -82,73 +87,36 @@
         <div class="circle"></div>
     </div>
     <!--=============== NAVBAR ===============-->
+    <!--==================== HEADER ====================-->
     <header class="header" id="header">
-        <div class="navtotal container">
-            <a href="index.html" class="nav__logo"><img src="assets/img/logo2.png" alt=""></a>
-
-            <nav class="nav">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Youssef Yanni</a>
+            <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li>
-                        <a href="#home" class="nav__link ">
-                            <i class="ri-home-smile-2-line"></i>
-                            <span data-lang="nav1">home</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#about" class="nav__link">
-                            <i class="ri-user-line"></i>
-                            <span data-lang="nav2">about</span>
-                        </a>
-                    </li>
-
-                    <!-- Expand list -->
-
-
-                    <li>
-                        <a href="#clients" class="nav__link">
-                            <i class="ri-chat-3-fill"></i>
-                            <span data-lang="nav3">Clients</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#accordion" class="nav__link">
-                            <i class="ri-question-mark"></i>
-                            <span data-lang="nav8">Faqs</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="footer__social2">
-                <select name="language" id="language-selector">
+                    <li><a href="#home" class="nav__link" data-lang="nav1">Home</a></li>
+                    <li><a href="index.html#pricing" class="nav__link" data-lang="nav6">Packages</a></li>
+                    <li><a href="index.html#new" class="nav__link" data-lang="nav7">Transformations</a></li>
+                    <li><a href="book.html" class="nav__link cookingnav" data-lang="nav4">Cooking E-book</a></li>
+                    <li><a href="#about" class="nav__link" data-lang="nav2">About Us</a></li>
+                    <li><a href="calc.html" class="nav__link calcnav" data-lang="nav5">Calorie calculator</a></li>
+                    <li><select name="language" id="language-selector">
                     <option value="en" data-flag="https://flagcdn.com/w40/us.png" selected>En</option>
-                    <option value="ar" data-flag="https://flagcdn.com/w40/sa.png">Ar</option>
-                </select>
-
-                <span class="footersociel"><i class="ri-moon-clear-fill change-theme" id="theme-button"></i></span>
-                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link2 facebook">
-                    <i class="ri-facebook-circle-fill"></i>
-                </a>
-                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link2 instagram">
-                    <i class="ri-instagram-fill"></i>
-                </a>
-                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link2 tiktok">
-                    <i class="ri-tiktok-fill"></i>
-                </a>
-
+                    <option value="ar" data-flag="https://flagcdn.com/w40/eg.png">EG</option>
+                </select></li>
+                </ul>
             </div>
-        </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-apps-2-line"></i>
+            </div>
+        </nav>
     </header>
 
     <!--==================== MAIN ====================-->
     <main class="main">
         <!--==================== HOME ====================-->
-        <section class="home" id="home">
+        <section class="home" id="home" data-aos="fade-right">
             <div class="video-container">
-                <video class="home__video" autoplay muted loop>
-                    <source src="assets/video/v2.mp4" type="video/mp4" >
-                </video>
+
                 <div class="video-overlay"></div>
             </div>
             <div class="home__img">
@@ -156,18 +124,25 @@
             </div>
             <div class="home__container container grid">
                 <div class="home__data">
-                    <h1 class="home__title">
-                        <p data-lang="home1" data-lang="home2pp"> Achieve Your Fitness Goals with Coach Youssef</p>
-                        <!-- <p data-lang="home2">body with Wassim</p> -->
-                    </h1>
+                    <h1 class="home__title" data-lang="home1">
 
-                    <a data-lang="button" href="pricing.html" class="button button--flex">
-                        <span data-lang="getstatrr">Get Start</span> <i class="ri-arrow-right-circle-fill"></i>
-                    </a>
+                        DISCOUNT up to 50%
+
+                    </h1>
+                    <!-- <p data-lang="home3" class="home__description">
+                            Welcome to Wassim, your ultimate destination for fitness guidance and inspiration.
+                        </p> -->
+                    <!-- <a data-lang="button" href="#pricing" class="button button--flex">
+                        <span data-lang="homebutton">Get Start</span> <i class="ri-arrow-right-circle-fill"></i>
+                    </a> -->
+                    <div class="home__buttons">
+                        <a href="#pricing" class="button" data-lang="Subscr">Subscribe Now</a>
+                        <a href="#new " class="button__ghost button" data-lang="transbuttongg">Transformations</a>
+                    </div>
                 </div>
 
                 <div class="home__social">
-                    <span data-lang="follow" class="home__social-follow">Follow Us</span>
+                    <span class="home__social-follow">Follow Us</span>
 
                     <div class="home__social-links">
                         <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
@@ -201,9 +176,10 @@
                 <div class="choose__contect">
                     <div class="choose__data">
                         <h2 class="section__title creative-title">
-                            <p data-lang="about1"> About</p> <br>
-                            <span class="highlight">
-                            <span class="char" data-lang="c">C</span>
+                            <p data-lang="about1"> About</p>
+                            <p data-lang="youssefyanni">Youssef Yanni</p>
+                            <!-- <span class="highlight">
+                        <span class="char" data-lang="c">C</span>
                             <span class="char" data-lang="dot">.</span>
                             <span class="char" data-lang="y">Y</span>
                             <span class="char" data-lang="o">o</span>
@@ -212,7 +188,7 @@
                             <span class="char" data-lang="ss">s</span>
                             <span class="char" data-lang="e">e</span>
                             <span class="char" data-lang="f">f</span>
-                            </span>
+                            </span> -->
 
                         </h2>
                     </div>
@@ -227,67 +203,64 @@
                 </div>
             </div>
         </section>
-
         <!--==================== Clients ====================-->
-        <section class="containereea" data-aos="fade-left">
+        <section class="containereea" id="clients" data-aos="fade-right">
             <div class="testimonial mySwiper">
                 <div class="testi-content swiper-wrapper">
                     <div class="slide swiper-slide">
-                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" alt="" class="image" />
+                        <img src="assets/img/clients/client8.jpeg" alt="" class="image" />
                         <!-- تم إضافة معرف مختلف لكل صورة -->
                         <p>
 
-                            I'm truly happy with the program and glad I followed your guidance during the preparation. I had some bad experiences with other trainers before you, even some friends. You're a real pro and show great respect. It's not just about money for you; you genuinely
-                            focus on quality. Bless you. </p>
+                            الحمدلله والله انا مبسوط جدا بأمانه اول ما شوفت الانبودي يا كوتش انت رهييييب اقسم بالله مش عارف ازاي عملت كده 😂❤️❤️ انا انهارده من اسعد ايام حياتي </p>
 
                         <i class="bx bxs-quote-alt-left quote-icon"></i>
 
                         <div class="details">
-                            <span class="name">Marnie Lotter</span>
+                            <span class="name">Eslam reda </span>
 
                         </div>
                     </div>
                     <div class="slide swiper-slide">
-                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" id="zoomable-image-2" alt="" class="image" />
+                        <img src="assets/img/clients/client6.jpeg" id="zoomable-image-2" alt="" class="image" />
                         <!-- تم إضافة معرف مختلف لكل صورة -->
                         <p>
-                            In these pictures, there are two trophies. The first is the gold medal. These words make me very proud, especially coming from the best person I've ever met, my coach and brother, Dr. Mohammed El Gadi Mo Qadi. I can't express how much I appreciate what
-                            he's done for me. The second picture is just a medal 🥇. Thanks to everyone who supported me. Thank you all </p>
+                            والله يا جو، أول مرة أشوف النتائج دي في حياتي! بجد، انت مش متخيل إن ده أعلى من توقعاتي بكتير جدًا</p>
 
                         <i class="bx bxs-quote-alt-left quote-icon"></i>
 
                         <div class="details">
-                            <span class="name">Marnie Lotter</span>
+                            <span class="name">Ahmed Mohsen</span>
 
                         </div>
                     </div>
                     <div class="slide swiper-slide">
-                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" id="zoomable-image-3" alt="" class="image" />
+                        <img src="assets/img/clients/client7.jpeg" id="zoomable-image-3" alt="" class="image" />
                         <!-- تم إضافة معرف مختلف لكل صورة -->
                         <p>
-                            You're the best coach I've ever worked with, I swear. You're like a doctor and an artist in bodybuilding. I'm really satisfied and happy. I pray for you day and night. Wherever I go, I speak highly of you. I recommend all my friends to train with you.
-                            God willing, I'll continue working with you.
+                            كل حاجة واضحة بجد، والأكل واضح، والشهادات واضحة، وكل حاجة مظبوطة. مش محتاج أجيلك وأسألك: هناكل إيه؟ طيب مفيش شوفان، أكل إيه بداله؟ فاهم؟ الدنيا واضحة جدًا. أنا بشجعك إنك تكبر وتطور أكتر
                         </p>
 
                         <i class="bx bxs-quote-alt-left quote-icon"></i>
 
                         <div class="details">
-                            <span class="name">Marnie Lotter</span>
+                            <span class="name">Robert Ramzy</span>
 
                         </div>
                     </div>
                     <div class="slide swiper-slide">
-                        <img src="assets/img/WhatsApp Image 2024-12-06 at 11.15.55 PM (2).jpeg" id="zoomable-image-4" alt="" class="image" />
+                        <img src="assets/img/clients/client5.jpeg" id="zoomable-image-4" alt="" class="image" />
                         <!-- تم إضافة معرف مختلف لكل صورة -->
                         <p>
 
-                            I took the first overall in men's physique and earned a physique pro card. I came second in overall bodybuilding. It was really close between me and the other dude. I'm very happy that I worked with you, my friend. Thanks to you, I achieved all of this
+                            باسل كان متربي معانا وكان بيحكي لنا عنك بطريقة، الصراحة، تشجع أي حد يتعرف عليك بشخصك، مش بس علشان أنت بروفشنال. أنا كنت فخورة بكل اللي أنت بتعمله من كلام باسل، بصراحة. بس دلوقتي أنا انبهرت بالمجهود اللي معمول في كل التفاصيل. ربنا يبارك لك أكتر وأكتر،
+                            وكمل، وإن شاء الله من نجاح لنجاح.
                         </p>
 
                         <i class="bx bxs-quote-alt-left quote-icon"></i>
 
                         <div class="details">
-                            <span class="name">Marnie Lotter</span>
+                            <span class="name">Silvana Ibrahim</span>
 
                         </div>
                     </div>
@@ -389,104 +362,68 @@
 
     </main>
 
+
     <!--==================== FOOTER ====================-->
-    <footer class="footer" data-aos="fade-right">
+    <footer class="footer">
         <div class="footer__container container grid">
+            <a style="width: 50%;" href="index.html" class="nav__logo"><img src="assets/img/logo2.png" alt=""></a>
             <div class="footer__contect grid">
-                <a href="index.html" class="nav__logo"><img src="assets/img/logo2.png" alt=""></a>
+
                 <ul class="footer__links">
                     <li>
-                        <a href="index.html#home" class="footer__lik" data-lang="footerhome">Home</a>
+                        <a href="#home" class="footer__lik" data-lang="footerhome">Home</a>
                     </li>
                     <li>
-                        <a href="index.html#about" class="footer__lik" data-lang="footerabout">About</a>
+                        <a href="#about" class="footer__lik" data-lang="footerabout">About</a>
                     </li>
                     <li>
                         <a href="index.html#pricing" class="footer__lik" data-lang="footerpricing">Pricing</a>
                     </li>
                     <li>
-                        <a href="index.html#care" class="footer__lik" data-lang="footercalc">Calc</a>
+                        <a href="calc.html" class="footer__lik" data-lang="footercalc">Calc</a>
                     </li>
                     <li>
-                        <a href="index.html#discount" class="footer__lik" data-lang="footerbook">Book</a>
+                        <a href="book.html" class="footer__lik" data-lang="nav4">Book</a>
                     </li>
                 </ul>
             </div>
             <div class="footer__social">
-                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link">
+                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link facebook">
                     <i class="ri-facebook-circle-fill"></i>
                 </a>
-                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link">
+                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link instagram">
                     <i class="ri-instagram-fill"></i>
                 </a>
-                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link">
+                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link tiktok">
                     <i class="ri-tiktok-fill"></i>
                 </a>
             </div>
         </div>
         <span class="footer__copy">
-    &#169; All Rights Reserved By Moalramly
-</span>
+            &#169; All Rights Reserved By Moalramly
+        </span>
     </footer>
 
     <!--========== whatsapp ==========-->
 
-
+    <!-- <a href="#pricing" class="whatsapp2">
+        <h1>Subscribe Now</h1>
+    </a> -->
     <a href="https://wa.me/201208425542" class="whatsapp">
-        <img src="assets/img/about1.jpeg" alt="WhatsApp Icon" class="whatsapp-img">
-        <span>Contact us</span>
+        <i class="ri-whatsapp-fill"></i>
     </a>
+
     <!--=============== SCROLL UP ===============-->
     <a href="#" class="scrollup" id="scroll-up">
         <i class="ri-arrow-up-double-line"></i>
-        <!-- <i class="fa-solid fa-circle-arrow-up"></i> -->
     </a>
 
 
 
 
     <script src="https://app.embed.im/snow.js" defer></script>
-    <script>
-        /*=============== CHANGE BACKGROUND HEADER ===============*/
-        const scrollHeader = () => {
-            const header = document.getElementById('header')
-                // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-            this.scrollY >= 50 ? header.classList.add('scroll-header') :
-                header.classList.remove('scroll-header')
-        }
-        window.addEventListener('scroll', scrollHeader)
-    </script>
-    <script>
-        /*=============== DARK LIGHT THEME ===============*/
-        const themeButton = document.getElementById('theme-button')
-        const darkTheme = 'dark-theme'
-        const iconTheme = 'bx-sun'
 
-        // Previously selected topic (if user selected)
-        const selectedTheme = localStorage.getItem('selected-theme')
-        const selectedIcon = localStorage.getItem('selected-icon')
 
-        // We obtain the current theme that the interface has by validating the dark-theme class
-        const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-        const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun'
-
-        // We validate if the user previously chose a topic
-        if (selectedTheme) {
-            // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-            document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-            themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
-        }
-
-        // Activate / deactivate the theme manually with the button
-        themeButton.addEventListener('click', () => {
-            // Add or remove the dark / icon theme
-            document.body.classList.toggle(darkTheme)
-            themeButton.classList.toggle(iconTheme)
-                // We save the theme and the current icon that the user chose
-            localStorage.setItem('selected-theme', getCurrentTheme())
-            localStorage.setItem('selected-icon', getCurrentIcon())
-        })
-    </script>
 
     <!--=============== SWIPER JS ===============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
