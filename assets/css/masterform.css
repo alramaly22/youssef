@@ -224,7 +224,7 @@ transition: color .4s;
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/logo2.png) no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/about2.jpeg) no-repeat center center fixed;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -256,14 +256,18 @@ body {
     border-radius: 12px;
     padding: 20px 30px 120px;
     margin-top: 1rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/logo2.png) no-repeat center center fixed;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/logo2.png) no-repeat center center fixed;
     background-size: contain;
     background-position: bottom;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     /* background: #4070f4; */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     height: 150vh;
+}
+
+label span {
+    padding: 1rem;
 }
 
 .container {

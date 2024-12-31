@@ -198,6 +198,7 @@ img {
     font-family: var(--second-font);
     margin-bottom: 1.5rem;
     text-align: center;
+    font-weight: 600;
     color: var(--white-color);
 }
 
@@ -290,7 +291,7 @@ img {
     place-items: center;
 }
 
-.footer__social-link2.facebook {
+.footer__social-link.facebook {
     background-color: #1877f2;
     /* اللون الأزرق الخاص بالفيسبوك */
     color: white;
@@ -299,7 +300,7 @@ img {
 
 /* لون الإنستجرام */
 
-.footer__social-link2.instagram {
+.footer__social-link.instagram {
     background-color: #e1306c;
     /* اللون الوردي الخاص بالإنستجرام */
     color: white;
@@ -308,16 +309,17 @@ img {
 
 /* لون التيك توك */
 
-.footer__social-link2.tiktok {
+.footer__social-link.tiktok {
     background-color: #000000;
     /* اللون الأسود الخاص بالتيك توك */
     color: white;
+    border: 1px solid var(--white-color);
 }
 
 
 /* تغيير اللون عند التمرير */
 
-.footer__social-link2:hover {
+.footer__social-link:hover {
     background-color: var(--white-color);
     color: black;
 }
@@ -820,9 +822,10 @@ img {
     /* margin: 30px; */
 }
 
-.nav__logo {
+
+/* .nav__logo {
     width: 50%;
-}
+} */
 
 .package {
     display: flex;
@@ -922,9 +925,9 @@ ul {
 
 .bookpachage {
     border-color: #f1c40f;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/book.jpeg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.84)), url(../img/book/book2.jpeg) no-repeat;
     background-size: cover;
-    background-position: center right;
+    background-position: center;
 }
 
 .descriptionbookred {
@@ -962,7 +965,7 @@ ul {
     width: 100%;
     height: 100%;
     background: -webkit-linear-gradient(top, rgba(229, 172, 142, 0), rgba(255, 255, 255, .7) 50%, rgba(229, 172, 142, 0));
-    animation: shine 2s infinite;
+    animation: shine 5s infinite;
 }
 
 @keyframes shine {
@@ -1332,7 +1335,9 @@ select {
 /*=============== transformation ===============*/
 
 .new {
-    background: white;
+    background: linear-gradient(rgb(0 0 0 / 48%), rgba(0, 0, 0, 0.7)), url(../img/background/back7.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center top;
 }
 
 .new__card {
@@ -1464,8 +1469,8 @@ select {
 .slide p {
     text-align: center;
     padding: 0 160px;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 21px;
+    font-weight: 600;
     color: #fff;
 }
 
@@ -1501,6 +1506,7 @@ select {
 
 .footer__container {
     row-gap: 2.5rem;
+    justify-items: center;
 }
 
 .footer__logo {
@@ -2811,6 +2817,11 @@ select {
     margin-bottom: 1rem;
 }
 
+.westirns {
+    color: gold;
+    margin-bottom: 1rem;
+}
+
 .instacared {
     color: #8f4aa2;
     margin-bottom: 1rem;
@@ -3035,8 +3046,13 @@ select {
     position: relative;
     font-size: 18px;
     border-radius: 0.5em;
-    /* background: #21242b; */
+    background: rgba(255, 255, 255, .1);
     border-bottom: 10px solid var(--first-color);
+    backdrop-filter: blur(15px);
+    /* border: 1px solid #ffffff7e; */
+    border-right: 1px solid #ffffff7e;
+    border-left: 1px solid #ffffff7e;
+    border-top: 1px solid #ffffff7e;
 }
 
 .containere i {
