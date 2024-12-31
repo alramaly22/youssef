@@ -3,14 +3,21 @@ let lang = {
         nav1: "الرئيسية",
         nav2: "من نحن",
         nav3: "العملاء",
-        nav4: "الكتاب الإلكتروني",
+        nav4: "كتاب الوصفات",
         nav5: "حاسبة السعرات",
         nav6: "التسعير",
         nav7: "التحويلات",
         nav8: "الأسئلة ",
-
-        home1: "نتائجك، شغفي",
+        nav10: "تحميل",
+        home1: "خصم يصل إلى 50%",
         homebutton: "ابدأ الآن",
+
+        Subscr: "اشترك الآن",
+        transbuttongg: "التحولات",
+        ecxprp: "التجربة",
+        wtapertr: "التحولات",
+        wraperclients: "العملاء",
+        youssefyanni: "يوسف يني",
 
         steps: "خطوات تصنيع منتجاتنا",
         step1: "الخطوة 1: اختر الباقة. تصفح الباقات المتاحة واضغط على 'اشترك الآن' للبدء.",
@@ -58,14 +65,14 @@ let lang = {
         limt5: "خطة مكملات غذائية موصى بها مع خصومات خاصة (اختياري).",
         limt6: "التواصل عبر المكالمات الهاتفية في أي وقت.",
         limt7: "أولوية في الرد على الرسائل بأسرع وقت.",
-        limt8: "٤ ٤اجتماعات عبر زووم أو جوجل خلال فترة الاشتراك.",
+        limt8: "  اربع اجتماعات عبر زووم أو جوجل خلال فترة الاشتراك.",
         limt9: "جلستان خاصتان مع الكابتن يوسف.",
         limt10: "التحضير للبطولات (اختياري).",
 
-        transformation: "التحولات والانتصارات",
+        transformation: "نتائجك، شغفي",
 
         discountebook: "خصم يصل إلى 50% على كتابنا الإلكتروني الحصري",
-        discountebookdescription: "اكتشف وصفات سهلة ومنخفضة السعرات تساعدك على البقاء بصحة جيدة والاستمتاع بوجبات لذيذة في نفس الوقت. هذا الكتاب الإلكتروني هو رفيقك المثالي لنمط حياة صحي ورحلة إدارة الوزن. لا تفوت هذا العرض المحدود!",
+        discountebookdescription: "اكتشف وصفات سهلة ومنخفضة السعرات الحرارية تساعدك على الحفاظ على لياقتك والاستمتاع بوجبات لذيذة في نفس الوقت. مع أكثر من 50 وصفة، هذا الكتاب الإلكتروني هو رفيقك المثالي لأسلوب حياة صحي ورحلة إدارة الوزن. لا تفوت هذه العرض المحدود",
         getyourcopy: "احصل على نسختك",
 
         calc1: "احسب سعراتك الحرارية",
@@ -83,9 +90,9 @@ let lang = {
         footerbook: "الكتاب الإلكتروني",
         moretransformation: "المزيد من التحولات",
 
-        home3p3: "حقق أهداف لياقتك البدنية و",
+        home3p3: "حقق أهداف لياقتك البدنية وابدأ التحول",
 
-        home3p2: "حوّل نمط حياتك",
+        home3p2: "أسلوب حياتك",
 
         home3p1: "هذا الكتاب الإلكتروني هو دليلك النهائي لتحقيق نمط حياة أكثر صحة وحيوية. يحتوي على خطط وجبات سهلة التطبيق، وصفات منظمة، وخيارات منخفضة السعرات الحرارية، ويقدم طرقًا بسيطة وفعالة لتحقيق أهدافك البدنية. سواء كنت مبتدئًا أو ترغب في تحسين نظامك الغذائي، هذا الدليل مصمم لجعل الحياة الصحية سهلة. ابدأ رحلتك اليوم واستثمر في نفسك بشكل أفضل وأصح!",
 
@@ -140,7 +147,7 @@ let lang = {
 
         customer2: "إرسال",
 
-        customer3: "العميل 3",
+        customer3: "تم تأكيد الحجز. سيقوم المدرب بالتواصل معك قريبًا.",
 
         clientsp1: "لقد غيرت تمامًا وجهة نظري حول الأكل الصحي. كنت دائمًا أشعر أن الخيارات محدودة ومملة، لكن الآن كل شيء أصبح مختلفًا.",
 
@@ -148,7 +155,7 @@ let lang = {
 
         clientsp2: "جو، مساء الخير. بصراحة، مش عارف أقولك إيه. ماكنتش ماشي كويس الفترة اللي فاتت، لكن من بكرة، بوعدك هارجع وألتزم بكل اللي قلته لي. مش قادر أصدق إنك فعلًا عملت ده. جربت وده من أفضل الأشياء اللي شفتها.",
 
-        clientsname3: "إيه ده؟ لو كده هحب الدايت والله. لو كده مش محتاج تشيت ميل، وأحلى حاجة إن في طرق لتحديد الهدف بشكل مباشر. فعلاً حبيت الدايت.",
+        clientsp3: "إيه ده؟ لو كده هحب الدايت والله. لو كده مش محتاج تشيت ميل، وأحلى حاجة إن في طرق لتحديد الهدف بشكل مباشر. فعلاً حبيت الدايت.",
 
         clientsname2: "أحمد عادل",
 
@@ -157,7 +164,7 @@ let lang = {
         clientsp4: "الكتاب بتاع الطبخ رائع جدًا، فيه تنوع كبير، شغل مدهش. بيخليك تكتشف وصفات جديدة. كله بسيط وسهل، كمان فيه أفكار متنوعة للوجبات.",
 
         clientsname4: "لوسي سامي",
-        offerdownload: "تحميل",
+        offerdownload: "تحميل النسخة التجريبية المجانية",
         pricingspan: "اكتشف سر الحياة الصحية!",
         instapay2: "الخطوة 1",
         instapay3: "نقل الدفع إلى رقم InstaPay التالي:",
@@ -187,22 +194,158 @@ let lang = {
         faqs7: "ما النتائج التي يمكنني توقعها من العمل مع المدرب يوسف؟",
         faqs8: "من خلال العمل مع المدرب يوسف، يمكنك توقع جسم أقوى وأكثر صحة، بالإضافة إلى نظرة إيجابية للحياة. تضمن برامجه تحسينات في القوة والقدرة على التحمل واللياقة العامة، مع مساعدتك في تحقيق التحول الجسدي الذي طالما حلمت به.",
         faqs9: "هل يقدم المدرب يوسف الدعم خارج صالة الرياضة؟",
-        faqs10: "بالطبع! يقدم المدرب يوسف إرشادًا ودعمًا مستمرًا، سواء أثناء جلسات التدريب الشخصية أو عبر الإنترنت. هدفه هو بناء علاقة قوية وموثوقة مع كل عميل، مما يضمن بقائهم متحفزين وعلى المسار الصحيح داخل وخارج صالة الرياضة."
+        faqs10: "بالطبع! يقدم المدرب يوسف إرشادًا ودعمًا مستمرًا، سواء أثناء جلسات التدريب الشخصية أو عبر الإنترنت. هدفه هو بناء علاقة قوية وموثوقة مع كل عميل، مما يضمن بقائهم متحفزين وعلى المسار الصحيح داخل وخارج صالة الرياضة.",
+        formquestion1: "السؤال 1",
+        formquetionname: "اسمك",
+        formquetionage: "عمرك",
+        buynowpricing: "اشترِ الآن",
+
+        formquestion2: "السؤال 2",
+        qutionheight: "ما هو طولك؟",
+        qutionweight: "ما هو وزنك؟",
+
+        qution3: "السؤال 3",
+        qutiongender: "ما هو جنسك؟",
+        qutionmale: "ذكر",
+        qutionfemale: "أنثى",
+
+        formqution4: "السؤال 4",
+        qutionprotein: "اختر أنواع البروتين المفضلة لديك:",
+        qutionchicken: "دجاج مسلوق أو مشوي 🍗",
+        qutionbeef: "لحم بقر مسلوق أو مشوي 🥩",
+        qutionfish: "سمك (تونا - تيلابيا - سلمون - جمبري) 🍣 🍤",
+        qutioneggs: "بيض مسلوق أو عجة 🥚🍳",
+        qutionturkey: "ديك رومي مدخن 🦃",
+        qutioncottagecheese: "جبن قريش 🧀",
+        qutiongreekyogurt: "زبادي يوناني",
+
+        formqution5: "السؤال 5",
+        qutioncarbs: "اختر أنواع الكربوهيدرات المفضلة لديك:",
+        qutionoats: "شوفان",
+        qutionbrowntoast: "توست بني 🍞",
+        qutionwhiterice: "أرز أبيض 🍚",
+        qutionpotatoes: "بطاطس 🫐",
+        qutionpasta: "مكرونة",
+        qutionsweetpotatoes: "بطاطا حلوة 🍠",
+        qutionoatspasta: "مكرونة شوفان 🍝",
+        qutionbrownrice: "أرز بني",
+        qutionricecakes: "كيك الأرز",
+        qutiontortilla: "خبز تورتيلا",
+        qutionother: "أخرى",
+
+        question6: "السؤال 6",
+        questionveggies: "اختر نوع الخضار المفضل لديك",
+        question_salad: "سلطة 🥗",
+        question_cucumber: "خيار 🥒",
+        question_spinach: "سبانخ",
+        question_mushroom: "فطر 🍄",
+        question_greenbeans: "فاصوليا خضراء",
+        question_broccoli: "بروكلي 🥦",
+        question_onion: "بصل 🧅",
+        question_zucchini: "كوسة",
+        question_greenpepper: "فلفل أخضر 🫑",
+
+        question7: "السؤال 7",
+        questionnuts: "اختر نوع الدهون المفضل لديك (المكسرات):",
+        question_peanut: "فول سوداني 🥜",
+        question_peanutbutter: "زبدة الفول السوداني",
+        question_almonds: "لوز",
+        question_cashews: "كاجو",
+
+        question8: "السؤال 8",
+        questionfruits: "اختر أنواع الفواكه المفضلة لديك:",
+        question_strawberry: "فراولة 🍓",
+        question_cantaloupe: "كانتلوب 🍈",
+        question_watermelon: "بطيخ 🍉",
+        question_pineapple: "أناناس",
+        question_kiwi: "كيوي 🥝",
+        question_banana: "موز 🍌",
+        question_peach: "خوخ 🍑",
+        question_pomegranate: "رمان",
+        question_greenapple: "تفاح أخضر 🍏",
+
+        question9: "السؤال 9",
+        questionmeals: "كم وجبة تحتاج في اليوم؟",
+
+        question10: "السؤال 10",
+        questionvariation: "هل ترغب أن تكون الوجبات الثلاث في منتصف اليوم بنفس نوع البروتين والكربوهيدرات والخضار، أم تفضل التنويع؟ مع العلم أنه يمكننا تغييرها كل 10-14 يومًا خلال الفحوصات! 🥘",
+        question_yes: "نعم، أرغب في التنويع",
+        question_no: "لا، لا أرغب في التنويع",
+
+        question11: "السؤال 11",
+        questiontrainingdays: "كم يومًا في الأسبوع يمكنك التدريب؟ 🏋️‍♀️",
+        question_5or6days: "5 أو 6 (موصى به للحصول على نتائج أسرع)",
+
+        question12: "السؤال 12",
+        questionfoodscale: "هل لديك ميزان طعام؟",
+        question_yes: "نعم",
+        question_no: "لا",
+
+        question13: "السؤال 13",
+        questionweakmuscle: "ما هي أضعف مجموعة عضلية لديك؟",
+        question_chest: "صدر",
+        question_back: "ظهر",
+        question_shoulders: "أكتاف",
+        question_arms: "ذراعين",
+        question_legs: "أرجل",
+
+        question14: "السؤال 14",
+        questiongymlevel: "ما هو مستواك في الجيم؟",
+        question_beginner: "مبتدئ",
+        question_moderate: "متوسط",
+        question_advanced: "متقدم",
+
+        question15: "السؤال 15",
+        questionallergy: "هل لديك أي حساسية من بعض الأطعمة؟",
+        question_yes2: "نعم، لدي حساسية",
+        question_no2: "لا، أنا بخير",
+
+        qution16: "السؤال 16",
+        qutionothersports: "هل تمارس رياضات أخرى؟",
+        qutionyes: "نعم",
+        qutionno: "لا",
+
+        question17: "السؤال 17",
+        questioninjuries: "هل لديك أي إصابات حالية أو أمراض مزمنة؟",
+
+        question18: "السؤال 18",
+        questionroutine: "كيف هي روتينك اليومي؟ ما الوقت الذي تستيقظ فيه، وتنام فيه، وما هي ساعات عملك؟",
+
+        question19: "السؤال 19",
+        questionsupplements: "هل لديك أي مكملات غذائية؟ 💊",
+        buttonformstart: "ابدأ",
+        qutionothersports: "ألعاب رياضية أخرى",
+        westirnsendpayments: "أرسل الدفع إلى حساب Western Union التالي:",
+        bankmisrsend: " قم بتحويل الدفع إلى حساب بنك مصر التالي",
 
 
     },
     en: {
-        nav1: "home",
-        nav2: "about",
+        nav1: "Home",
+        nav2: "About Us",
         nav3: "Clients",
-        nav4: "E-Book",
-        nav5: "Calculater",
-        nav6: "Pricing",
-        nav7: "Trans",
-
+        nav4: "Cooking E-book",
+        nav5: "Calorie calculator",
+        nav6: "Packages",
+        nav7: "Transformations",
         nav8: "Faqs",
-        home1: "Your results  My passion",
+        Subscr: "Subscribe Now",
+        transbuttongg: "Transformations",
+        ecxprp: "Experience",
+        wtapertr: "Transformations",
+        wraperclients: "Clients",
+
+
+        home1: "DISCOUNT UP TO 50%",
+        transformation: "Your results, my passion.",
+        discountebookdescription: "Discover easy, low-calorie recipes that help you stay fit and enjoy delicious meals at the same time. With over 50 recipes included, this e-book is your perfect companion for a healthy lifestyle and weight management journey. Don’t miss this limited-time offer",
+        offerdownload: "Download The Free Trial",
+        youssefyanni: "Youssef Yanni",
+        home3p3: "Achieve Your Fitness Goals & Transform",
+        home3p2: " Your Lifestyle",
+
         homebutton: "Get Start",
+        bankmisrsend: "Transfer the payment to the following Bank Misr account:",
 
         steps: "Steps of manufacturing our products",
         step1: "Step 1: Choose a Package. Browse through our available packages and click 'Subscribe Now' to get started.",
@@ -222,7 +365,7 @@ let lang = {
         about1description: "Meet Youssef, an experienced online fitness coach and certified nutritionist. With a passion for helping clients achieve their health goals, Youssef combines personalized training and expert guidance to transform lives.",
         learnmore: "Learn More",
 
-        packages: "CHOOSE THE PACKAGE",
+        packages: "Exclusive Now",
         ignitepackage: "Ignite Package",
         packagebutton: "SUBSCRIBE NOW",
         per3month: "PER / 3 MONTHS",
@@ -254,10 +397,9 @@ let lang = {
         limt9: "2 One-to-one private sessions with Captain Youssef.",
         limt10: "Preparations for tournaments (Optional).",
 
-        transformation: "Transformations & Triumphs",
+
 
         discountebook: " Up To 50% Off On Our Exclusive E-Book",
-        discountebookdescription: "Discover easy, low-calorie recipes that help you stay fit and enjoy delicious meals at the same time. This e-book is your perfect companion for a healthy lifestyle and weight management journey. Don’t miss this limited-time offer!",
         getyourcopy: "Get Your Copy",
 
         calc1: "Calculate Your Calories ",
@@ -275,8 +417,7 @@ let lang = {
         footerbook: "E-Book",
         moretransformation: "More Transformations",
 
-        home3p3: "Achieve Your Fitness Goals &",
-        home3p2: "Transform Your Lifestyle",
+
         home3p1: "This e-book is your ultimate guide to achieving a healthier and more active lifestyle. Packed with easy-to-follow meal plans, organized recipes, and low-calorie options, it offers simple and effective ways to meet your fitness goals. Whether you're just starting or looking to refine your diet, this guide is designed to make healthy living effortless.Start your journey today and invest in a better, healthier you!",
         blog1: "Discover Delicious Recipes from Our E-Book",
         blog2: "Fluffy Pancakes",
@@ -291,9 +432,9 @@ let lang = {
         offerp: "Take advantage of this opportunity to get the book with the best healthy and easy recipes. Offer valid for a limited time only!",
         offerp2: "                        Available Now: You can download a free version to explore the quality and simplicity of the recipes.",
         offerbuttonbut: "Buy Now",
-        offerdownload: "Down Load",
 
-        pricingselect: "Select Your Boost",
+
+        pricingselect: "Book now to catch the offer",
         pricinghealthriciper: "Healthy Recipe Book",
         pricingavailable: "Available Now",
         pricingover1: "Over 50 quick and healthy recipes that you'll never get bored of.",
@@ -310,13 +451,13 @@ let lang = {
         clientsp1: "You completely changed my perspective on healthy eating. I always felt like the options were limited and boring, but now everything feels so different",
         clientsname1: "simone Abdo",
         clientsp2: " Joe,good evening.Honestly,I don’ t even know what to say.I haven’ t been doing great lately,but starting tomorrow,I promise toget back on track and stick to everything you told me.I can’ t believe you actually did this.I’ m trying it out,and honestly,this is one of the best things I’ ve ever seen ",
-        clientsname3: "What’s this? If it’s like this, I’ll love the diet, honestly. If it’s like this, I don’t even need a cheat meal. And the best part is that there are ways to set goals directly. I really liked the diet.",
+        clientsp3: "What’s this? If it’s like this, I’ll love the diet, honestly. If it’s like this, I don’t even need a cheat meal. And the best part is that there are ways to set goals directly. I really liked the diet.",
         clientsname2: "Ahmed Adel",
         clientsname3: "Mahmoud Sherif",
         clientsp4: "The cooking book is really great, it has a lot of variety, truly amazing work. It really makes you discover new recipes. Everything is simple and easy, plus it has a variety of meal ideas",
         clientsname4: "lucie samy",
 
-        offerdownload: "Download",
+
         pricingspan: "Discover the Secret to Healthy Living!",
         offerbuttonbut: "Buy Now",
 
@@ -352,10 +493,159 @@ let lang = {
         faqs8: "By working with Coach Youssef, you can expect a stronger, healthier body and a more positive outlook on life. His programs ensure improvements in strength, endurance, and overall fitness while helping you achieve the body transformation you’ve been dreaming of.",
         faqs9: "Does Coach Youssef offer support outside the gym?",
         faqs10: "Absolutely! Coach Youssef provides continuous guidance and support, whether during in-person training sessions or online. His goal is to build a strong, trusting relationship with each client, ensuring they stay motivated and on track both inside and outside the gym.",
-        faqs3: "",
-        faqs3: "",
-        faqs3: "",
-        faqs3: "",
+
+
+        formquestion1: "Question 1",
+        formquetionname: "Your Name",
+        formquetionage: "Your Age",
+
+        formquestion2: "Question 2",
+        qutionheight: "Your Height?",
+        qutionweight: "Your Weight?",
+
+        qution3: "Question 3",
+        qutiongender: "What is your gender?",
+        qutionmale: "Male",
+        qutionfemale: "Female",
+
+        formqution4: "Question 4",
+        qutionothersports: "Another Sports",
+        qutionprotein: "Choose your favorite protein types:",
+        qutionchicken: "Chicken 🐓",
+        qutionbeef: " Beef 🥩",
+        qutionfish: " Fish (Tuna - Tilapia - Salmon - Shrimp) 🍣 🍤",
+        qutioneggs: "⁠Eggs 🥚",
+        qutionturkey: "Smoked turkey 🦃",
+        qutioncottagecheese: "Cottage cheese 🧀",
+        qutiongreekyogurt: " Greek yogurt",
+
+
+        formqution5: "Question 5",
+        qutioncarbs: "Choose your favorite carbohydrate types:",
+        qutionoats: "Oats",
+        qutionbrowntoast: "Brown toast bread 🍞",
+        qutionwhiterice: " White rice 🍚",
+        qutionpotatoes: "Potatoes 🫐",
+        qutionpasta: "Pasta 🍝",
+        qutionsweetpotatoes: " Sweet potatoes 🍠",
+        qutionoatspasta: "Oats pasta 🍝",
+        qutionbrownrice: "Brown rice",
+        qutionricecakes: " Rice cakes",
+        qutiontortilla: "  Tortilla bread",
+        qutionother: "  Other",
+
+        question6: "Question 6",
+        questionveggies: " Choose your favorite vegetable type",
+        question_salad: "Salad 🥗",
+        question_cucumber: "Cucumber 🥒",
+        question_spinach: "Spinach",
+        question_mushroom: " Mushroom 🍄",
+        question_greenbeans: " Green beans",
+        question_broccoli: "  Broccoli 🥦",
+        question_onion: "    Onion 🧅",
+        question_zucchini: "  Zucchini",
+        question_greenpepper: "   Green pepper 🫑",
+
+        question7: "Question 7",
+        questionnuts: " Choose your favorite type of Fats (Nuts):",
+        question_peanut: "Peanut butter 🧈🥜",
+        question_peanutbutter: "Peanut butter",
+        question_almonds: "Almonds",
+        question_cashews: "  Cashews",
+
+        question8: "Question 8",
+        questionfruits: "Choose your favorite types of fruits:",
+        question_strawberry: "Strawberry 🍓",
+        question_cantaloupe: " Cantaloupe 🍈",
+        question_watermelon: " Watermelon 🍉",
+        question_pineapple: "  Pineapple",
+        question_kiwi: "   Kiwi 🥝",
+        question_banana: " Banana 🍌",
+        question_peach: "Peach 🍑",
+        question_pomegranate: " Pomegranate",
+        question_greenapple: "  Green apple 🍏",
+
+        question9: "Question 9",
+        questionmeals: "How many meals do you need in a day?",
+
+        question10: "Question 10",
+        questionvariation: " Do you want the 3 meals in the middle of your day to have the same type of protein, carbs, and vegetables, or would you prefer to vary them? Keep in mind that we can change them every 10-14 days during your Check-ins! 🥘",
+        question_yes: "  Yes, I want to vary them",
+        question_no: " No, I don't want to vary them",
+
+        question11: "Question 11",
+        questiontrainingdays: " How many days a week can you train? 🏋️‍♀️",
+        question_5or6days: " 5 or 6 (recommended for faster results)",
+
+        question12: "Question 12",
+        questionfoodscale: "Do you have a food scale?",
+        question_yes: "  Yes",
+        question_no: " No",
+
+        question13: "Question 13",
+        questionweakmuscle: "What is your weakest muscle group?",
+        question_chest: "Chest",
+        question_back: "  Back",
+        question_shoulders: "Shoulders",
+        question_arms: "  Arms",
+        question_legs: "  Legs",
+
+
+        question14: "Question 14",
+        questiongymlevel: " What is your level at the gym?",
+        question_beginner: " Beginner",
+        question_moderate: " Moderate",
+        question_advanced: " Advanced",
+
+        question15: "Question 15",
+        questionallergy: "Do you have any allergies to certain foods?",
+        question_yes2: "Yes, I have allergies",
+        question_no2: "No, I'm fine",
+
+        qution16: "Question 16",
+        qutionothersports: "Do you play other sports?",
+        qutionyes: "Yes",
+        qutionno: "No",
+
+        question17: "Question 17",
+        questioninjuries: "Do you have any current injuries or chronic diseases?",
+
+        question18: "Question 18",
+        questionroutine: " What is your daily routine like? What time do you wake up, go to sleep, and what are your work hours?",
+
+        question19: "Question 19",
+        questionsupplements: " Do you have any dietary supplements? 💊",
+        buttonformstart: "Get Start",
+
+        buynowpricing: "Buy Now",
+        nav10: "download",
+
+        westirnsendpayments: "Send payment to the following Western Union account:",
+        vodafon7: "Send the screenshot to our WhatsApp number:",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+        formqution5: "",
+
 
     }
 };
@@ -369,6 +659,12 @@ updateLanguage();
 
 function updateLanguage() {
     let language = selector.value; // اللغة المختارة
+    let selectedOption = selector.options[selector.selectedIndex];
+    let flagUrl = selectedOption.getAttribute('data-flag'); // رابط العلم
+
+    // تحديث صورة العلم في خلفية <select>
+    selector.style.backgroundImage = `url(${flagUrl})`;
+
     let nodes = document.querySelectorAll('[data-lang]');
 
     // تحديث نصوص العناصر باستخدام اللغة المناسبة
@@ -392,24 +688,16 @@ function updateLanguage() {
     document.body.style.direction = language === 'ar' ? 'ltr' : 'ltr';
     document.body.style.textAlign = language === 'ar' ? 'right' : 'left';
 
-    // التأكد من أن قسم "tranding" يظل بخصوصيته
-    let trandingSection = document.getElementById('new');
-    if (trandingSection) {
-        trandingSection.style.direction = 'ltr';
-        trandingSection.style.textAlign = 'left';
-    }
+    // أقسام ذات اتجاه معين تبقى كما هي
+    let sections = ['new', 'travel', 'clients', 'discount'];
+    sections.forEach(id => {
+        let section = document.getElementById(id);
+        if (section) {
+            section.style.direction = 'ltr';
+            section.style.textAlign = 'left';
+        }
+    });
 
-    let projectsSection = document.getElementById('travel');
-    if (projectsSection) {
-        projectsSection.style.direction = 'ltr';
-        projectsSection.style.textAlign = 'left';
-    }
-
-    let clientsSection = document.getElementById('clients');
-    if (clientsSection) {
-        clientsSection.style.direction = 'ltr';
-        clientsSection.style.textAlign = 'left';
-    }
     let stepsSection = document.querySelector('.steps');
     if (stepsSection) {
         stepsSection.style.direction = 'ltr';
@@ -427,10 +715,4 @@ function updateLanguage() {
         testimonialSection.style.direction = 'ltr';
         testimonialSection.style.textAlign = 'left';
     }
-    let discountSection = document.getElementById('discount');
-    if (discountSection) {
-        discountSection.style.direction = 'ltr';
-        discountSection.style.textAlign = 'left';
-    }
-
 }

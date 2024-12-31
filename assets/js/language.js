@@ -3,14 +3,21 @@ let lang = {
         nav1: "الرئيسية",
         nav2: "من نحن",
         nav3: "العملاء",
-        nav4: "الكتاب الإلكتروني",
+        nav4: "كتاب الوصفات",
         nav5: "حاسبة السعرات",
         nav6: "التسعير",
         nav7: "التحويلات",
         nav8: "الأسئلة ",
         nav10: "تحميل",
-        home1: "نتائجك، شغفي",
+        home1: "خصم يصل إلى 50%",
         homebutton: "ابدأ الآن",
+
+        Subscr: "اشترك الآن",
+        transbuttongg: "التحولات",
+        ecxprp: "التجربة",
+        wtapertr: "التحولات",
+        wraperclients: "العملاء",
+        youssefyanni: "يوسف يني",
 
         steps: "خطوات تصنيع منتجاتنا",
         step1: "الخطوة 1: اختر الباقة. تصفح الباقات المتاحة واضغط على 'اشترك الآن' للبدء.",
@@ -62,10 +69,10 @@ let lang = {
         limt9: "جلستان خاصتان مع الكابتن يوسف.",
         limt10: "التحضير للبطولات (اختياري).",
 
-        transformation: "التحولات والانتصارات",
+        transformation: "نتائجك، شغفي",
 
         discountebook: "خصم يصل إلى 50% على كتابنا الإلكتروني الحصري",
-        discountebookdescription: "اكتشف وصفات سهلة ومنخفضة السعرات تساعدك على البقاء بصحة جيدة والاستمتاع بوجبات لذيذة في نفس الوقت. هذا الكتاب الإلكتروني هو رفيقك المثالي لنمط حياة صحي ورحلة إدارة الوزن. لا تفوت هذا العرض المحدود!",
+        discountebookdescription: "اكتشف وصفات سهلة ومنخفضة السعرات الحرارية تساعدك على الحفاظ على لياقتك والاستمتاع بوجبات لذيذة في نفس الوقت. مع أكثر من 50 وصفة، هذا الكتاب الإلكتروني هو رفيقك المثالي لأسلوب حياة صحي ورحلة إدارة الوزن. لا تفوت هذه العرض المحدود",
         getyourcopy: "احصل على نسختك",
 
         calc1: "احسب سعراتك الحرارية",
@@ -83,9 +90,9 @@ let lang = {
         footerbook: "الكتاب الإلكتروني",
         moretransformation: "المزيد من التحولات",
 
-        home3p3: "حقق أهداف لياقتك البدنية و",
+        home3p3: "حقق أهداف لياقتك البدنية وابدأ التحول",
 
-        home3p2: "حوّل نمط حياتك",
+        home3p2: "أسلوب حياتك",
 
         home3p1: "هذا الكتاب الإلكتروني هو دليلك النهائي لتحقيق نمط حياة أكثر صحة وحيوية. يحتوي على خطط وجبات سهلة التطبيق، وصفات منظمة، وخيارات منخفضة السعرات الحرارية، ويقدم طرقًا بسيطة وفعالة لتحقيق أهدافك البدنية. سواء كنت مبتدئًا أو ترغب في تحسين نظامك الغذائي، هذا الدليل مصمم لجعل الحياة الصحية سهلة. ابدأ رحلتك اليوم واستثمر في نفسك بشكل أفضل وأصح!",
 
@@ -157,7 +164,7 @@ let lang = {
         clientsp4: "الكتاب بتاع الطبخ رائع جدًا، فيه تنوع كبير، شغل مدهش. بيخليك تكتشف وصفات جديدة. كله بسيط وسهل، كمان فيه أفكار متنوعة للوجبات.",
 
         clientsname4: "لوسي سامي",
-        offerdownload: "تحميل",
+        offerdownload: "تحميل النسخة التجريبية المجانية",
         pricingspan: "اكتشف سر الحياة الصحية!",
         instapay2: "الخطوة 1",
         instapay3: "نقل الدفع إلى رقم InstaPay التالي:",
@@ -306,8 +313,10 @@ let lang = {
 
         question19: "السؤال 19",
         questionsupplements: "هل لديك أي مكملات غذائية؟ 💊",
-        buttonformstart: "ابدأ"
-
+        buttonformstart: "ابدأ",
+        qutionothersports: "ألعاب رياضية أخرى",
+        westirnsendpayments: "أرسل الدفع إلى حساب Western Union التالي:",
+        bankmisrsend: " قم بتحويل الدفع إلى حساب بنك مصر التالي",
 
 
     },
@@ -320,12 +329,23 @@ let lang = {
         nav6: "Packages",
         nav7: "Transformations",
         nav8: "Faqs",
+        Subscr: "Subscribe Now",
+        transbuttongg: "Transformations",
+        ecxprp: "Experience",
+        wtapertr: "Transformations",
+        wraperclients: "Clients",
 
-        home1: "   DISCOUNT UP TO 50%",
+
+        home1: "DISCOUNT UP TO 50%",
         transformation: "Your results, my passion.",
         discountebookdescription: "Discover easy, low-calorie recipes that help you stay fit and enjoy delicious meals at the same time. With over 50 recipes included, this e-book is your perfect companion for a healthy lifestyle and weight management journey. Don’t miss this limited-time offer",
+        offerdownload: "Download The Free Trial",
+        youssefyanni: "Youssef Yanni",
+        home3p3: "Achieve Your Fitness Goals & Transform",
+        home3p2: " Your Lifestyle",
 
         homebutton: "Get Start",
+        bankmisrsend: "Transfer the payment to the following Bank Misr account:",
 
         steps: "Steps of manufacturing our products",
         step1: "Step 1: Choose a Package. Browse through our available packages and click 'Subscribe Now' to get started.",
@@ -345,7 +365,7 @@ let lang = {
         about1description: "Meet Youssef, an experienced online fitness coach and certified nutritionist. With a passion for helping clients achieve their health goals, Youssef combines personalized training and expert guidance to transform lives.",
         learnmore: "Learn More",
 
-        packages: "Select Your Boost",
+        packages: "Exclusive Now",
         ignitepackage: "Ignite Package",
         packagebutton: "SUBSCRIBE NOW",
         per3month: "PER / 3 MONTHS",
@@ -397,8 +417,7 @@ let lang = {
         footerbook: "E-Book",
         moretransformation: "More Transformations",
 
-        home3p3: "Achieve Your Fitness Goals &",
-        home3p2: "Transform Your Lifestyle",
+
         home3p1: "This e-book is your ultimate guide to achieving a healthier and more active lifestyle. Packed with easy-to-follow meal plans, organized recipes, and low-calorie options, it offers simple and effective ways to meet your fitness goals. Whether you're just starting or looking to refine your diet, this guide is designed to make healthy living effortless.Start your journey today and invest in a better, healthier you!",
         blog1: "Discover Delicious Recipes from Our E-Book",
         blog2: "Fluffy Pancakes",
@@ -413,7 +432,7 @@ let lang = {
         offerp: "Take advantage of this opportunity to get the book with the best healthy and easy recipes. Offer valid for a limited time only!",
         offerp2: "                        Available Now: You can download a free version to explore the quality and simplicity of the recipes.",
         offerbuttonbut: "Buy Now",
-        offerdownload: "Down Load",
+
 
         pricingselect: "Book now to catch the offer",
         pricinghealthriciper: "Healthy Recipe Book",
@@ -438,7 +457,7 @@ let lang = {
         clientsp4: "The cooking book is really great, it has a lot of variety, truly amazing work. It really makes you discover new recipes. Everything is simple and easy, plus it has a variety of meal ideas",
         clientsname4: "lucie samy",
 
-        offerdownload: "Download",
+
         pricingspan: "Discover the Secret to Healthy Living!",
         offerbuttonbut: "Buy Now",
 
@@ -490,11 +509,12 @@ let lang = {
         qutionfemale: "Female",
 
         formqution4: "Question 4",
+        qutionothersports: "Another Sports",
         qutionprotein: "Choose your favorite protein types:",
-        qutionchicken: "Boiled or grilled chicken 🍗",
-        qutionbeef: " Boiled or grilled beef 🥩",
+        qutionchicken: "Chicken 🐓",
+        qutionbeef: " Beef 🥩",
         qutionfish: " Fish (Tuna - Tilapia - Salmon - Shrimp) 🍣 🍤",
-        qutioneggs: "Boiled or omelet eggs 🥚🍳",
+        qutioneggs: "⁠Eggs 🥚",
         qutionturkey: "Smoked turkey 🦃",
         qutioncottagecheese: "Cottage cheese 🧀",
         qutiongreekyogurt: " Greek yogurt",
@@ -506,7 +526,7 @@ let lang = {
         qutionbrowntoast: "Brown toast bread 🍞",
         qutionwhiterice: " White rice 🍚",
         qutionpotatoes: "Potatoes 🫐",
-        qutionpasta: "Pasta",
+        qutionpasta: "Pasta 🍝",
         qutionsweetpotatoes: " Sweet potatoes 🍠",
         qutionoatspasta: "Oats pasta 🍝",
         qutionbrownrice: "Brown rice",
@@ -528,7 +548,7 @@ let lang = {
 
         question7: "Question 7",
         questionnuts: " Choose your favorite type of Fats (Nuts):",
-        question_peanut: "  Peanut 🥜",
+        question_peanut: "Peanut butter 🧈🥜",
         question_peanutbutter: "Peanut butter",
         question_almonds: "Almonds",
         question_cashews: "  Cashews",
@@ -600,8 +620,8 @@ let lang = {
         buynowpricing: "Buy Now",
         nav10: "download",
 
-        formqution5: "",
-        formqution5: "",
+        westirnsendpayments: "Send payment to the following Western Union account:",
+        vodafon7: "Send the screenshot to our WhatsApp number:",
         formqution5: "",
         formqution5: "",
         formqution5: "",
