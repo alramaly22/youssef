@@ -1,15 +1,38 @@
-/*=============== EXPANDED LIST ===============*/
-const navExpand = document.getElementById('nav-expand'),
-    navExpandList = document.getElementById('nav-expand-list'),
-    navExpandIcon = document.getElementById('nav-expand-icon')
+// الحصول على العناصر من الصفحة
+const navMenu = document.getElementById('nav-menu');
+const navToggle = document.getElementById('nav-toggle');
 
-navExpand.addEventListener('click', () => {
-    // Expand list
-    navExpandList.classList.toggle('show-list')
+/*===== TOGGLE MENU =====*/
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        // تبديل حالة إظهار القائمة
+        navMenu.classList.toggle('show-menu');
+    });
+}
 
-    // Rotate icon
-    navExpandIcon.classList.toggle('rotate-icon')
-})
+/*===== REMOVE MENU WHEN CLICKING A LINK =====*/
+const navLink = document.querySelectorAll('.nav__link');
+navLink.forEach(link => {
+    link.addEventListener('click', () => {
+        // إزالة الكلاس show-menu عند النقر على أي رابط داخل القائمة
+        navMenu.classList.remove('show-menu');
+    });
+});
+
+/*=============== CHANGE BACKGROUND HEADER ===============*/
+const scrollHeader = () => {
+    const header = document.getElementById('header')
+        // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
+    this.scrollY >= 50 ? header.classList.add('scroll-header') :
+        header.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader)
+
+
+
+
+/*=============== REMOVE MENU MOBILE ===============*/
+
 
 const swipeHome2 = new Swiper('.home__swiper', {
     loop: true,
@@ -38,14 +61,7 @@ const swipeHome2 = new Swiper('.home__swiper', {
         clickable: true,
     },
 });
-/*=============== CHANGE BACKGROUND HEADER ===============*/
-const scrollHeader = () => {
-    const header = document.getElementById('header')
-        // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-    this.scrollY >= 50 ? header.classList.add('scroll-header') :
-        header.classList.remove('scroll-header')
-}
-window.addEventListener('scroll', scrollHeader)
+
 
 
 var swiper = new Swiper(".mySwiper", {

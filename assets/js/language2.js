@@ -201,7 +201,7 @@ let lang = {
         nav7: "Trans",
 
         nav8: "Faqs",
-        home1: "Your results , My passion",
+        home1: "Your results  My passion",
         homebutton: "Get Start",
 
         steps: "Steps of manufacturing our products",

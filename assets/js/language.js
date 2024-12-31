@@ -312,16 +312,19 @@ let lang = {
 
     },
     en: {
-        nav1: "home",
-        nav2: "about",
+        nav1: "Home",
+        nav2: "About Us",
         nav3: "Clients",
-        nav4: "E-Book",
-        nav5: "Calculater",
-        nav6: "Pricing",
-        nav7: "Trans",
+        nav4: "Cooking E-book",
+        nav5: "Calorie calculator",
+        nav6: "Packages",
+        nav7: "Transformations",
         nav8: "Faqs",
 
-        home1: "Your results , My passion",
+        home1: "   DISCOUNT UP TO 50%",
+        transformation: "Your results, my passion.",
+        discountebookdescription: "Discover easy, low-calorie recipes that help you stay fit and enjoy delicious meals at the same time. With over 50 recipes included, this e-book is your perfect companion for a healthy lifestyle and weight management journey. Don’t miss this limited-time offer",
+
         homebutton: "Get Start",
 
         steps: "Steps of manufacturing our products",
@@ -342,7 +345,7 @@ let lang = {
         about1description: "Meet Youssef, an experienced online fitness coach and certified nutritionist. With a passion for helping clients achieve their health goals, Youssef combines personalized training and expert guidance to transform lives.",
         learnmore: "Learn More",
 
-        packages: "CHOOSE THE PACKAGE",
+        packages: "Select Your Boost",
         ignitepackage: "Ignite Package",
         packagebutton: "SUBSCRIBE NOW",
         per3month: "PER / 3 MONTHS",
@@ -374,10 +377,9 @@ let lang = {
         limt9: "2 One-to-one private sessions with Captain Youssef.",
         limt10: "Preparations for tournaments (Optional).",
 
-        transformation: "Transformations & Triumphs",
+
 
         discountebook: " Up To 50% Off On Our Exclusive E-Book",
-        discountebookdescription: "Discover easy, low-calorie recipes that help you stay fit and enjoy delicious meals at the same time. This e-book is your perfect companion for a healthy lifestyle and weight management journey. Don’t miss this limited-time offer!",
         getyourcopy: "Get Your Copy",
 
         calc1: "Calculate Your Calories ",
@@ -413,7 +415,7 @@ let lang = {
         offerbuttonbut: "Buy Now",
         offerdownload: "Down Load",
 
-        pricingselect: "Select Your Boost",
+        pricingselect: "Book now to catch the offer",
         pricinghealthriciper: "Healthy Recipe Book",
         pricingavailable: "Available Now",
         pricingover1: "Over 50 quick and healthy recipes that you'll never get bored of.",
