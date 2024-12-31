@@ -85,7 +85,32 @@
         <div class="circle"></div>
     </div>
     <!--=============== NAVBAR ===============-->
+    <!--==================== HEADER ====================-->
     <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Youssef Yanni</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link" data-lang="nav1">Home</a></li>
+                    <li><a href="#pricing" class="nav__link" data-lang="nav6">Packages</a></li>
+                    <li><a href="#new" class="nav__link" data-lang="nav7">Transformations</a></li>
+                    <li><a href="#discount" class="nav__link cookingnav" data-lang="nav4">Cooking E-book</a></li>
+                    <li><a href="#about" class="nav__link" data-lang="nav2">About Us</a></li>
+                    <li><a href="calc.html" class="nav__link calcnav" data-lang="nav5">Calorie calculator</a></li>
+                    <li><select name="language" id="language-selector">
+                        <option value="en" data-flag="https://flagcdn.com/w40/us.png" selected>En</option>
+                        <option value="ar" data-flag="https://flagcdn.com/w40/sa.png">Ar</option>
+                    </select></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-apps-2-line"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- <header class="header" id="header">
         <div class="navtotal container">
             <a href="index.html" class="nav__logo"><img src="assets/img/logo2.png" alt=""></a>
 
@@ -105,7 +130,6 @@
                         </a>
                     </li>
 
-                    <!-- Expand list -->
                     <li>
                         <button class="nav__expand" id="nav-expand">
           <i class="ri-add-line nav__expand-icon" id="nav-expand-icon"></i>
@@ -169,15 +193,13 @@
 
             </div>
         </div>
-    </header>
+    </header> -->
     <!--==================== MAIN ====================-->
     <main class="main">
         <!--==================== HOME ====================-->
         <section class="home" id="home" data-aos="fade-right">
             <div class="video-container">
-                <video class="home__video" autoplay muted loop>
-                        <source src="assets/video/v3.mp4" type="video/mp4" >
-                    </video>
+
                 <div class="video-overlay"></div>
             </div>
             <div class="home__img">
@@ -185,16 +207,21 @@
             </div>
             <div class="home__container container grid">
                 <div class="home__data">
-                    <h1 class="home__title">
-                        <p data-lang="home1">Your results , My passion</p>
-                        <!-- <p data-lang="home2">body with Wassim</p> -->
+                    <h1 class="home__title" data-lang="home1">
+
+                        DISCOUNT up to 50%
+
                     </h1>
                     <!-- <p data-lang="home3" class="home__description">
                             Welcome to Wassim, your ultimate destination for fitness guidance and inspiration.
                         </p> -->
-                    <a data-lang="button" href="#pricing" class="button button--flex">
+                    <!-- <a data-lang="button" href="#pricing" class="button button--flex">
                         <span data-lang="homebutton">Get Start</span> <i class="ri-arrow-right-circle-fill"></i>
-                    </a>
+                    </a> -->
+                    <div class="home__buttons">
+                        <a href="#pricing" class="button">Subscribe Now</a>
+                        <a href="#new " class="button__ghost button">Transformations</a>
+                    </div>
                 </div>
 
                 <div class="home__social">
@@ -218,7 +245,25 @@
             </div>
         </section>
         <!--==================== STEPS ====================-->
-        <section class="steps" id="steps" data-aos="fade-right">
+        <div class="wrapper" data-aos="fade-right">
+            <div class="containere">
+                <i class="fa-brands fa-tiktok"><a href="https://www.facebook.com/"></a></i>
+                <span class="num" data-val="10" data-unit="y">+0</span>
+                <span class="text">Experience</span>
+            </div>
+            <div class="containere">
+                <i class="fab fa-facebook-f"></i>
+                <span class="num" data-val="300">+0</span>
+                <span class="text">Transformations</span>
+            </div>
+            <div class="containere">
+                <i class="fab fa-instagram"></i>
+                <span class="num" data-val="1000">+0</span>
+                <span class="text">Clients</span>
+            </div>
+        </div>
+
+        <!-- <section class="steps" id="steps" data-aos="fade-right">
             <div class="steps__bg section">
                 <h2 class="section__title" data-lang="steps">
                     Steps of manufacturing our products
@@ -265,14 +310,15 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--==================== ABOUT ====================-->
         <section class="about section" id="about" data-aos="fade-right">
             <div class="about__container container grid">
                 <div class="about__data">
                     <h2 class="section__title creative-title">
-                        <p data-lang="about1"> About</p> <br>
-                        <span class="highlight">
+                        <p data-lang="about1"> About</p>
+                        <p>Yousse Yanni</p>
+                        <!-- <span class="highlight">
                     <span class="char" data-lang="c">C</span>
                         <span class="char" data-lang="dot">.</span>
                         <span class="char" data-lang="y">Y</span>
@@ -282,7 +328,7 @@
                         <span class="char" data-lang="ss">s</span>
                         <span class="char" data-lang="e">e</span>
                         <span class="char" data-lang="f">f</span>
-                        </span>
+                        </span> -->
 
                     </h2>
 
@@ -304,8 +350,8 @@
 
         <!--==================== Transformation ====================-->
         <section class="new section" id="new" data-aos="fade-right">
-            <h2 class="section__title" data-lang="transformation">
-                Transformations & Triumphs
+            <h2 style="color: black;" class="section__title" data-lang="transformation">
+                Your results, my passion.
             </h2>
             <div class="new__container container">
                 <div class="new__swiper swiper" id="swiper1">
@@ -446,81 +492,14 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-        <!--==================== CONTACT ====================-->
-        <section class="discount section" id="discount" data-aos="fade-right">
-            <div class="discount__container container grid">
-                <div class="discount__data">
-                    <h2 class="discount__title section__title" data-lang="discountebook">
-                        Up To 50% Off On Our Exclusive E-Book!
-                    </h2>
-                    <p class="discount__description" data-lang="discountebookdescription">
-                        Discover easy, low-calorie recipes that help you stay fit and enjoy delicious meals at the same time. This e-book is your perfect companion for a healthy lifestyle and weight management journey. Don’t miss this limited-time offer!
-                    </p>
-                    <a href="book.html" class="button"><span data-lang="getyourcopy">Get Your Copy</span> <i class="ri-shopping-cart-fill"></i></a>
-                </div>
-                <div class="discout__images">
-                    <img src="assets/img/book2.jpeg" alt="E-Book Cover" class="discount__img-1">
-                    <img src="assets/img/bbokkk1.jpeg" alt="Healthy Recipes" class="discount__img-2">
-                </div>
-            </div>
-        </section>
 
-        <!--==================== CONTACT ====================-->
-        <section class="care section" id="care" data-aos="fade-right">
-            <h2 class="section__title">
-                <span data-lang="calc1">Calculate Your Calories </span><br><span data-lang="alc2"> Easily & Effectively!</span>
-            </h2>
-            <div class="care__container container grid">
-                <!-- Video -->
-                <div class="care__video-container">
-                    <video id="careVideo" class="care__video" autoplay muted loop>
-                        <source src="assets/video/calc.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <!-- Video Control Button -->
-                    <button id="videoControl" class="care__button">
-                        <i class="ri-play-fill"></i>
-                    </button>
-                </div>
-                <!-- Benefits List -->
-                <ul class="care__list">
-                    <li class="care__item">
-                        <i class="ri-checkbox-circle-fill"></i>
-                        <p data-lang="calc3">
-                            Discover the perfect calorie intake for your body to reach your goals.
-                        </p>
-                    </li>
-                    <li class="care__item">
-                        <i class="ri-checkbox-circle-fill"></i>
-                        <p data-lang="calc4">
-                            Plan your meals efficiently based on your weight, height, and activity level.
-                        </p>
-                    </li>
-                    <li class="care__item">
-                        <i class="ri-checkbox-circle-fill"></i>
-                        <p data-lang="calc5">
-                            Achieve your fitness objectives, whether it’s weight loss, maintenance, or gain.
-                        </p>
-                    </li>
-                    <li class="care__item">
-                        <i class="ri-checkbox-circle-fill"></i>
-                        <p data-lang="calc6">
-                            Sign up now with your name and WhatsApp number to use our free calorie calculator!
-                        </p>
-                    </li>
-                    <a href="calc.html" class="button"><span data-lang="trynow">Try Now </span><i class="ri-calculator-fill"></i></a>
-
-                </ul>
-            </div>
-
-        </section>
         <!--==================== PRICING ====================-->
-        <section class="packages section" id="pricing" data-aos="fade-right">
+        <section class="packages section" id="pricing">
             <h1 class="section__title" data-lang="packages">CHOOSE THE PACKAGE</h1>
             <!-- <p>I will help you reach the best version of yourself</p> -->
             <div class="package-container">
                 <!-- Package Basic -->
-                <div class="package silver">
+                <div class="package silver" data-aos="fade-right">
                     <h2 data-lang="ignitepackage">Ignite Package</h2>
                     <p class="price"><del>EGP 2,500</del> <span>EGP 1,499</span></p>
                     <a href="card.html" class="animationbutttonpricieng" data-lang="packagebutton">SUBSCRIBE NOW</a>
@@ -536,7 +515,7 @@
                 </div>
 
                 <!-- Package 1 Premium -->
-                <div class="package gold" style="position: relative;">
+                <div class="package gold" style="position: relative;" data-aos="fade-left">
                     <div class="most-popular-banner">
                         <span data-lang="most">MOST SELLER</span>
                     </div>
@@ -559,7 +538,7 @@
 
 
                 <!-- Package 2 VIP -->
-                <div class="package vip">
+                <div class="package vip" data-aos="fade-right">
                     <h2 data-lang="limt">Limit break Package</h2>
                     <p class="price"><del>EGP 7,500</del> <span>EGP 3,500</span></p>
                     <a href="card.html" class="animationbutttonpricieng" data-lang="packagebutton">SUBSCRIBE NOW</a>
@@ -579,6 +558,26 @@
                 </div>
             </div>
         </section>
+        <!--==================== CONTACT ====================-->
+        <section class="discount section" id="discount" data-aos="fade-right">
+            <div class="discount__container container grid">
+                <div class="discount__data">
+                    <h2 class="discount__title section__title" data-lang="discountebook">
+                        Up To 50% Off On Our Exclusive E-Book!
+                    </h2>
+                    <p class="discount__description" data-lang="discountebookdescription">
+                        Discover easy, low-calorie recipes that help you stay fit and enjoy delicious meals at the same time. With over 50 recipes included, this e-book is your perfect companion for a healthy lifestyle and weight management journey. Don’t miss this limited-time
+                        offer </p>
+                    <a href="book.html" class="button"><span data-lang="getyourcopy">Get a free trial</span> <i class="ri-shopping-cart-fill"></i></a>
+                </div>
+                <div class="discout__images">
+                    <img src="assets/img/book2.jpeg" alt="E-Book Cover" class="discount__img-1">
+                    <img src="assets/img/bbokkk1.jpeg" alt="Healthy Recipes" class="discount__img-2">
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
     <!--==================== FOOTER ====================-->
@@ -620,43 +619,14 @@
             &#169; All Rights Reserved By Moalramly
         </span>
     </footer>
-    <!--========== whatsapp ==========-->
-    <div class="floating">
-        <div class="floating__container">
-            <div class="floating__toggle" id="floating-toggle">
-                <i class="ri-add-line"></i>
-            </div>
 
-            <ul>
-                <!-- <a href="#" class="floating__link">
-                    <div class="floating__icon">
-                        <i class="ri-pencil-fill"></i>
-                    </div>
-                </a> -->
 
-                <a href="https://wa.me/201208425542" class=" floating__link">
-                    <div class="floating__icon">
-                        <i class="ri-whatsapp-fill wahtsapp-icon"></i>
-                    </div>
-                </a>
-
-                <a href="pricing.html" class="floating-pricing floating__link">
-                    <div class="floating__icon">
-                        <i class="ri-money-dollar-circle-line"></i>
-                    </div>
-                </a>
-            </ul>
-        </div>
-    </div>
-
-    <!-- <a href="pricing.html" class="floating-pricing floating__link">
-        <i class="ri-money-dollar-circle-line"></i>
-        <span class="pricing-tooltip">عرض الأسعار</span>
-    </a>
-    <a href="https://wa.me/201208425542" class="whatsapp floating__link">
-        <img src="assets/img/about1.jpeg" alt="WhatsApp Icon" class="whatsapp-img">
-        <span>Contact us</span>
+    <!-- <a href="#pricing" class="whatsapp2">
+        <h1>Subscribe Now</h1>
     </a> -->
+    <a href="https://wa.me/201208425542" class="whatsapp">
+        <i class="ri-whatsapp-fill"></i>
+    </a>
 
     <!--=============== SCROLL UP ===============-->
     <a href="#" class="scrollup" id="scroll-up">
@@ -677,8 +647,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js "></script>
     <script>
         AOS.init({
-            offset: 200,
-            duration: 1500
+            offset: 150,
+            duration: 1000
         });
     </script>
 
@@ -690,21 +660,36 @@
     </script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const video = document.getElementById('careVideo');
-            const controlButton = document.getElementById('videoControl');
-            const controlIcon = controlButton.querySelector('i');
+        // ==============NUMM==============
 
-            controlButton.addEventListener('click', () => {
-                if (video.paused) {
-                    video.play();
-                    controlIcon.classList.replace('ri-play-fill', 'ri-pause-fill');
-                } else {
-                    video.pause();
-                    controlIcon.classList.replace('ri-pause-fill', 'ri-play-fill');
-                }
+        let valueDisplays = document.querySelectorAll('.num');
+        let interval = 2000; // تسريع العدّادات
+        let animationDone = false;
+
+        // Function to animate counting
+        function animateCounters() {
+            if (animationDone) return; // إذا كانت الأنيميشن قد اكتملت، لا تُعيدها
+
+            valueDisplays.forEach((valueDisplay) => {
+                let startValue = 0;
+                let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+                let duration = Math.floor(interval / endValue);
+                let unit = valueDisplay.getAttribute("data-unit") || ""; // التحقق من وجود وحدة إضافية
+
+                let counter = setInterval(function() {
+                    startValue += 1;
+                    valueDisplay.textContent = "+" + startValue + unit; // إضافة الوحدة إذا كانت موجودة
+                    if (startValue == endValue) {
+                        clearInterval(counter);
+                    }
+                }, duration);
             });
-        });
+
+            animationDone = true; // منع الأنيميشن من التشغيل مرة أخرى
+        }
+
+        // Start the initial animation on page load
+        window.addEventListener("load", animateCounters);
     </script>
 </body>
 
