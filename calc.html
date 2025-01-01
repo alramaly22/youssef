@@ -117,13 +117,15 @@
                 <h1>Login</h1>
                 <form id="login">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" required>
+                    <input type="text" name="user_name" id="name" required>
 
                     <label for="phone">WhatsApp/Phone Number:</label>
-                    <input type="tel" id="phone" pattern="^\d{11}$" required placeholder="11-digit number">
+                    <input type="tel" name="user_phone" id="phone" pattern="^\d{11}$" required placeholder="11-digit number">
 
                     <button class="button" type="submit">Login</button>
                 </form>
+                <p class="custom-alert-success" id="success-message" data-lang="customer3">Booking confirmed. The coach will contact you shortly.</p>
+                <p id="contact-message"></p>
             </div>
 
             <div class="containerform hidden" id="calculatorForm">
@@ -170,7 +172,37 @@
             </div>
         </div>
     </main>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
+    <script>
+        const contactForm = document.getElementById('login');
+        const contactMessage = document.getElementById('contact-message');
+
+        const sendEmail = (e) => {
+            e.preventDefault();
+
+            // Service Id - templateID - #form -publickey
+            emailjs.sendForm('service_6z1b0ll', 'template_h9kcrpf', '#login', 'V0PDbA02Wxns8ppoS')
+                .then(() => {
+                    // Show sent message
+                    contactMessage.textContent = 'Message sent successfully';
+
+                    // Remove message after five seconds
+                    setTimeout(() => {
+                        contactMessage.textContent = '';
+                    }, 5000);
+
+                    // Clear input 
+                    contactForm.reset();
+                }, () => {
+                    // Show error message
+                    contactMessage.textContent = 'Message not sent (service error)';
+                });
+        }
+
+        contactForm.addEventListener('submit', sendEmail);
+    </script>
     <script>
         const loginForm = document.getElementById('login');
         const calculatorForm = document.getElementById('calculatorForm');
