@@ -11,6 +11,7 @@ let lang = {
         nav10: "تحميل",
         home1: "خصم يصل إلى 50%",
         homebutton: "ابدأ الآن",
+        nav11: "جرب حظك",
 
         Subscr: "اشترك الآن",
         transbuttongg: "التحولات",
@@ -123,7 +124,7 @@ let lang = {
 
         offerdowload: "تحميل",
 
-        pricingselect: "اختر دفعتك",
+        pricingselect: "حصري الآن",
 
         pricinghealthriciper: "كتاب الوصفات الصحية",
 
@@ -434,7 +435,8 @@ let lang = {
         offerbuttonbut: "Buy Now",
 
 
-        pricingselect: "Book now to catch the offer",
+        pricingselect: "Exclusive now",
+
         pricinghealthriciper: "Healthy Recipe Book",
         pricingavailable: "Available Now",
         pricingover1: "Over 50 quick and healthy recipes that you'll never get bored of.",
@@ -622,8 +624,8 @@ let lang = {
 
         westirnsendpayments: "Send payment to the following Western Union account:",
         vodafon7: "Send the screenshot to our WhatsApp number:",
-        formqution5: "",
-        formqution5: "",
+        nav11: "Spin To Win",
+
         formqution5: "",
         formqution5: "",
         formqution5: "",

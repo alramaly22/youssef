@@ -11,6 +11,7 @@ let lang = {
         nav10: "تحميل",
         home1: "خصم يصل إلى 50%",
         homebutton: "ابدأ الآن",
+        nav11: "جرب حظك",
 
         Subscr: "اشترك الآن",
         transbuttongg: "التحولات",
@@ -73,7 +74,7 @@ let lang = {
 
         discountebook: "خصم يصل إلى 50% على كتابنا الإلكتروني الحصري",
         discountebookdescription: "اكتشف وصفات سهلة ومنخفضة السعرات الحرارية تساعدك على الحفاظ على لياقتك والاستمتاع بوجبات لذيذة في نفس الوقت. مع أكثر من 50 وصفة، هذا الكتاب الإلكتروني هو رفيقك المثالي لأسلوب حياة صحي ورحلة إدارة الوزن. لا تفوت هذه العرض المحدود",
-        getyourcopy: "احصل على نسختك",
+        getyourcopy: "اشتري الان",
 
         calc1: "احسب سعراتك الحرارية",
         calc3: "اكتشف كمية السعرات الحرارية المثالية لجسمك لتحقيق أهدافك.",
@@ -123,7 +124,7 @@ let lang = {
 
         offerdowload: "تحميل",
 
-        pricingselect: "اختر دفعتك",
+        pricingselect: "حصري الآن",
 
         pricinghealthriciper: "كتاب الوصفات الصحية",
 
@@ -339,7 +340,7 @@ let lang = {
         home1: "DISCOUNT UP TO 50%",
         transformation: "Your results, my passion.",
         discountebookdescription: "Discover easy, low-calorie recipes that help you stay fit and enjoy delicious meals at the same time. With over 50 recipes included, this e-book is your perfect companion for a healthy lifestyle and weight management journey. Don’t miss this limited-time offer",
-        offerdownload: "Download The Free Trial",
+        offerdownload: "Download Free Trial",
         youssefyanni: "Youssef Yanni",
         home3p3: "Achieve Your Fitness Goals & Transform",
         home3p2: " Your Lifestyle",
@@ -365,8 +366,9 @@ let lang = {
         about1description: "Meet Youssef, an experienced online fitness coach and certified nutritionist. With a passion for helping clients achieve their health goals, Youssef combines personalized training and expert guidance to transform lives.",
         learnmore: "Learn More",
 
-        packages: "Exclusive Now",
-        ignitepackage: "Ignite Package",
+        packages: "Select Your Boost",
+
+        ignitepackage: "ignite Package",
         packagebutton: "SUBSCRIBE NOW",
         per3month: "PER / 3 MONTHS",
         ignite1: "Weekly follow up.",
@@ -399,8 +401,9 @@ let lang = {
 
 
 
-        discountebook: " Up To 50% Off On Our Exclusive E-Book",
-        getyourcopy: "Get Your Copy",
+        discountebook: " Up To 50% OFF On Our Exclusive E-Book",
+        getyourcopy: "Buy Now",
+
 
         calc1: "Calculate Your Calories ",
         calc3: "Discover the perfect calorie intake for your body to reach your goals.",
@@ -434,7 +437,8 @@ let lang = {
         offerbuttonbut: "Buy Now",
 
 
-        pricingselect: "Book now to catch the offer",
+        pricingselect: "Exclusive now",
+
         pricinghealthriciper: "Healthy Recipe Book",
         pricingavailable: "Available Now",
         pricingover1: "Over 50 quick and healthy recipes that you'll never get bored of.",
@@ -622,7 +626,7 @@ let lang = {
 
         westirnsendpayments: "Send payment to the following Western Union account:",
         vodafon7: "Send the screenshot to our WhatsApp number:",
-        formqution5: "",
+        nav11: "Spin To Win",
         formqution5: "",
         formqution5: "",
         formqution5: "",
