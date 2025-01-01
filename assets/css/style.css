@@ -972,7 +972,7 @@ ul {
 
 .bookpachage {
     border-color: #f1c40f;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.84)), url(../img/book/book2.jpeg) no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 54%), rgba(0, 0, 0, 0.84)), url(../img/book/book5.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
 }
