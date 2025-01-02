@@ -525,6 +525,7 @@ img {
     /* max-width: 471px; */
     margin-bottom: var(--mb-1);
     color: var(--white-color);
+    text-shadow: 0px 8px 5px rgb(0 0 0);
 }
 
 .home__description {
