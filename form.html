@@ -170,11 +170,16 @@
                 <fieldset class="fi">
                     <h2 class="fs-title" data-lang="formquestion2">Question 2</h2>
                     <!-- <label style="color: white;" for="CAT_Custom_2" data-lang="qutionheight">Your Height?</label> -->
-                    <label style="color: white;" for="CAT_Custom_2" data-lang="qutionheight">Your Height?</label>
-                    <input type="number" name="CAT_Custom_2" id="CAT_Custom_2" placeholder="Your Height?" required />
+                    <div class="mk" style="    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+">
+                        <label style="color: white;" for="CAT_Custom_2" data-lang="qutionheight">Your Height?</label>
+                        <input type="number" name="CAT_Custom_2" id="CAT_Custom_2" placeholder="Your Height?" required />
 
-                    <label style="color: white;" for="range-weight" data-lang="qutionweight">Your Weight?</label>
-                    <input type="number" required name="range-weight" id="range-weight" placeholder="Your Weight?" pattern="\d+" title="Your Weight?" />
+                        <label style="color: white;" for="range-weight" data-lang="qutionweight">Your Weight?</label>
+                        <input type="number" required name="range-weight" id="range-weight" placeholder="Your Weight?" pattern="\d+" title="Your Weight?" />
+                    </div>
                     <input type="button" name="previous" class="previous action-button butt" required value="Previous" />
                     <input type="button" name="next" class="next action-button butt" value="Next" />
                 </fieldset>
@@ -385,7 +390,7 @@
                         </label>
                         <label>
                             <input class="checkboxo" type="checkbox" name="fruits_type" value="pineapple"> 
-                          <span  data-lang="question_pineapple">  Pineapple</span>
+                          <span  data-lang="question_pineapple">  Pineapple 🍍</span>
                         </label>
                         <label>
                             <input class="checkboxo" type="checkbox" name="fruits_type" value="kiwi"> 
@@ -472,8 +477,8 @@
             6
         </label>
                         <label>
-            <input class="checkboxo" type="radio" name="training_days" value="5_or_6" data-lang="question_5or6days"> 
-            5 or 6 (recommended for faster results)
+            <input class="checkboxo" type="radio" name="training_days" value="5_or_6"> 
+           <span  data-lang="question_5or6days"> 5 or 6 (recommended for faster results)</span>
         </label>
                     </div>
 
@@ -591,11 +596,7 @@
                             <!-- تعيين القيمة "لا" للإجابة السلبية -->
                         </div>
 
-                        <div class="fa">
-                            <label style="color: white;" for="sports-other" data-lang="qutionothersports">Another Sports</label>
-                            <input class="checkboxo" type="radio" name="CAT_Custom_6" id="sports-other" value="Another Sports" required>
-                            <!-- تعيين القيمة "ألعاب رياضية أخرى" -->
-                        </div>
+
                     </div>
 
                     <input type="button" name="previous" class="previous action-button butt" value="Previous" />
