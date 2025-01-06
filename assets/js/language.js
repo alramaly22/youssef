@@ -249,7 +249,7 @@ let lang = {
         question7: "السؤال 7",
         questionnuts: "اختر نوع الدهون المفضل لديك (المكسرات):",
         question_peanut: "فول سوداني 🥜",
-        question_peanutbutter: "زبدة فول السوداني",
+        question_peanutbutter: "زبدة فول سوداني 🧈🥜 ",
         question_almonds: "لوز",
         question_cashews: "كاجو",
 
@@ -527,7 +527,7 @@ let lang = {
         formqution5: "Question 5",
         qutioncarbs: "Choose your favorite carbohydrate types:",
         qutionoats: "Oats",
-        qutionbrowntoast: "Brown toast bread 🍞",
+        qutionbrowntoast: " Brown Toast 🍞",
         qutionwhiterice: " White rice 🍚",
         qutionpotatoes: "Potatoes  🥔 ",
         qutionpasta: "Pasta 🍝",
