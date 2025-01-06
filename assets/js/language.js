@@ -226,7 +226,7 @@ let lang = {
         qutionbrowntoast: "توست بني 🍞",
         qutionwhiterice: "أرز أبيض 🍚",
         qutionpotatoes: "بطاطس  🥔 ",
-        qutionpasta: "مكرونة",
+        qutionpasta: "مكرونة 🍝",
         qutionsweetpotatoes: "بطاطا حلوة 🍠",
         qutionoatspasta: "مكرونة شوفان 🍝",
         qutionbrownrice: "أرز بني",
