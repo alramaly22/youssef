@@ -139,7 +139,7 @@
                 /* محاذاة عمودية في المنتصف */
                 justify-content: center;
                 /* محاذاة أفقية في المنتصف */
-                height: 100vh;
+                /* height: 100vh; */
             }
             
             h1,
@@ -258,6 +258,27 @@
                 color: black;
             }
             
+            .footer__social-link2.facebook {
+                background-color: #1877f2;
+                /* اللون الأزرق الخاص بالفيسبوك */
+                color: white;
+            }
+            /* لون الإنستجرام */
+            
+            .footer__social-link2.instagram {
+                background-color: #e1306c;
+                /* اللون الوردي الخاص بالإنستجرام */
+                color: white;
+            }
+            /* لون التيك توك */
+            
+            .footer__social-link2.tiktok {
+                background-color: #000000;
+                /* اللون الأسود الخاص بالتيك توك */
+                color: white;
+                border: 1px solid var(--white-color);
+            }
+            
             .header {
                 position: fixed;
                 top: 0;
@@ -268,9 +289,11 @@
             }
             
             .nav__logo {
-                color: var(--first-color);
-                font-weight: var(--font-medium);
-                transition: .4s;
+                font-family: "Poppins", sans-serif !important;
+                white-space: nowrap;
+                font-size: 1.25rem;
+                font-weight: bolder !important;
+                color: var(--white-color);
             }
             
             .nav__logo img {
@@ -731,24 +754,8 @@
                         padding-block: 7rem 2rem;
                     }
                 }
-                @media screen and (max-width: 767px) {
-                    .nav__logo {
-                        max-width: 100px;
-                        /* تقليل حجم الشعار في الشاشات الصغيرة */
-                    }
-                }
-            }
-            
-            @media (min-width: 750px) and (max-width: 1028px) {
                 .nav__logo {
-                    max-width: 110px;
-                    /* تصغير الشعار قليلاً */
-                }
-            }
-            
-            @media screen and (min-width: 1023px) {
-                .nav__logo {
-                    max-width: 130px;
+                    font-size: var(--h3-font-size);
                 }
             }
             
