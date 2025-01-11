@@ -63,23 +63,86 @@
             input.value = value ? value + 'g' : ''; // Append "جم" only if there's a value
         }
     </script>
+
+
+    <style>
+        .equation-container {
+            background-color: #000000;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            margin-top: 5rem;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .equation-container h2 {
+            color: #007BFF;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .equation-container p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        
+        .equation {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 15px;
+            background-color: #35353580;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .equation-part {
+            flex: 1;
+        }
+        
+        .calculation {
+            flex: 1;
+            text-align: center;
+            background-color: #ffffff2e;
+            border: 1px solid #c3e6cb;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        
+        .formula {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #28a745;
+        }
+        
+        .equation-part span,
+        .formula span {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
     <header class="header" id="header">
         <div class="navtotal container">
-            <a href="index.html" class="nav__logo"><img src="assets/img/logo3.png" alt=""></a>
+            <a href="index.html" class="nav__logo">Youssef Yanni</a>
 
 
             <div class="footer__social2">
-                <span class="footersociel"><i class="ri-moon-clear-fill change-theme" id="theme-button"></i></span>
-                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link2">
+                <!-- <span class="footersociel"><i class="ri-moon-clear-fill change-theme" id="theme-button"></i></span> -->
+                <a href="https://www.facebook.com/youssef.yanni1?mibextid=wwXIfr&rdid=Uo0ES4dwie6CsFfl&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F179kNgQV6y%2F%3Fmibextid%3DwwXIfr" class="footer__social-link2 facebook">
                     <i class="ri-facebook-circle-fill"></i>
                 </a>
-                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link2">
+                <a href="https://www.instagram.com/yannileads/?igsh=azFmb2g4azdvbWRm" class="footer__social-link2 instagram">
                     <i class="ri-instagram-fill"></i>
                 </a>
-                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link2">
+                <a href="https://www.tiktok.com/@youssefyanni_?_t=8sNqTMeBp6W&_r=1" class="footer__social-link2 tiktok">
                     <i class="ri-tiktok-fill"></i>
                 </a>
             </div>
@@ -88,6 +151,27 @@
 
     <!--==================== MAIN ====================-->
     <main class="main">
+        <div class="equation-container container">
+            <h2>كيف تستخدم البدائل؟</h2>
+            <p>
+                لنفترض أني كاتبلك 60 جم رز في النظام بتاعك، وانت عاوز تبدله ببطاطس. هنروح لجدول البدائل ونلاقي أن 60 جم رز = 260 جم بطاطس.
+            </p>
+            <p>
+                طب لو مكتوبلك 100 جم رز مش 60 جم؟ وانت عاوز تبدلهم ببطاطس. هنا هنعمل عملية حسابية بسيطة بطريقتين عشان نعرف محتاجين بطاطس قد إيه:
+            </p>
+            <div class="equation">
+                <div class="equation-part">
+                    <p>كمية البطاطس من جدول البدائل = <span>260 جم</span></p>
+                    <p>كمية الرز من جدول البدائل = <span>60 جم</span></p>
+                </div>
+                <div class="calculation">
+                    <p>كمية البطاطس المطلوبة معرفتها:</p>
+                    <p class="formula" style="color: rgb(0, 0, 0);">260 &times; 100 / 60 = <span>435 جم</span></p>
+                </div>
+            </div>
+        </div>
+
+
         <div class="section calc2">
             <h1>آلة حاسبة لبدائل الطعام</h1>
             <div class="somebutton">
@@ -116,7 +200,7 @@
                     <option value="120">سمك سالمون </option>
                     <option value="120">سمك مكرونة </option>
                     <option value="120">سمك بلطي </option>
-                    <option value="120">سمك سردين </option>
+                    <!-- <option value="120">سمك سردين </option> -->
                     <option value="120">سمك بوري </option>
                     <option value="120">سمك فيليه </option>
                     <option value="100">جمبري </option>
@@ -147,7 +231,7 @@
                     <option value="120">سمك سالمون </option>
                     <option value="120">سمك مكرونة </option>
                     <option value="120">سمك بلطي </option>
-                    <option value="120">سمك سردين </option>
+                    <!-- <option value="120">سمك سردين </option> -->
                     <option value="120">سمك بوري </option>
                     <option value="120">سمك فيليه </option>
                     <option value="100">جمبري </option>
@@ -179,15 +263,15 @@
 
                     <label for="originalFoodCarbohydrate">الطعام الأصلي:</label>
                     <select id="originalFoodCarbohydrate">
-                    <option value="169">أرز </option>
+                    <option value="60">أرز </option>
                     <option value="55">كورن فلكس </option>
                     <option value="65">مكرونة-شعرية </option>
                     <option value="60">برغل </option>
                     <option value="60">فريك </option>
-                    <option value="90">فينو </option>
-                    <option value="85">خبز شامي </option>
-                    <option value="100">خبز بلدي </option>
-                    <option value="90">كيزر </option>
+                    <!-- <option value="90">فينو </option> -->
+                    <!-- <option value="85">خبز شامي </option> -->
+                    <!-- <option value="100">خبز بلدي </option> -->
+                    <!-- <option value="90">كيزر </option> -->
                     <option value="90">توست أبيض </option>
                     <option value="90">توست أسمر </option>
                     <option value="90">كوز ذرة مشوي </option>
@@ -196,7 +280,7 @@
                     <option value="260">بطاطا </option>
                     <option value="60">كينوا </option>
                     <option value="60">شوفان </option>
-                    <option value="60">بقسماط </option>
+                    <!-- <option value="60">بقسماط </option> -->
                     <option value="60">بليلة </option>
                     <option value="65">ذرة (فشار) </option>
                     <option value="80">تورتيلا </option>
@@ -208,15 +292,15 @@
 
                     <label for="replacementFoodCarbohydrate">البديل المطلوب:</label>
                     <select id="replacementFoodCarbohydrate">
-                    <option value="169">أرز </option>
+                    <option value="60">أرز </option>
                     <option value="55">كورن فلكس </option>
                     <option value="65">مكرونة-شعرية </option>
                     <option value="60">برغل </option>
                     <option value="60">فريك </option>
-                    <option value="90">فينو </option>
-                    <option value="85">خبز شامي </option>
-                    <option value="100">خبز بلدي </option>
-                    <option value="90">كيزر </option>
+                    <!-- <option value="90">فينو </option> -->
+                    <!-- <option value="85">خبز شامي </option> -->
+                    <!-- <option value="100">خبز بلدي </option> -->
+                    <!-- <option value="90">كيزر </option> -->
                     <option value="90">توست أبيض </option>
                     <option value="90">توست أسمر </option>
                     <option value="90">كوز ذرة مشوي </option>
@@ -225,7 +309,7 @@
                     <option value="260">بطاطا </option>
                     <option value="60">كينوا </option>
                     <option value="60">شوفان </option>
-                    <option value="60">بقسماط </option>
+                    <!-- <option value="60">بقسماط </option> -->
                     <option value="60">بليلة </option>
                     <option value="65">ذرة (فشار) </option>
                     <option value="80">تورتيلا </option>
