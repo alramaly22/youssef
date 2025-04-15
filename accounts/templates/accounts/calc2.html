@@ -1,12 +1,17 @@
 <!DOCTYPE html>
+{% load static %}
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
-
+  <!--=============== FAVICON ===============-->
+  <link
+  rel="shortcut icon"
+  href="{% static 'assets/img/logo.png' %}"
+  type="image/x-icon"
+/>
     <!--=============== REMIXICONS ===============-->
     <link
       rel="stylesheet"
@@ -24,7 +29,7 @@
       href="{% static 'assets/css/swiper-bundle.min.css' %}"
     />
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="{% static '"assets/css/cancel.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/cancel.css' %}" />
 
     <title>آلة حاسبة لبدائل الطعام</title>
     <script>
