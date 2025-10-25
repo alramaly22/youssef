@@ -3892,3 +3892,328 @@ span.text {
         /* الحجم المتزايد */
     }
 }
+
+
+/* ===== Coach call banner (above packages) ===== */
+
+.coach-call {
+    background: linear-gradient(rgb(113 111 111 / 56%), rgba(0, 0, 0, 0.7));
+    border-radius: 12px;
+    padding: 14px;
+    margin: 20px 0;
+    color: var(--white-color, #fff);
+    box-shadow: var(--shadow-card, 0 8px 24px rgba(0, 0, 0, .45));
+}
+
+.coach-call__inner {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.coach-call__text h3 {
+    font-size: 1.25rem;
+    margin-bottom: 6px;
+    color: var(--first-color);
+}
+
+.coach-call__text p {
+    font-size: .95rem;
+    opacity: .9;
+}
+
+
+/* buttons */
+
+.btn {
+    display: inline-block;
+    padding: .6rem .95rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: var(--shadow-button);
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.btn--call {
+    background: linear-gradient(90deg, var(--first-color), var(--button-color-alt));
+    color: #111;
+}
+
+.btn--learn {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    color: var(--white-color);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ===== Packages grid ===== */
+
+.packages-section {
+    padding: 10px 0 30px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: var(--bigger-font-size, 2rem);
+    color: var(--white-color);
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+}
+
+
+/* grid */
+
+.packages-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* card */
+
+.card.pkg {
+    width: 320px;
+    min-height: 380px;
+    background: linear-gradient(rgb(0 0 0 / 45%), rgba(0, 0, 0, .75));
+    border-radius: 12px;
+    padding: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .6);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card.pkg:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .7);
+}
+
+
+/* header + badge */
+
+.pkg-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.pkg-header h2 {
+    font-size: 1.4rem;
+    color: var(--white-color);
+    margin: 0;
+}
+
+.pkg-badge {
+    font-size: .8rem;
+    padding: .4rem .6rem;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, .5);
+    color: var(--first-color);
+    font-weight: 700;
+    box-shadow: var(--shadow-text, none);
+}
+
+
+/* special badge style for most */
+
+.pkg-badge.most {
+    background: linear-gradient(90deg, #f6bb41, #d49c2f);
+    color: #111;
+}
+
+
+/* price */
+
+.pkg-price {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+.pkg-price del {
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 400;
+    margin-right: 8px;
+}
+
+.pkg-price span {
+    color: var(--first-color);
+    font-size: 1.35rem;
+}
+
+
+/* CTA */
+
+.pkg-cta {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    background: linear-gradient(90deg, var(--first-color), var(--button-color-alt));
+    color: #111;
+    transition: opacity .15s ease, transform .12s ease;
+}
+
+.pkg-cta:hover {
+    opacity: .95;
+    transform: translateY(-3px);
+}
+
+
+/* features */
+
+.pkg-features {
+    list-style: none;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-inline-start: 0;
+}
+
+.pkg-features li {
+    font-size: .95rem;
+    color: var(--text-color-light, #ddd);
+    line-height: 1.4;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+
+/* variations */
+
+.card.gold {
+    border-color: rgba(246, 187, 65, .18);
+}
+
+.card.vip {
+    border-color: rgba(241, 196, 15, .12);
+}
+
+
+/* ===== No-refund ribbon (moving text) ===== */
+
+.no-refund-ribbon {
+    margin-top: 18px;
+    overflow: hidden;
+    width: 100%;
+    --ribbon-height: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.no-refund__track {
+    width: 100%;
+    max-width: 1120px;
+    height: var(--ribbon-height);
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(255, 32, 9, .12), rgba(0, 0, 0, .4));
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-inline: 10px;
+    box-shadow: var(--shadow-card);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.no-refund__track span {
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: 700;
+    padding-left: 100%;
+    color: #fff;
+    font-size: 1rem;
+    animation: scroll-left 18s linear infinite;
+    letter-spacing: .6px;
+}
+
+
+/* duplicate content technique: if you want more gap, repeat the text in HTML */
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+    /* move left */
+}
+
+
+/* responsive */
+
+@media (max-width: 920px) {
+    .packages-grid {
+        gap: 14px;
+    }
+    .card.pkg {
+        width: calc(50% - 18px);
+        min-height: 360px;
+    }
+}
+
+@media (max-width: 640px) {
+    .coach-call__inner {
+        flex-direction: column;
+        text-align: center;
+        gap: .6rem;
+    }
+    .card.pkg {
+        width: 100%;
+    }
+    .no-refund__track span {
+        font-size: .95rem;
+        animation-duration: 14s;
+    }
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #1a1b1b;
+    color: var(--first-color);
+    font-size: 24px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.testoh56 {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 600;
+    font-size: var(--h2-font-size);
+}
+
+.marquee__inner {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 12s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
