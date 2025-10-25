@@ -457,9 +457,24 @@
         </div>
       </section>
 
+
+        <!-- === Coach call banner (above packages) === -->
+
       <!--==================== PRICING ====================-->
       <section class="packages section" id="pricing">
-        <h1 class="section__title" data-lang="packages">Exclusive Now</h1>
+        <h1 class="section__title" data-lang="packages">Exclusive Now</h1> 
+    <section class="coach-call">
+    <div class="coach-call__inner container">
+      <div class="coach-call__text">
+        <h3 data-lang="feelfree">Feel free to call the coach</h3>
+      </div>
+      <div class="coach-call__actions">
+        <a class="btn btn--call" href="tel:+201208425542" aria-label="Call Coach" data-lang="letstak">
+          📞 Let's Talk
+        </a>
+      </div>
+    </div>
+  </section>
         <div class="package-container">
           <!-- Package Basic -->
           {% comment %}
@@ -634,25 +649,31 @@
               <li>
                 <i class="ri-check-fill iconprice"></i
                 ><span data-lang="limt8">
-                  4 Zoom or Google meetings during your subscription.</span
+                  6 Zoom or Google meetings during your subscription.</span
                 >
               </li>
-              <li>
+              {% comment %} <li>
                 <i class="ri-check-fill iconprice"></i
                 ><span data-lang="limt9">
                   2 One-to-one private sessions with Captain Youssef.</span
                 >
-              </li>
-              <li>
+              </li> {% endcomment %}
+              {% comment %} <li>
                 <i class="ri-check-fill iconprice"></i
                 ><span data-lang="limt10">
                   Preparations for tournaments (Optional).</span
                 >
-              </li>
+              </li> {% endcomment %}
             </ul>
           </div>
         </div>
       </section>
+ <!-- === No-refund moving ribbon under packages === -->
+ <div class="marquee">
+  <div class="marquee__inner">
+    <span data-lang="spanrefundsno" class="testoh56">No refunds. Let's stay committed</span>
+  </div>
+</div>
 
       <!--==================== CONTACT ====================-->
       <section class="discount section" id="discount" data-aos="fade-right">
