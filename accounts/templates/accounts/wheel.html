@@ -25,7 +25,7 @@
     />
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="{% static 'css/wheel.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/wheel.css' %}" />
   </head>
 
   <body>
@@ -104,7 +104,7 @@
       <div class="container">
         <canvas id="wheel" width="400" height="400"></canvas>
         <button id="spin-btn" disabled>Spin</button>
-        <img src="assets/img/ss.svg" alt="spinner-arrow" />
+        <img src="{% static 'assets/img/ss.svg' %}" alt="spinner-arrow" />
       </div>
       <div id="final-value">
         <p style="color: white">Click On The Spin Button To Start</p>
@@ -126,23 +126,23 @@
       const sections = [
         {
           value: "50% Discount",
-          image: "assets/img/GIFT/1.png",
+          image: "/static/assets/img/GIFT/1.png",
         },
         {
           value: "30% Discount",
-          image: "assets/img/GIFT/1.png",
+          image: "/static/assets/img/GIFT/1.png",
         },
         {
           value: "50% Discount",
-          image: "assets/img/GIFT/1.png",
+          image: "/static/assets/img/GIFT/1.png",
         },
         {
           value: "+1 Free Month On Your Subscriptions",
-          image: "assets/img/GIFT/1.png",
+          image: "/static/assets/img/GIFT/1.png",
         },
         {
           value: "70% Discount",
-          image: "assets/img/GIFT/1.png",
+          image: "/static/assets/img/GIFT/1.png",
         },
       ];
 
