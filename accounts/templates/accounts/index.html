@@ -892,9 +892,10 @@ document.addEventListener("DOMContentLoaded", detectCurrency);
 <script>
 // ==================== PACKAGES SCRIPT ====================
 
+// بيانات الباقات حسب العملة
 const packageData = {
   EGP: {
-    currency: "EGP",
+    label: "EGP",
     gold: {
       old: "5,000",
       new: "2,499",
@@ -908,7 +909,7 @@ const packageData = {
   },
 
   USD: {
-    currency: "$",
+    label: "$",
     gold: {
       old: "160",
       new: "80",
@@ -922,7 +923,7 @@ const packageData = {
   },
 
   SAR: {
-    currency: "SAR",
+    label: "SAR",
     gold: {
       old: "600",
       new: "299",
@@ -936,27 +937,35 @@ const packageData = {
   }
 };
 
+function formatPrice(currency, value) {
+  if (currency === "USD") {
+    return `$${value}`;
+  }
+  return `${value} ${currency}`;
+}
+
 function updatePackages() {
   const currency = window.APP_CURRENCY || "EGP";
   const data = packageData[currency];
+
   if (!data) return;
 
   // GOLD
   document.querySelector(".gold .price del").textContent =
-    `${data.currency} ${data.gold.old}`;
+    formatPrice(currency, data.gold.old);
 
   document.querySelector(".gold .price span").textContent =
-    `${data.currency} ${data.gold.new}`;
+    formatPrice(currency, data.gold.new);
 
   document.querySelector(".gold .animationbutttonpricieng").href =
     data.gold.link;
 
   // VIP
   document.querySelector(".vip .price del").textContent =
-    `${data.currency} ${data.vip.old}`;
+    formatPrice(currency, data.vip.old);
 
   document.querySelector(".vip .price span").textContent =
-    `${data.currency} ${data.vip.new}`;
+    formatPrice(currency, data.vip.new);
 
   document.querySelector(".vip .animationbutttonpricieng").href =
     data.vip.link;
