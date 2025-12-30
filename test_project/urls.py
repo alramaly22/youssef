@@ -16,4 +16,5 @@ urlpatterns = [
     path('book/', views.book, name='book'),
     path('webhook/paid/', views.paid_webhook, name='paid_webhook'),
     path('admin/', admin.site.urls),
+    path("location/", views.location_view, name="location"),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
