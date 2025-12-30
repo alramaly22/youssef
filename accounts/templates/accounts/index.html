@@ -488,7 +488,10 @@
             <h2 style="margin-top: 0.5rem" data-lang="powerpackage">
               Elite Package
             </h2>
-            <p class="price"><span>EGP 2,500</span></p>
+<p class="price">
+  <del>EGP 7,500</del>
+  <span>EGP 4,500</span>
+</p>
             <a
               href="https://app.fawaterk.com/paymentRequest/show/17123"
               class="animationbutttonpricieng"
@@ -506,7 +509,7 @@
               <li>
                 <i class="ri-check-fill iconprice"></i
                 ><span data-lang="power1">
-                  Follow up every (24-48 hours) to evaluate your progress.</span
+                  Follow up every (24-48 / 7 hours) to evaluate your progress.</span
                 >
               </li>
               <li>
@@ -533,10 +536,8 @@
               </li>
               <li>
                 <i class="ri-check-fill iconprice"></i>
-                <span data-lang="power6"
-                  ><span data-lang="power6">
-                    Phone call support available 3 days / week.
-                    </span>
+                <span data-lang="power6">
+                    Phone calls 3 days / week.
                     </span>
               </li>
             </ul>
@@ -545,15 +546,21 @@
           <!-- Package 2 VIP -->
           <div class="package vip" data-aos="fade-right">
             <h2 data-lang="limt">Exclusive Package</h2>
-            <p class="price"><span>EGP 4,500</span></p>
+            <p class="price"><del>EGP 7,500</del><span>EGP 4,500</span></p>
             <a
               href="https://app.fawaterk.com/paymentRequest/show/17124"
               class="animationbutttonpricieng"
               data-lang="packagebutton"
               >SUBSCRIBE NOW</a
             >
-            <p class="animated-line" data-lang="per3month2">PER / 6 MONTHS</p>
+            <p class="animated-line" data-lang="per3month">PER / 3 MONTHS</p>
              <ul>
+              <li>
+                <i class="ri-check-fill iconprice"></i
+                ><span data-lang="new11ex">
+                  Priority in texting back faster </span
+                >
+              </li>
               <li>
                 <i class="ri-check-fill iconprice"></i
                 ><span data-lang="new11">
@@ -606,7 +613,7 @@
               <li>
                 <i class="ri-check-fill iconprice"></i>
                 <span data-lang="power7ex"
-                  >3 Zoom meeting or google meetings.</span
+                  >Guarantee 3 Zoom or google meetings with c/Youssef.</span
                 >
               </li>
             </ul>
@@ -838,9 +845,12 @@ async function detectCurrency() {
     const res = await fetch("/location/");
     const data = await res.json();
 
-    if (data.country === "Egypt") setCurrency("EGP");
-    else if (data.country === "Saudi Arabia") setCurrency("SAR");
-    else setCurrency("USD");
+    // استخدم العملة مباشرة من Django
+    if (ALLOWED_CURRENCIES.includes(data.currency)) {
+      setCurrency(data.currency);
+    } else {
+      setCurrency("USD");
+    }
 
   } catch (e) {
     // Localhost fallback
@@ -887,50 +897,77 @@ document.addEventListener("DOMContentLoaded", detectCurrency);
 const packageData = {
   EGP: {
     currency: "EGP",
-    goldPrice: "2,499",
-    vipPrice: "4,499",
-    goldLink: "https://app.fawaterk.com/paymentRequest/show/17123",
-    vipLink: "https://app.fawaterk.com/paymentRequest/show/17124"
+    gold: {
+      old: "5,000",
+      new: "2,499",
+      link: "https://app.fawaterk.com/paymentRequest/show/17123"
+    },
+    vip: {
+      old: "10,000",
+      new: "4,499",
+      link: "https://app.fawaterk.com/paymentRequest/show/17124"
+    }
   },
+
   USD: {
     currency: "USD",
-    goldPrice: "80",
-    vipPrice: "140",
-    goldLink: "https://app.fawaterk.com/paymentRequest/show/32981",
-    vipLink: "https://app.fawaterk.com/paymentRequest/show/32982"
+    gold: {
+      old: "160",
+      new: "80",
+      link: "https://app.fawaterk.com/paymentRequest/show/32981"
+    },
+    vip: {
+      old: "320",
+      new: "140",
+      link: "https://app.fawaterk.com/paymentRequest/show/32982"
+    }
   },
+
   SAR: {
     currency: "SAR",
-    goldPrice: "300",
-    vipPrice: "500",
-    goldLink: "https://app.fawaterk.com/paymentRequest/show/32983",
-    vipLink: "https://app.fawaterk.com/paymentRequest/show/32984"
+    gold: {
+      old: "600",
+      new: "299",
+      link: "https://app.fawaterk.com/paymentRequest/show/32983"
+    },
+    vip: {
+      old: "1,200",
+      new: "499",
+      link: "https://app.fawaterk.com/paymentRequest/show/32984"
+    }
   }
 };
 
 function updatePackages() {
   const currency = window.APP_CURRENCY || "EGP";
   const data = packageData[currency];
-
   if (!data) return;
 
-  document.querySelector(".gold .price span").textContent =
-    `${data.currency} ${data.goldPrice}`;
+  // GOLD
+  document.querySelector(".gold .price del").textContent =
+    `${data.currency} ${data.gold.old}`;
 
-  document.querySelector(".vip .price span").textContent =
-    `${data.currency} ${data.vipPrice}`;
+  document.querySelector(".gold .price span").textContent =
+    `${data.currency} ${data.gold.new}`;
 
   document.querySelector(".gold .animationbutttonpricieng").href =
-    data.goldLink;
+    data.gold.link;
+
+  // VIP
+  document.querySelector(".vip .price del").textContent =
+    `${data.currency} ${data.vip.old}`;
+
+  document.querySelector(".vip .price span").textContent =
+    `${data.currency} ${data.vip.new}`;
 
   document.querySelector(".vip .animationbutttonpricieng").href =
-    data.vipLink;
+    data.vip.link;
 }
 
 // أول تحميل
 document.addEventListener("DOMContentLoaded", updatePackages);
 
-// أي تغيير عملة
+// عند تغيير العملة
 document.addEventListener("currencyChanged", updatePackages);
 </script>
 
