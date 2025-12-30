@@ -812,82 +812,33 @@
     </script>
 
 <script>
-// ==================== NAV CURRENCY SCRIPT ====================
+// ==================== AUTO CURRENCY SCRIPT ====================
 
 // Global currency
 window.APP_CURRENCY = "USD";
 
-// العملات المسموحة
-const ALLOWED_CURRENCIES = ["EGP", "USD", "SAR"];
-
-// ==================== SET CURRENCY ====================
-function setCurrency(currency) {
-  if (!ALLOWED_CURRENCIES.includes(currency)) return;
-
-  window.APP_CURRENCY = currency;
-  localStorage.setItem("selectedCurrency", currency);
-
-  updateNavCurrency();
-  document.dispatchEvent(new Event("currencyChanged"));
-}
-
 // ==================== AUTO DETECT ====================
 async function detectCurrency() {
-  const saved = localStorage.getItem("selectedCurrency");
-  if (saved) {
-    setCurrency(saved);
-    return;
-  }
-
   try {
     const res = await fetch("/location/");
     const data = await res.json();
 
-    // استخدم العملة مباشرة من Django
-    if (ALLOWED_CURRENCIES.includes(data.currency)) {
-      setCurrency(data.currency);
-    } else {
-      setCurrency("USD");
-    }
+    // استخدم العملة القادمة من Django مباشرة
+    window.APP_CURRENCY = data.currency || "USD";
 
   } catch (e) {
-    // Localhost fallback
-    setCurrency("EGP");
-  }
-}
-
-// ==================== NAV UI ====================
-function updateNavCurrency() {
-  const navList = document.querySelector(".nav__list");
-  if (!navList) return;
-
-  let li = document.querySelector(".nav-currency");
-  if (!li) {
-    li = document.createElement("li");
-    li.className = "nav-currency";
-
-    li.innerHTML = `
-      <select id="currencySelector"
-        style="padding:4px;border-radius:6px;font-weight:600;">
-        <option value="EGP">EGP</option>
-        <option value="USD">USD</option>
-        <option value="SAR">SAR</option>
-      </select>
-    `;
-
-    navList.appendChild(li);
-
-    li.querySelector("select").addEventListener("change", (e) => {
-      setCurrency(e.target.value);
-    });
+    // fallback (مثلاً localhost)
+    window.APP_CURRENCY = "EGP";
   }
 
-  li.querySelector("select").value = window.APP_CURRENCY;
+  // نحدث الباقات
+  document.dispatchEvent(new Event("currencyChanged"));
 }
 
 // ==================== INIT ====================
 document.addEventListener("DOMContentLoaded", detectCurrency);
 </script>
+
 
 <script>
 // ==================== PACKAGES SCRIPT ====================
