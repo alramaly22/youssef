@@ -64,7 +64,7 @@ let lang = {
         power55ex: "تعديل أسبوعي في النظام الغذائي ومتابعة كل 7 لـ 10 أيام",
         power6: "مكالمات تليفون 3 أيام في الأسبوع",
         power6ex: "مكالمات تليفون غير محدودة في الأسبوع",
-        power7ex: "ضمان 3 مكالمات متابعة فيديو مع الكابتن يوسف",
+        power7ex: "اضمن ٣ مكالمات فيديو خلال فتره المتابعه مع ك/يوسف",
 
 
         limt: "باقة كسر الحدود",
@@ -228,7 +228,7 @@ let lang = {
         qutionTilapiafish: "سمك بلطي 🐟",
         qutionShrimps: "جمبري 🍤",
         qutionSmokedSalmon: "سلمون مدخن 🍣",
-        qutionGrilledFilletfish: "فيليه سمك مشوي 🐟",
+        qutionGrilledFilletfish: "سمك فيليه مشوي 🐟",
         qutioneggs: "بيض 🥚",
         qutionSmokedturkey: "تركي مدخن 🦃",
         qutioncottagecheese: "جبنة قريش 🧀",
@@ -479,7 +479,7 @@ let lang = {
         power55ex: "Weekly change in nutrition plan & check ins every 7-10 days",
         power6: "Phone calls 3 days / week.",
         power6ex: "Unlimited phone calls / week",
-        power7ex: "Guarantee 3 Zoom or google meetings with c/Youssef",
+        power7ex: "Guarantee 3 video calls through zoom or google meetings with c/Youssef",
 
         limt: "Exclusive Package",
         limt1: "Daily follow up every 24hrs to evaluate your progress.",
