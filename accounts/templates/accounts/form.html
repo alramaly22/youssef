@@ -745,6 +745,7 @@
                     <input type="button" name="previous" class="previous action-button butt" value="Previous" />
                     <input type="button" name="next" class="next action-button butt" value="Next" />
                 </fieldset>
+                
                 <!-- ===================================== New 14 ======================= -->
                 
                 <!-- ===================================== New 15 ======================= -->
@@ -798,8 +799,81 @@
     </ol>
 
     <input type="button" name="previous" class="previous action-button butt" value="Previous" />
-    <input type="button" id="sendToWhatsApp" class="submit action-button butt" value="Send" />
+    <input type="button" name="next" class="next action-button butt" value="Next" />
+
 </fieldset>
+
+
+
+
+<fieldset>
+                    <h2 class="fs-title" data-lang="numberform22">Question 22</h2>
+                    <h3 class="fs-subtitle" data-lang="questionfruits225">Choose your favorite snack:</h3>
+                    <div class="checkbox-container">
+                        <label>
+                            <input class="checkboxo" type="checkbox" name="snack_type" value="Sugar-Free-Jelly"> 
+                           <span data-lang="question_SugarFreeJelly"> Sugar Free Jelly</span>
+                        </label>
+                        <label>
+                            <input class="checkboxo" type="checkbox" name="snack_type" value="Sugar-Free-Pudding"> 
+                          <span data-lang="question_SugarFreePudding"> Sugar Free Pudding</span>
+                        </label>
+
+                        <label>
+                            <input class="checkboxo" type="checkbox" name="snack_type" value="⁠Sugar-Free-Cream-Caramel"> 
+                           <span data-lang="question__125"> ⁠Sugar Free Cream Caramel 🍮</span>
+                        </label>
+                        <label>
+                            <input class="checkboxo" type="checkbox" name="snack_type" value="Greek-Yogurt-0-Sugar"> 
+                          <span data-lang="question_GreekYogurt0Sugar">Greek Yogurt 0 Sugar</span>
+                        </label>
+
+                        <label>
+                            <input class="checkboxo" type="checkbox" name="snack_type" value="Stevia-Corona-Chocolate"> 
+                           <span data-lang="question_SteviaCoronaChocolate">Stevia Corona Chocolate 🍫 </span>
+                        </label>
+                        <label>
+                            <input class="checkboxo" type="checkbox" name="snack_type" value="Sugar-Free-Ice-Cream"> 
+                          <span data-lang="question_98"> Sugar-Free Ice Cream 🍦</span>
+                        </label>
+
+                        <label>
+                            <input class="checkboxo" type="checkbox" name="snack_type" value="Stevia-Healthy-Spread"> 
+                           <span data-lang="question_SteviaHealthySpread">Stevia Healthy Spread 🍫</span>
+                        </label>
+                        <label>
+                            <input class="checkboxo" type="checkbox" name="snack_type" value="Unsalted-Rice-Cakes"> 
+                          <span data-lang="question_UnsaltedRiceCakes"> Unsalted Rice Cakes</span>
+                        </label>
+                        <label>
+                            <input class="checkboxo" type="checkbox" name="snack_type" value="Flaminco-puffs"> 
+                           <span data-lang="question_Flamincopuffs"> Flaminco puffs</span>
+                        </label>
+                        
+                    </div>
+                    <input type="button" name="previous" class="previous action-button butt" value="Previous" />
+                    <input type="button" name="next" class="next action-button butt" value="Next" />
+                </fieldset>
+
+
+                <fieldset>
+                    <h2 class="fs-title" data-lang="numberform23">Question 23</h2>
+                    <h3 class="fs-subtitle" data-lang="questionnnm">Where exactly would you like to work out?</h3>
+                    <div class="checkbox-container">
+                      
+                        <label>
+                            <input class="checkboxo" type="checkbox" name="work-out" value="At-home" > 
+                           <span data-lang="question_Athomee"> At home 🏠</span>
+                        </label>
+                        <label>
+                            <input class="checkboxo" type="checkbox" name="work-out" value="At-the-gym"> 
+                           <span data-lang="question_Atthegym"> At the gym 🏋️‍♂️</span>
+                        </label>
+                    </div>
+
+                    <input type="button" name="previous" class="previous action-button butt" value="Previous" />
+                    <input type="button" id="sendToWhatsApp" class="submit action-button butt" value="Send" />
+                </fieldset>
     </section>
 
     </form>
@@ -856,6 +930,9 @@
                     dietBudget: document.querySelector('input[name="diet_budget"]:checked') ? document.querySelector('input[name="diet_budget"]:checked').value : '',
                     goal: document.querySelector('input[name="goal"]:checked') ? document.querySelector('input[name="goal"]:checked').value : '',
                     dailyRoutine2: document.getElementById('daily_routine2') ? document.getElementById('daily_routine2').value : '',
+                    snacks: Array.from(document.querySelectorAll('input[name="snack_type"]:checked')).map(input => input.value),
+                    workoutPlace: Array.from(document.querySelectorAll('input[name="work-out"]:checked')).map(input => input.value),
+                
                 };
         
                 // بناء الرسالة
@@ -883,6 +960,9 @@
                 message += `Diet Budget: ${formData.dietBudget}\n`;
                 message += `Goal: ${formData.goal}\n`;
                 message += `Daily Routine: ${formData.dailyRoutine2}\n`;
+                message += `Favorite Snacks: ${formData.snacks.join(", ")}\n`;
+                message += `Workout Place: ${formData.workoutPlace.join(", ")}\n`;
+
         
                 // تشفير الرسالة لاستخدامها في الرابط
                 let encodedMessage = encodeURIComponent(message);
