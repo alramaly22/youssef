@@ -53,7 +53,7 @@ let lang = {
         most: "الأكثر مبيعًا",
         powerpackage: "باقة القوة",
         new11: "نظام غذائي متظبط على حسب جسمك وهدفك",
-        power1: "متابعة مستمرة 24/7 علشان نقيّم تقدمك",
+        power1: "متابعه مستمره و رد خلال ٢٤ ساعه علي مدار الاسبوع عشان نضمن تقدمك",
         power1ex: "متابعة مستمرة طول الوقت علشان نطمن على تقدمك",
         power2: "برنامج تمارين مخصص (في الجيم أو في البيت) وبيتغير كل 45 يوم",
         power2ex: "برنامج تمارين مخصص (في الجيم أو في البيت) وبيتغير كل 30 يوم",
@@ -399,7 +399,22 @@ let lang = {
         numberform20: "السؤال 20",
         numberform21: "السؤال 21",
         new11ex: "أولوية في الرد على الرسائل بشكل أسرع",
+        questionfruits225: "بتحب تاكل إيه كسناك بين الوجبات ؟ ",
+        question_SugarFreeJelly: "جيلي خالي من السكر",
+        question_SugarFreePudding: "بودينج خالي من السكر",
+        question__125: "كريم كراميل خالي من السكر 🍮",
 
+        question_GreekYogurt0Sugar: " زبادي يوناني خالي من السكر",
+        question_SteviaCoronaChocolate: " شوكولاتة كورونا ستيفيا 🍫 ",
+        question_98: "آيس كريم خالي من السكر 🍦",
+        question_SteviaHealthySpread: "شوكوليت سبريد ستيفيا 🍫",
+
+        question_UnsaltedRiceCakes: "رايس كيك من غير ملح",
+        question_Flamincopuffs: "فلامينكو بافس",
+
+        questionnnm: "حابب تتمرن فين بالظبط؟",
+        question_Athomee: "البيت 🏠",
+        question_Atthegym: "الجيم 🏋️‍♂️",
 
 
 
@@ -790,6 +805,24 @@ let lang = {
         numberform20: "Question 20",
         numberform21: "Question 21",
 
+        numberform23: "Question 23",
+        numberform22: "Question 22",
+        questionfruits225: "Choose your favorite snack:",
+        question_SugarFreeJelly: "Sugar Free Jelly",
+        question_SugarFreePudding: "Sugar Free Pudding",
+        question__125: "⁠Sugar Free Cream Caramel 🍮",
+
+        question_GreekYogurt0Sugar: "Greek Yogurt 0 Sugar",
+        question_SteviaCoronaChocolate: "Stevia Corona Chocolate 🍫 ",
+        question_98: "Sugar-Free Ice Cream 🍦",
+        question_SteviaHealthySpread: "Stevia Healthy Spread 🍫",
+
+        question_UnsaltedRiceCakes: "Unsalted Rice Cakes",
+        question_Flamincopuffs: " Flaminco puffs",
+
+        questionnnm: "Where exactly would you like to work out?",
+        question_Athomee: "At home 🏠",
+        question_Atthegym: "At the gym 🏋️‍♂️",
 
 
     }
